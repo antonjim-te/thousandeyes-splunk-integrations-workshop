@@ -32,7 +32,8 @@ To obtain it follow the following steps:
 - Click `Create` next to `OAuth Bearer Token` on `User API Tokens` ![ThousandEyes create token](img/thousandeyes/createToken.png)
 - ThousandEyes will generate new OAuth Bearer Token for you and show it in a new popup window ![ThousandEyes token](img/thousandeyes/token.png)
 - Click `Copy` and
-- Save the token into the placeholder `<ThousandEyes_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>). This token will be used for all API requests.
+- Save the token into the variable `ThousandEyes_token` in Postman ![ThousandEyes token variable](img/thousandeyes/postman/token.png)
+
 
 > [!WARNING]
 > The OAuth Token is shown only once. If lost, you need to revoke and create a new one.
@@ -46,29 +47,12 @@ Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-docu
 We are going to create an `HTTP Server` test that validates the availability of `www.google.com`.
 Full description of the API request is available at [ThousandEyes API Reference](https://developer.cisco.com/docs/thousandeyes/create-http-server-test).
 
-- Use the following API request to create a test:
-```
-curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer <ThousandEyes_token>' \
---data '{
-    "interval": 60,
-    "agents": [{"agentId": 7}],
-    "testName": "DEVWKS-2656",
-    "url": "www.google.com"
-}'
-```
+- Use the following Postman request to create the HTTP test ![ThousandEyes create test](img/thousandeyes/postman/createHttpTest.png)
 
 > [!NOTE]
 > You can use other `agentId` using [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents).
 
-- Save the `testId` from the response into the placeholder `<ThousandEyes_test_id>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
-```
-{
-    "testId": "281474976818273",
-    ...
-}
-```
+- Save the `testId` from the response into the variable `ThousandEyes_test_id` in Postman ![ThousandEyes test id variable](img/thousandeyes/postman/testId.png)
 
 ## Step 4. Create Splunk Enterprise integration
 
@@ -86,46 +70,14 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 - Open `HTTP Event Collector`  ![HTTP Event Collector](img/splunkEnterprise/HttpEventCollector.png)
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value`
 ![HEC token](img/splunkEnterprise/hecToken.png)
-- Save it into the placeholder `<Splunk_Enterprise_HEC_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
+- Save the `HEC token` into the variable `<Splunk_Enterprise_HEC_token>` in Postman ![Splunk Enterprise HEC token variable](img/splunkEnterprise/postman/token.png)
 
 ### Step 4.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
-- Create a streaming integration for Splunk Enterprise. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
+- Create a stream integration for Splunk Enterprise. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
+- Use the following Postman request to create the stream ![ThousandEyes create stream](img/splunkEnterprise/postman/stream.png)
+- Save the `id` from the response into the variable `<Splunk_Enterprise_stream_id>` in Postman ![Splunk Enterprise Stream Id](img/splunkEnterprise/postman/streamId.png)
 
-```
-curl --location 'https://api.thousandeyes.com/v7/stream' \
---header 'Authorization: Bearer <ThousandEyes_token>' \
---header 'Content-Type: application/json' \
---data '{
-    "type": "splunk-hec",
-    "testMatch": [
-        {
-            "id": "<ThousandEyes_test_id>",
-            "domain": "cea"
-        }
-    ],
-    "exporterConfig": {
-        "splunkHec":{
-            "token": "<Splunk_Enterprise_HEC_token>"
-        }
-    },
-    "endpointType": "http",
-    "streamEndpointUrl": "https://splunk.pseudoco.net:8088/services/collector/event"
-}'
-
-```
-> [!NOTE]
-> Copy the `<ThousandEyes_test_id>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
-> 
-> Copy the `<Splunk_Enterprise_HEC_token>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
-
-- Save the `id` from the response into the placeholder `<Splunk_Enterprise_stream_id>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
-```
-{
-    "id": "151a3417-6d4b-4db7-a8d9-557a62252e4b",
-    ...
-}
-```
 
 ## Step 5. Create Splunk Observability Cloud integration
 
@@ -141,39 +93,12 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 
 - Navigate to `Settings` -> `Access Tokens`
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png)
-- Save it into the placeholder `<Splunk_Observability_access_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
+- Save the `token` into the variable `Splunk_Observability_access_token` in Postman  ![Splunk Observability Cloud token variable](img/splunkObservabilityCloud/postman/token.png)
 
 ### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
 
 - Create a streaming integration for Splunk Observability Cloud. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
-
-```
-curl --location 'https://api.thousandeyes.com/v7/stream' \
---header 'Authorization: Bearer <ThousandEyes_token>' \
---header 'X-ThousandEyes-Partner-Id: test' \
---header 'Content-Type: application/json' \
---data '{
-    "type": "openTelemetry",
-    "testMatch": [
-        {
-            "id": "<testId>",
-            "domain": "cea"
-        }
-    ],
-    "endpointType": "http",
-    "streamEndpointUrl": "https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp",
-    "customHeaders": {
-        "X-SF-Token": "<Splunk-Observability-access-token>",
-        "Content-Type": "application/x-protobuf"
-    }
-}'
-```
-
-> [!NOTE]
-> Copy the `<ThousandEyes_test_id>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
-> 
-> Copy the `<Splunk_Observability_access_token>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
-
+- Use the following Postman request to create the stream ![ThousandEyes create stream](img/splunkObservabilityCloud/postman/stream.png)
 
 ## Step 6. Visualize ThousandEyes telemetry data in Splunk Enterprise
 
@@ -187,7 +112,7 @@ index="*" source="ThousandEyesOTel" "thousandeyes.stream.id"="<Splunk_Enterprise
 ![alt text](img/splunkEnterprise/chart.png)
 
 > [!NOTE]
-> Copy the `Splunk_Enterprise_stream_id` from [tokens_and_ids.md file](<tokens_and_ids.md>)
+> Copy the `Splunk_Enterprise_stream_id` the Postman variables ![Splunk Enterprise Stream Id](img/splunkEnterprise/postman/streamId.png)
 
 ## Step 7. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
