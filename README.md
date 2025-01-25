@@ -85,7 +85,8 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 - Navigate to `Settings` -> `Data Inputs`  ![datainputs](img/splunkEnterprise/datainputs.png)
 - Open `HTTP Event Collector`  ![HTTP Event Collector](img/splunkEnterprise/HttpEventCollector.png)
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value`
-![HEC token](img/splunkEnterprise/hecToken.png) and save into the placeholder `<Splunk_Enterprise_HEC_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
+![HEC token](img/splunkEnterprise/hecToken.png)
+- Save into the placeholder `<Splunk_Enterprise_HEC_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 4.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
@@ -139,7 +140,8 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 ### Step 5.b. Get Splunk Observability Cloud Access Tokens
 
 - Navigate to `Settings` -> `Access Tokens`
-- There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png) and save into the placeholder `<Splunk_Observability_access_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
+- There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png)
+- Save into the placeholder `<Splunk_Observability_access_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
 
