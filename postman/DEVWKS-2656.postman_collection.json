@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "5b93c03e-8acc-4dd6-b5de-9cc3739c27b9",
 		"name": "DEVWKS-2656",
+		"description": "Cisco Live EMEA 2025 - DEVWKS-2656",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "30292128"
 	},
@@ -12,7 +13,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "<ThousandEyes_token>"
+						"token": "{{ThousandEyes_token}}"
 					}
 				},
 				"method": "GET",
@@ -27,7 +28,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "<ThousandEyes_token>"
+						"token": "{{ThousandEyes_token}}"
 					}
 				},
 				"method": "POST",
@@ -60,7 +61,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "<ThousandEyes_token>"
+						"token": "{{ThousandEyes_token}}"
 					}
 				},
 				"method": "POST",
@@ -72,7 +73,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"<ThousandEyes_test_id>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"<Splunk_Enterprise_HEC_token>\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://splunk.pseudoco.net:8088/services/collector/event\"\n}",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_Enterprise_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://splunk.pseudoco.net:8088/services/collector/event\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -89,7 +90,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "<ThousandEyes_token>"
+						"token": "{{ThousandEyes_token}}"
 					}
 				},
 				"method": "POST",
@@ -101,7 +102,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"testMatch\": [\n        {\n            \"id\": \"<ThousandEyes_test_id>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"<Splunk-Observability-access-token>\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk-Observability-access-token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -111,6 +112,61 @@
 				"url": "https://api.thousandeyes.com/v7/stream"
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{ThousandEyes_token}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ThousandEyes_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "ThousandEyes_test_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Splunk_Enterprise_HEC_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Splunk_Enterprise_stream_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Splunk_Observability_access_token",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
