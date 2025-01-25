@@ -86,7 +86,7 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 - Open `HTTP Event Collector`  ![HTTP Event Collector](img/splunkEnterprise/HttpEventCollector.png)
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value`
 ![HEC token](img/splunkEnterprise/hecToken.png)
-- Save into the placeholder `<Splunk_Enterprise_HEC_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
+- Save it into the placeholder `<Splunk_Enterprise_HEC_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 4.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
@@ -141,7 +141,7 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 
 - Navigate to `Settings` -> `Access Tokens`
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png)
-- Save into the placeholder `<Splunk_Observability_access_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
+- Save it into the placeholder `<Splunk_Observability_access_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
 
@@ -163,7 +163,7 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
     "endpointType": "http",
     "streamEndpointUrl": "https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp",
     "customHeaders": {
-        "X-SF-Token": "<splunk-access-token>",
+        "X-SF-Token": "<Splunk-Observability-access-token>",
         "Content-Type": "application/x-protobuf"
     }
 }'
@@ -181,7 +181,6 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 - Navigate to `Search & Reporting` ![Search](img/splunkEnterprise/search.png)
 - Search by `index="*" source="ThousandEyesOTel"` ![Search by source](img/splunkEnterprise/searchSource.png) ![Expand metric](img/splunkEnterprise/expandMetric.png)
 - Create a chart by searching the following query and click on `Visualization`
-  - > `<stream_id>` from result of `Step 4.c`
 ```
 index="*" source="ThousandEyesOTel" "thousandeyes.stream.id"="<Splunk_Enterprise_stream_id>" | timechart avg("metric_name:http.client.request.duration") as "Avg" span=30s
 ```

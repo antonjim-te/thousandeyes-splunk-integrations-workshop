@@ -101,7 +101,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"testMatch\": [\n        {\n            \"id\": \"<testId>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"<splunk-access-token>\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"testMatch\": [\n        {\n            \"id\": \"<testId>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"<Splunk-Observability-access-token>\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
