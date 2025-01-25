@@ -72,7 +72,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"<testId>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"<splunk-HEC-token>\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://splunk.pseudoco.net:8088/services/collector/event\"\n}",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"<testId>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"<Splunk_Enterprise_HEC_token>\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://splunk.pseudoco.net:8088/services/collector/event\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"

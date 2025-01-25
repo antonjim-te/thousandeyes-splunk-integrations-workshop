@@ -31,9 +31,10 @@ To obtain it follow the following steps:
 - After logging in, navigate to `Account Settings` -> `Users and Roles` ![ThousandEyes user and roles](img/thousandeyes/usersRoles.png)
 - Click `Create` next to `OAuth Bearer Token` on `User API Tokens` ![ThousandEyes create token](img/thousandeyes/createToken.png)
 - ThousandEyes will generate new OAuth Bearer Token for you and show it in a new popup window ![ThousandEyes token](img/thousandeyes/token.png)
-- Click `Copy` and record the token somewhere. This token will be used for all API requests.
+- Click `Copy` and save the token in `<ThousandEyes_token>` in [tokens_and_ids.md file](<tokens_and_ids.md>). This token will be used for all API requests.
 
-> **WARNING**: The OAuth Token is shown only once. If lost, you need to revoke and create a new one.
+> [!WARNING]
+> The OAuth Token is shown only once. If lost, you need to revoke and create a new one.
 
 ## Step 3. Create ThousandEyes HTTP Server test
 
@@ -48,7 +49,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 ```
 curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer <ThousandEyes_Token>' \
+--header 'Authorization: Bearer <ThousandEyes_token>' \
 --data '{
     "interval": 60,
     "agents": [{"agentId": 7}],
@@ -57,12 +58,12 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 }'
 ```
 
+> [!NOTE]
 > You can use other `agentId` using [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents).
 
-- Keep the `testId` from the response for later use
+- Save the `testId` from the response in `<ThousandEyes_test_id>` [tokens_and_ids.md file](<tokens_and_ids.md>)
 ```
 {
-    "interval": 60,
     "testId": "281474976818273",
     ...
 }
@@ -83,7 +84,7 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 - Navigate to `Settings` -> `Data Inputs`  ![datainputs](img/splunkEnterprise/datainputs.png)
 - Open `HTTP Event Collector`  ![HTTP Event Collector](img/splunkEnterprise/HttpEventCollector.png)
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value`
-![HEC token](img/splunkEnterprise/hecToken.png)
+![HEC token](img/splunkEnterprise/hecToken.png) and save in  `<Splunk_Enterprise_HEC_token>` [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 4.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
@@ -91,30 +92,32 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 
 ```
 curl --location 'https://api.thousandeyes.com/v7/stream' \
---header 'Authorization: Bearer <ThousandEyes_Token>' \
+--header 'Authorization: Bearer <ThousandEyes_token>' \
 --header 'Content-Type: application/json' \
 --data '{
     "type": "splunk-hec",
     "testMatch": [
         {
-            "id": "<testId>",
+            "id": "<ThousandEyes_test_id>",
             "domain": "cea"
         }
     ],
     "exporterConfig": {
         "splunkHec":{
-            "token": "<splunk-HEC-token>"
+            "token": "<Splunk_Enterprise_HEC_token>"
         }
     },
     "endpointType": "http",
     "streamEndpointUrl": "https://splunk.pseudoco.net:8088/services/collector/event"
 }'
+
 ```
-> Set the `testId` created previosly.
+> [!NOTE]
+> Copy the `ThousandEyes_test_id` from [tokens_and_ids.md file](<tokens_and_ids.md>)
+> 
+> Copy the `Splunk_Enterprise_HEC_token` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 
-> Set the `splunk-HEC-token` copied previosly.
-
-- Keep the `id` from the response for later
+- Save the `id` from the response in `<Splunk_Enterprise_stream_id>` [tokens_and_ids.md file](<tokens_and_ids.md>)
 ```
 {
     "id": "151a3417-6d4b-4db7-a8d9-557a62252e4b",
@@ -134,7 +137,7 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 ### Step 5.b. Get Splunk Observability Cloud Access Tokens
 
 - Navigate to `Settings` -> `Access Tokens`
-- There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png)
+- There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png) and save in  `<Splunk_Observability_access_token>` [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
 
@@ -142,7 +145,7 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 
 ```
 curl --location 'https://api.thousandeyes.com/v7/stream' \
---header 'Authorization: Bearer <ThousandEyes_Token>' \
+--header 'Authorization: Bearer <ThousandEyes_token>' \
 --header 'X-ThousandEyes-Partner-Id: test' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -162,17 +165,11 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 }'
 ```
 
-> Set the `testId` created previosly.
+> [!NOTE]
+> Copy the `ThousandEyes_test_id` from [tokens_and_ids.md file](<tokens_and_ids.md>)
+> 
+> Copy the `Splunk_Observability_access_token` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 
-> Set the `splunk-access-token` copied previosly.
-
-- Keep the `id` from the response for later
-```
-{
-    "id": "151a3417-6d4b-4db7-a8d9-557a62252e4b",
-    ...
-}
-```
 
 ## Step 6. Visualize ThousandEyes telemetry data in Splunk Enterprise
 
@@ -182,9 +179,12 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 - Create a chart by searching the following query and click on `Visualization`
   - > `<stream_id>` from result of `Step 4.c`
 ```
-index="*" source="ThousandEyesOTel" "thousandeyes.stream.id"="<stream_id>>" | timechart avg("metric_name:http.client.request.duration") as "Avg" span=30s
+index="*" source="ThousandEyesOTel" "thousandeyes.stream.id"="<Splunk_Enterprise_stream_id>" | timechart avg("metric_name:http.client.request.duration") as "Avg" span=30s
 ```
 ![alt text](img/splunkEnterprise/chart.png)
+
+> [!NOTE]
+> Copy the `Splunk_Enterprise_stream_id` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ## Step 7. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
