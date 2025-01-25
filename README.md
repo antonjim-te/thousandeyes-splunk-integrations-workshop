@@ -113,9 +113,9 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 
 ```
 > [!NOTE]
-> Copy the `ThousandEyes_test_id` from [tokens_and_ids.md file](<tokens_and_ids.md>)
+> Copy the `<ThousandEyes_test_id>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 > 
-> Copy the `Splunk_Enterprise_HEC_token` from [tokens_and_ids.md file](<tokens_and_ids.md>)
+> Copy the `<Splunk_Enterprise_HEC_token>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 - Save the `id` from the response in `<Splunk_Enterprise_stream_id>` [tokens_and_ids.md file](<tokens_and_ids.md>)
 ```
@@ -166,9 +166,9 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 ```
 
 > [!NOTE]
-> Copy the `ThousandEyes_test_id` from [tokens_and_ids.md file](<tokens_and_ids.md>)
+> Copy the `<ThousandEyes_test_id>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 > 
-> Copy the `Splunk_Observability_access_token` from [tokens_and_ids.md file](<tokens_and_ids.md>)
+> Copy the `<Splunk_Observability_access_token>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 
 ## Step 6. Visualize ThousandEyes telemetry data in Splunk Enterprise
