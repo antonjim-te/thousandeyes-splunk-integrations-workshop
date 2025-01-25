@@ -31,7 +31,8 @@ To obtain it follow the following steps:
 - After logging in, navigate to `Account Settings` -> `Users and Roles` ![ThousandEyes user and roles](img/thousandeyes/usersRoles.png)
 - Click `Create` next to `OAuth Bearer Token` on `User API Tokens` ![ThousandEyes create token](img/thousandeyes/createToken.png)
 - ThousandEyes will generate new OAuth Bearer Token for you and show it in a new popup window ![ThousandEyes token](img/thousandeyes/token.png)
-- Click `Copy` and save the token in `<ThousandEyes_token>` in [tokens_and_ids.md file](<tokens_and_ids.md>). This token will be used for all API requests.
+- Click `Copy` and
+- Save the token into the placeholder `<ThousandEyes_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>). This token will be used for all API requests.
 
 > [!WARNING]
 > The OAuth Token is shown only once. If lost, you need to revoke and create a new one.
@@ -61,7 +62,7 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 > [!NOTE]
 > You can use other `agentId` using [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents).
 
-- Save the `testId` from the response in `<ThousandEyes_test_id>` [tokens_and_ids.md file](<tokens_and_ids.md>)
+- Save the `testId` from the response into the placeholder `<ThousandEyes_test_id>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 ```
 {
     "testId": "281474976818273",
@@ -84,7 +85,7 @@ curl --location 'https://api.thousandeyes.com/v7/tests/http-server' \
 - Navigate to `Settings` -> `Data Inputs`  ![datainputs](img/splunkEnterprise/datainputs.png)
 - Open `HTTP Event Collector`  ![HTTP Event Collector](img/splunkEnterprise/HttpEventCollector.png)
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value`
-![HEC token](img/splunkEnterprise/hecToken.png) and save in  `<Splunk_Enterprise_HEC_token>` [tokens_and_ids.md file](<tokens_and_ids.md>)
+![HEC token](img/splunkEnterprise/hecToken.png) and save into the placeholder `<Splunk_Enterprise_HEC_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 4.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
@@ -117,7 +118,7 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 > 
 > Copy the `<Splunk_Enterprise_HEC_token>` from [tokens_and_ids.md file](<tokens_and_ids.md>)
 
-- Save the `id` from the response in `<Splunk_Enterprise_stream_id>` [tokens_and_ids.md file](<tokens_and_ids.md>)
+- Save the `id` from the response into the placeholder `<Splunk_Enterprise_stream_id>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 ```
 {
     "id": "151a3417-6d4b-4db7-a8d9-557a62252e4b",
@@ -131,13 +132,14 @@ curl --location 'https://api.thousandeyes.com/v7/stream' \
 
 - Navigate to [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin)
   - ![Splunk Observability Cloud](img/splunkObservabilityCloud/login.png)
-  - Email: `antonjim+devnet.ws2.<seat>@cisco.com` (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
+  - Email: `antonjim+devnet.ws2.<seat>@cisco.com` 
+    - (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
   - Password: `C1sco12345!`
 
 ### Step 5.b. Get Splunk Observability Cloud Access Tokens
 
 - Navigate to `Settings` -> `Access Tokens`
-- There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png) and save in  `<Splunk_Observability_access_token>` [tokens_and_ids.md file](<tokens_and_ids.md>)
+- There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png) and save into the placeholder `<Splunk_Observability_access_token>` of [tokens_and_ids.md file](<tokens_and_ids.md>)
 
 ### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
 
