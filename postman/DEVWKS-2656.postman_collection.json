@@ -44,7 +44,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"interval\": 60,\n    \"agents\": [\n        {\n            \"agentId\": 7\n        }\n    ],\n    \"testName\": \"DEVWKS-2656\",\n    \"url\": \"www.google.com\"\n}",
+					"raw": "{\n    \"interval\": 60,\n    \"agents\": [\n        {\n            \"agentId\": {{ThousandEyes_agent_id}}\n        }\n    ],\n    \"testName\": \"DEVWKS-2656\",\n    \"url\": \"www.google.com\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -166,6 +166,11 @@
 		{
 			"key": "Splunk_Observability_access_token",
 			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "ThousandEyes_agent_id",
+			"value": "32",
 			"type": "string"
 		}
 	]

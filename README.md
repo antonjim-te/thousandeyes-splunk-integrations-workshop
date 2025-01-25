@@ -50,7 +50,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 - Use the following Postman request to create the HTTP test ![ThousandEyes create test](img/thousandeyes/postman/createHttpTest.png)
 
 > [!NOTE]
-> You can use other `agentId` using [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents).
+> You can use other `agentId` using [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents), ![more info](getAgentId.md).
 
 - Save the `testId` from the response into the variable `ThousandEyes_test_id` in Postman ![ThousandEyes test id variable](img/thousandeyes/postman/testId.png)
 
