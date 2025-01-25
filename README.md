@@ -70,13 +70,13 @@ Full description of the API request is available at [ThousandEyes API Reference]
 - Open `HTTP Event Collector`  ![HTTP Event Collector](img/splunkEnterprise/HttpEventCollector.png)
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value`
 ![HEC token](img/splunkEnterprise/hecToken.png)
-- Save the `HEC token` into the variable `<Splunk_Enterprise_HEC_token>` in Postman ![Splunk Enterprise HEC token variable](img/splunkEnterprise/postman/token.png)
+- Save the `HEC token` into the variable `Splunk_Enterprise_HEC_token` in Postman ![Splunk Enterprise HEC token variable](img/splunkEnterprise/postman/token.png)
 
 ### Step 4.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
 - Create a stream integration for Splunk Enterprise. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 - Use the following Postman request to create the stream ![ThousandEyes create stream](img/splunkEnterprise/postman/stream.png)
-- Save the `id` from the response into the variable `<Splunk_Enterprise_stream_id>` in Postman ![Splunk Enterprise Stream Id](img/splunkEnterprise/postman/streamId.png)
+- Save the `id` from the response into the variable `Splunk_Enterprise_stream_id` in Postman ![Splunk Enterprise Stream Id](img/splunkEnterprise/postman/streamId.png)
 
 
 ## Step 5. Create Splunk Observability Cloud integration
