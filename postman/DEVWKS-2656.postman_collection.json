@@ -12,7 +12,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": ""
+						"token": "<ThousandEyes_token>"
 					}
 				},
 				"method": "GET",
@@ -27,7 +27,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": ""
+						"token": "<ThousandEyes_token>"
 					}
 				},
 				"method": "POST",
@@ -60,7 +60,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": ""
+						"token": "<ThousandEyes_token>"
 					}
 				},
 				"method": "POST",
@@ -72,7 +72,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"<testId>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"<Splunk_Enterprise_HEC_token>\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://splunk.pseudoco.net:8088/services/collector/event\"\n}",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"<ThousandEyes_test_id>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"<Splunk_Enterprise_HEC_token>\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://splunk.pseudoco.net:8088/services/collector/event\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -84,12 +84,12 @@
 			"response": []
 		},
 		{
-			"name": "Create Integration - Splunk observability cloud",
+			"name": "Create Integration - Splunk Observability Cloud",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": ""
+						"token": "<ThousandEyes_token>"
 					}
 				},
 				"method": "POST",
@@ -101,7 +101,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"testMatch\": [\n        {\n            \"id\": \"<testId>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"<Splunk-Observability-access-token>\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"testMatch\": [\n        {\n            \"id\": \"<ThousandEyes_test_id>\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.eu1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"<Splunk-Observability-access-token>\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
