@@ -2,6 +2,29 @@
 
 ![DEVWKS-2656](img/banner.png)
 
+# Table of Contents
+- [DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry](#devwks-2656-stream-thousandeyes-data-to-splunk-using-opentelemetry)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+  - [Note:](#note)
+- [Step-by-Step Guide](#step-by-step-guide)
+  - [Step 1. Postman](#step-1-postman)
+    - [Step 1.a. Login Postman](#step-1a-login-postman)
+    - [Step 1.b. Check Postman collection `DEVWKS-2656`](#step-1b-check-postman-collection-devwks-2656)
+  - [Step 2. Login ThousandEyes](#step-2-login-thousandeyes)
+  - [Step 3. Obtain ThousandEyes OAuth Bearer token](#step-3-obtain-thousandeyes-oauth-bearer-token)
+  - [Step 4. Create ThousandEyes HTTP Server test](#step-4-create-thousandeyes-http-server-test)
+  - [Step 5. Create Splunk Enterprise integration](#step-5-create-splunk-enterprise-integration)
+    - [Step 5.a. Login into Splunk Enterprise](#step-5a-login-into-splunk-enterprise)
+    - [Step 5.b. Get Splunk HEC token](#step-5b-get-splunk-hec-token)
+    - [Step 5.c. Create Streaming integration on ThousandEyes for Splunk Enterprise](#step-5c-create-streaming-integration-on-thousandeyes-for-splunk-enterprise)
+  - [Step 6. Create Splunk Observability Cloud integration](#step-6-create-splunk-observability-cloud-integration)
+    - [Step 6.a. Login into Splunk Observability Cloud](#step-6a-login-into-splunk-observability-cloud)
+    - [Step 6.b. Get Splunk Observability Cloud Access Tokens](#step-6b-get-splunk-observability-cloud-access-tokens)
+    - [Step 6.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud](#step-6c-create-streaming-integration-on-thousandeyes-for-splunk-observability-cloud)
+  - [Step 7. Visualize ThousandEyes telemetry data in Splunk Enterprise](#step-7-visualize-thousandeyes-telemetry-data-in-splunk-enterprise)
+  - [Step 8. Visualize ThousandEyes telemetry data in Splunk Observability Cloud](#step-8-visualize-thousandeyes-telemetry-data-in-splunk-observability-cloud)
+
 # Introduction
 
 Welcome to the workshop for streaming ThousandEyes data to Splunk using OpenTelemetry.
@@ -15,6 +38,7 @@ Each attendee has a unique login:
  - Password: `C1sco12345!`
 
 # Step-by-Step Guide
+
 
 
 ## Step 1. Postman
