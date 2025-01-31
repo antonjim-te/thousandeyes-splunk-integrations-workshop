@@ -6,11 +6,11 @@
 - [DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry](#devwks-2656-stream-thousandeyes-data-to-splunk-using-opentelemetry)
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-  - [Note:](#note)
+  - [Note](#note)
 - [Step-by-Step Guide](#step-by-step-guide)
   - [Step 1. Postman](#step-1-postman)
     - [Step 1.a. Login Postman](#step-1a-login-postman)
-    - [Step 1.b. Check Postman collection `DEVWKS-2656`](#step-1b-check-postman-collection-devwks-2656)
+    - [Step 1.b. Verify Postman collection `DEVWKS-2656`](#step-1b-verify-postman-collection-devwks-2656)
   - [Step 2. Login ThousandEyes](#step-2-login-thousandeyes)
   - [Step 3. Obtain ThousandEyes OAuth Bearer token](#step-3-obtain-thousandeyes-oauth-bearer-token)
   - [Step 4. Create ThousandEyes HTTP Server test](#step-4-create-thousandeyes-http-server-test)
@@ -30,7 +30,7 @@
 Welcome to the workshop for streaming ThousandEyes data to Splunk using OpenTelemetry.
 This workshop will guide you through setting up integrations between ThousandEyes and Splunk, enabling you to visualize and analyze network monitoring data effectively.
 
-## Note:
+## Note
 
 Each attendee has a unique login:
  - User: `antonjim+devnet.ws2.<seat>@cisco.com` 
@@ -38,8 +38,6 @@ Each attendee has a unique login:
  - Password: `C1sco12345!`
 
 # Step-by-Step Guide
-
-
 
 ## Step 1. Postman
 
@@ -54,7 +52,7 @@ Each attendee has a unique login:
      - Password: `C1sco12345!`
     ![Postman Sign in](img/postman/signin2.png)
 
-### Step 1.b. Check Postman collection `DEVWKS-2656` 
+### Step 1.b. Verify Postman collection `DEVWKS-2656` 
 
 - Navigate to `Workspaces` -> `My Workspace`  ![Postman Sign in](img/postman/workspace.png)
 - Identify the collection `DEVWKS-2656`
