@@ -159,11 +159,6 @@
 			"type": "string"
 		},
 		{
-			"key": "Splunk_Enterprise_stream_id",
-			"value": "",
-			"type": "string"
-		},
-		{
 			"key": "Splunk_Observability_access_token",
 			"value": "",
 			"type": "string"

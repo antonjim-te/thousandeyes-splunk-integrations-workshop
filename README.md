@@ -75,8 +75,6 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 - Create a stream integration for Splunk Enterprise. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 - Use the following Postman request to create the stream ![ThousandEyes create stream](img/splunkEnterprise/postman/stream.png)
-- Save the `id` from the response into the variable `Splunk_Enterprise_stream_id` in Postman ![Splunk Enterprise Stream Id](img/splunkEnterprise/postman/streamId.png)
-
 
 ## Step 5. Create Splunk Observability Cloud integration
 
@@ -104,20 +102,19 @@ Full description of the API request is available at [ThousandEyes API Reference]
 - Open [Splunk Enterprise](https://splunk.pseudoco.net)
 - Navigate to `Search & Reporting` ![Search](img/splunkEnterprise/search.png)
 - Search by `index="*" source="ThousandEyesOTel"` ![Search by source](img/splunkEnterprise/searchSource.png) ![Expand metric](img/splunkEnterprise/expandMetric.png)
-- Create a chart by searching the following query and click on `Visualization`
-```
-index="*" source="ThousandEyesOTel" "thousandeyes.stream.id"="<Splunk_Enterprise_stream_id>" | timechart avg("metric_name:http.client.request.duration") as "Avg" span=30s
-```
-![alt text](img/splunkEnterprise/chart.png)
+- Navigate to `Dashboards` ![Dashboards](img/splunkEnterprise/dashboard.png)
+- Select `DEVWKS-2656` ![Dashboards](img/splunkEnterprise/dashboardDEVWKS.png)
+- Choose the `ThousandEyes TestId` in the dashboard from the `ThousandEyes_test_id` Postman variables ![Test Id](img/splunkEnterprise/postman/testId.png) ![Test Id](img/splunkEnterprise/dashboardTestId.png)
 
-> [!NOTE]
-> Copy the `Splunk_Enterprise_stream_id` the Postman variables ![Splunk Enterprise Stream Id](img/splunkEnterprise/postman/streamId.png)
+- Visualize the data
+![Dashboard Application](img/splunkEnterprise/dashboardApplication.png)
+![Dasboard Network](img/splunkEnterprise/dashboardNetwork.png)
 
 ## Step 7. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
 - Open [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin)
-- Navigate to `+` -> `Import` -> `Dashboard Group` ![import](img/splunkObservabilityCloud/importDashboard.png)
-- Import [dashboard file](<dashboards/ThousandEyes Network monitoring.json>)
+- Navigate to `Dashboard` ![dashboard](img/splunkObservabilityCloud/dashboard.png)
+- In `Custom dashboard groups`, expand `DEVWKS-2656` and select `Application` ![dashboard](img/splunkObservabilityCloud/dashboardDEVWKS.png)
 - Visualize the data
 ![Dashboard Application](img/splunkObservabilityCloud/dashboardApplication.png)
 ![Dasboard Network](img/splunkObservabilityCloud/dashboardNetwork.png)
