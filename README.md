@@ -16,14 +16,35 @@ Each attendee has a unique login:
 
 # Step-by-Step Guide
 
-## Step 1. Login ThousandEyes
+
+## Step 1. Postman
+
+### Step 1.a. Login Postman
+
+> [!NOTE]
+> You may be already singed in. Then, you can skip this step.
+
+- Open Postman application
+  -  Sign in ![Postman Sign in](img/postman/signin.png)
+     - Email: `antonjim+devnet.ws2.<seat>@cisco.com` (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
+     - Password: `C1sco12345!`
+    ![Postman Sign in](img/postman/signin2.png)
+
+### Step 1.b. Check Postman collection `DEVWKS-2656` 
+
+- Navigate to `Workspaces` -> `My Workspace`  ![Postman Sign in](img/postman/workspace.png)
+- Identify the collection `DEVWKS-2656`
+  - Confirm the requests and variables are there. We will use them during the session.
+  -  ![Postman collection DEVWKS](img/postman/DEVWKS.png)
+
+## Step 2. Login ThousandEyes
 
 - Navigate to [ThousandEyes Login](https://app.thousandeyes.com/login)
   -  ![ThousandEyes Login](img/thousandeyes/login.png)
      - Email: `antonjim+devnet.ws2.<seat>@cisco.com` (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
      - Password: `C1sco12345!`
   
-## Step 2. Obtain ThousandEyes OAuth Bearer token
+## Step 3. Obtain ThousandEyes OAuth Bearer token
 
 Each API request to ThousandEyes should be authenticated using OAuth Bearer Token.
 
@@ -37,7 +58,7 @@ To obtain it follow the following steps:
 > [!WARNING]
 > The OAuth Token is shown only once. If lost, you need to revoke and create a new one.
 
-## Step 3. Create ThousandEyes HTTP Server test
+## Step 4. Create ThousandEyes HTTP Server test
 
 For ThousandEyes to be able to stream data to Splunk, the data first needs to be collected by ThousandEyes. To achieve this, we
 need to create a ThousandEyes test.
@@ -53,9 +74,9 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 - Save the `testId` from the response into the variable `ThousandEyes_test_id` in Postman ![ThousandEyes test id variable](img/postman/testId.png)
 
-## Step 4. Create Splunk Enterprise integration
+## Step 5. Create Splunk Enterprise integration
 
-### Step 4.a. Login into Splunk Enterprise
+### Step 5.a. Login into Splunk Enterprise
 
 - Navigate to [Splunk Enterprise](https://splunk.pseudoco.net)
   -  ![Splunk Enterprise Login](img/splunkEnterprise/login.png)
@@ -63,7 +84,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
   - Password: `C1sco12345!`
 - Welcome page ![Splunk Enterprise Login](img/splunkEnterprise/welcomepage.png)
 
-### Step 4.b. Get Splunk HEC token
+### Step 5.b. Get Splunk HEC token
 
 - Navigate to `Settings` -> `Data Inputs`  ![datainputs](img/splunkEnterprise/datainputs.png)
 - Open `HTTP Event Collector`  ![HTTP Event Collector](img/splunkEnterprise/HttpEventCollector.png)
@@ -71,14 +92,14 @@ Full description of the API request is available at [ThousandEyes API Reference]
 ![HEC token](img/splunkEnterprise/hecToken.png)
 - Save the `HEC token` into the variable `Splunk_Enterprise_HEC_token` in Postman ![Splunk Enterprise HEC token variable](img/postman/splunkEnterpriseToken.png)
 
-### Step 4.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
+### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
 - Create a stream integration for Splunk Enterprise. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 - Use the following Postman request to create the stream ![ThousandEyes create stream](img/postman/splunkEnterpriseStream.png)
 
-## Step 5. Create Splunk Observability Cloud integration
+## Step 6. Create Splunk Observability Cloud integration
 
-### Step 5.a. Login into Splunk Observability Cloud
+### Step 6.a. Login into Splunk Observability Cloud
 
 - Navigate to [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin)
   - ![Splunk Observability Cloud](img/splunkObservabilityCloud/login.png)
@@ -86,18 +107,18 @@ Full description of the API request is available at [ThousandEyes API Reference]
     - (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
   - Password: `C1sco12345!`
 
-### Step 5.b. Get Splunk Observability Cloud Access Tokens
+### Step 6.b. Get Splunk Observability Cloud Access Tokens
 
 - Navigate to `Settings` -> `Access Tokens`
 - There you can find a pre-provisioned token called `Default` which you can use. Copy `Token Value` ![token](img/splunkObservabilityCloud/token.png)
 - Save the `token` into the variable `Splunk_Observability_access_token` in Postman  ![Splunk Observability Cloud token variable](img/postman/splunkObservabilityCloudToken.png)
 
-### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
+### Step 6.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
 
 - Create a streaming integration for Splunk Observability Cloud. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 - Use the following Postman request to create the stream ![ThousandEyes create stream](img/postman/splunkObservabilityCloudStream.png)
 
-## Step 6. Visualize ThousandEyes telemetry data in Splunk Enterprise
+## Step 7. Visualize ThousandEyes telemetry data in Splunk Enterprise
 
 - Open [Splunk Enterprise](https://splunk.pseudoco.net)
 - Navigate to `Search & Reporting` ![Search](img/splunkEnterprise/search.png)
@@ -110,7 +131,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 ![Dashboard Application](img/splunkEnterprise/dashboardApplication.png)
 ![Dasboard Network](img/splunkEnterprise/dashboardNetwork.png)
 
-## Step 7. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
+## Step 8. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
 - Open [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin)
 - Navigate to `Dashboard` ![dashboard](img/splunkObservabilityCloud/dashboard.png)
