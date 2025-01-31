@@ -104,7 +104,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 - Search by `index="*" source="ThousandEyesOTel"` ![Search by source](img/splunkEnterprise/searchSource.png) ![Expand metric](img/splunkEnterprise/expandMetric.png)
 - Navigate to `Dashboards` ![Dashboards](img/splunkEnterprise/dashboard.png)
 - Select `DEVWKS-2656` ![Dashboards](img/splunkEnterprise/dashboardDEVWKS.png)
-- Choose the `ThousandEyes TestId` in the dashboard from the `ThousandEyes_test_id` Postman variables ![Test Id](img/splunkEnterprise/postman/testId.png) ![Test Id](img/splunkEnterprise/dashboardTestId.png)
+- Choose the `ThousandEyes TestId` in the dashboard from the `ThousandEyes_test_id` Postman variables ![Test Id](img/splunkEnterprise/dashboardTestId.png) ![Test Id](img/splunkEnterprise/postman/testId.png)
 
 - Visualize the data
 ![Dashboard Application](img/splunkEnterprise/dashboardApplication.png)
