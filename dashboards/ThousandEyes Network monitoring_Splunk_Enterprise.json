@@ -3,7 +3,7 @@
 		"ds_search_1_new": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:http.client.request.duration\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:http.client.request.duration\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -13,7 +13,7 @@
 		"ds_search_1": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:http.server.request.availability\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:http.server.request.availability\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -23,7 +23,7 @@
 		"ds_8wFwWAtw_ds_search_1": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:http.server.request.availability\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:http.server.request.availability\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -33,7 +33,7 @@
 		"ds_e4N3GyXG_ds_search_1_new": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:http.server.throughput\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:http.server.throughput\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -51,7 +51,7 @@
 		"ds_41qoPLFo_ds_e4N3GyXG_ds_search_1_new": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:network.latency\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:network.latency\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -62,7 +62,7 @@
 		"ds_FLpvzgF4_ds_41qoPLFo_ds_e4N3GyXG_ds_search_1_new": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:network.latency\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:network.latency\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -73,7 +73,7 @@
 		"ds_8k2ML2DU_ds_41qoPLFo_ds_e4N3GyXG_ds_search_1_new": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:network.loss\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:network.loss\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -84,7 +84,7 @@
 		"ds_JXcPJeGk_ds_8k2ML2DU_ds_41qoPLFo_ds_e4N3GyXG_ds_search_1_new": {
 			"type": "ds.search",
 			"options": {
-				"query": "index=\"*\" source=\"ThousandEyesOTel\" thousandeyes.test.id=\"$testIdVariable$\" | timechart avg(\"metric_name:network.jitter\") as \"Avg\" span=60s",
+				"query": "index=\"*\" source=\"ThousandEyesOTel\" | timechart avg(\"metric_name:network.jitter\") as \"Avg\" span=60s",
 				"queryParameters": {
 					"earliest": "-60m@m",
 					"latest": "now"
@@ -291,18 +291,6 @@
 				"defaultValue": "-24h@h,now"
 			},
 			"title": "Global Time Range"
-		},
-		"input_yvRviqJ0": {
-			"options": {
-				"items": [],
-				"defaultValue": "*",
-				"token": "testIdVariable"
-			},
-			"title": "ThousandEyes TestId",
-			"type": "input.dropdown",
-			"dataSources": {
-				"primary": "ds_0wMrFcFz"
-			}
 		}
 	},
 	"layout": {
@@ -391,8 +379,7 @@
 			}
 		],
 		"globalInputs": [
-			"input_global_trp",
-			"input_yvRviqJ0"
+			"input_global_trp"
 		]
 	},
 	"title": "DEVWKS-2656",
