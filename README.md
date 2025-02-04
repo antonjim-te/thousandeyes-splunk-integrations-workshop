@@ -61,7 +61,7 @@ Each attendee has a unique login:
 
 ## Step 2. Login ThousandEyes
 
-- Navigate to <a href="https://app.thousandeyes.com/login" target="_blank">ThousandEyes Login</a>
+- Navigate to [ThousandEyes Login](https://app.thousandeyes.com/login)
   -  ![ThousandEyes Login](img/thousandeyes/login.png)
      - Email: `antonjim+devnet.ws2.<seat>@cisco.com` (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
      - Password: `C1sco12345!`
@@ -84,15 +84,15 @@ To obtain it follow the following steps:
 
 For ThousandEyes to be able to stream data to Splunk, the data first needs to be collected by ThousandEyes. To achieve this, we
 need to create a ThousandEyes test.
-Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/tests){:target="_blank"} for test creation.
+Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/tests) for test creation.
 
 We are going to create an `HTTP Server` test that validates the availability of `www.google.com`.
-Full description of the API request is available at [ThousandEyes API Reference](https://developer.cisco.com/docs/thousandeyes/create-http-server-test){:target="_blank"}.
+Full description of the API request is available at [ThousandEyes API Reference](https://developer.cisco.com/docs/thousandeyes/create-http-server-test).
 
 - Use the following Postman request to create the HTTP test ![ThousandEyes create test](img/postman/createHttpTest.png)
 
 > [!NOTE]
-> You can use other `agentId` using [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents){:target="_blank"}, [more info](<getAgentId.md>).
+> You can use other `agentId` using [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents), [more info](<getAgentId.md>).
 
 - Save the `testId` from the response into the variable `ThousandEyes_test_id` in Postman ![ThousandEyes test id variable](img/postman/testId.png)
 
@@ -100,7 +100,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 ### Step 5.a. Login into Splunk Enterprise
 
-- Navigate to [Splunk Enterprise](https://splunk.pseudoco.net){:target="_blank"}
+- Navigate to [Splunk Enterprise](https://splunk.pseudoco.net)
   -  ![Splunk Enterprise Login](img/splunkEnterprise/login.png)
   - Username: `antonjim+devnet.ws2.<seat>@cisco.com`  (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
   - Password: `C1sco12345!`
@@ -116,12 +116,12 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 ### Step 5.c. Create Streaming integration on ThousandEyes for Splunk Enterprise
 
-- Create a stream integration for Splunk Enterprise. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream){:target="_blank"}.
+- Create a stream integration for Splunk Enterprise. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 - Use the following Postman request to create the stream ![ThousandEyes create stream](img/postman/splunkEnterpriseStream.png)
 
 ## Step 6. Visualize ThousandEyes telemetry data in Splunk Enterprise
 
-- Open [Splunk Enterprise](https://splunk.pseudoco.net){:target="_blank"}
+- Open [Splunk Enterprise](https://splunk.pseudoco.net)
 - Navigate to `Search & Reporting` ![Search](img/splunkEnterprise/search.png)
 - Search by `index="*" source="ThousandEyesOTel"` ![Search by source](img/splunkEnterprise/searchSource.png) ![Expand metric](img/splunkEnterprise/expandMetric.png)
 - Navigate to `Dashboards` ![Dashboards](img/splunkEnterprise/dashboard.png)
@@ -134,7 +134,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 ### Step 7.a. Login into Splunk Observability Cloud
 
-- Navigate to [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin){:target="_blank"}
+- Navigate to [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin)
   - ![Splunk Observability Cloud](img/splunkObservabilityCloud/login.png)
   - Email: `antonjim+devnet.ws2.<seat>@cisco.com` 
     - (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
@@ -148,12 +148,12 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 ### Step 7.c. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
 
-- Create a streaming integration for Splunk Observability Cloud. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream){:target="_blank"}.
+- Create a streaming integration for Splunk Observability Cloud. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 - Use the following Postman request to create the stream ![ThousandEyes create stream](img/postman/splunkObservabilityCloudStream.png)
 
 ## Step 8. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
-- Open [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin){:target="_blank"}
+- Open [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin)
 - Navigate to `Dashboard` ![dashboard](img/splunkObservabilityCloud/dashboard.png)
 - In `Custom dashboard groups`, expand `DEVWKS-2656` and select `Application` ![dashboard](img/splunkObservabilityCloud/dashboardDEVWKS.png)
 - Visualize the data
