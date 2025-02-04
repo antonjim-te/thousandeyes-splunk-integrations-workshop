@@ -121,7 +121,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 ## Step 6. Visualize ThousandEyes telemetry data in Splunk Enterprise
 
-- Open [Splunk Enterprise](https://splunk.pseudoco.net)
+- In the initial page of [Splunk Enterprise](https://splunk.pseudoco.net)
 - Navigate to `Search & Reporting` ![Search](img/splunkEnterprise/search.png)
 - Search by `index="*" source="ThousandEyesOTel"` ![Search by source](img/splunkEnterprise/searchSource.png) ![Expand metric](img/splunkEnterprise/expandMetric.png)
 - Navigate to `Dashboards` ![Dashboards](img/splunkEnterprise/dashboard.png)
@@ -153,7 +153,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 
 ## Step 8. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
-- Open [Splunk Observability Cloud](https://app.eu1.signalfx.com/#/signin)
+- In the initial page of [Splunk Observability Cloud](https://app.eu1.signalfx.com/)
 - Navigate to `Dashboard` ![dashboard](img/splunkObservabilityCloud/dashboard.png)
 - In `Custom dashboard groups`, expand `DEVWKS-2656` and select `Application` ![dashboard](img/splunkObservabilityCloud/dashboardDEVWKS.png)
 - Visualize the data
