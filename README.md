@@ -61,7 +61,7 @@ Each attendee has a unique login:
 
 ## Step 2. Login ThousandEyes
 
-- Navigate to [ThousandEyes Login](https://app.thousandeyes.com/login){:target="_blank"}
+- Navigate to <a href="https://app.thousandeyes.com/login" target="_blank">ThousandEyes Login</a>
   -  ![ThousandEyes Login](img/thousandeyes/login.png)
      - Email: `antonjim+devnet.ws2.<seat>@cisco.com` (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
      - Password: `C1sco12345!`
