@@ -154,7 +154,7 @@ Full description of the API request is available at [ThousandEyes API Reference]
 ## Step 8. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
 - In the initial page of [Splunk Observability Cloud](https://app.eu1.signalfx.com/)
-- Navigate to `Dashboard` ![dashboard](img/splunkObservabilityCloud/dashboard.png)
+- Navigate to `Dashboards` ![dashboards](img/splunkObservabilityCloud/dashboard.png)
 - In `Custom dashboard groups`, expand `DEVWKS-2656` and select `Application` ![dashboard](img/splunkObservabilityCloud/dashboardDEVWKS.png)
 - Visualize the data
 ![Dashboard Application](img/splunkObservabilityCloud/dashboardApplication.png)
