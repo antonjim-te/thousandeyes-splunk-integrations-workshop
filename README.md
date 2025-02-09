@@ -50,6 +50,7 @@ Each attendee has a unique login:
   -  Sign in ![Postman Sign in](img/postman/signin.png)
      - Email: `antonjim+devnet.ws2.<seat>@cisco.com` (e.g. `antonjim+devnet.ws2.seat1@cisco.com`)
      - Password: `C1sco12345!`
+  
     ![Postman Sign in](img/postman/signin2.png)
 
 ### Step 1.b. Verify Postman collection `DEVWKS-2656` 
