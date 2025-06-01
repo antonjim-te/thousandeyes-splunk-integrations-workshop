@@ -13,10 +13,6 @@
       
       
       
-        <link rel="prev" href="../stream_to_splunk_observability/">
-      
-      
-        <link rel="next" href="../../bonus_section/readme/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Step 4. Create Splunk Observability Cloud HTTP Server test - DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry</title>
+        <title>Get ThousandEyes Agent Id for the creation of the ThousandEyes HTTP test - DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry</title>
       
     
     
@@ -76,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#step-4-stream-to-splunk-enterprise" class="md-skip">
+        <a href="#get-thousandeyes-agent-id-for-the-creation-of-the-thousandeyes-http-test" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Step 4. Create Splunk Observability Cloud HTTP Server test
+              Get ThousandEyes Agent Id for the creation of the ThousandEyes HTTP test
             
           </span>
         </div>
@@ -227,12 +223,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../access_postman/" class="md-tabs__link">
           
   
@@ -324,29 +318,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -359,7 +348,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Workshop Guide
@@ -439,32 +428,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Step 4. Create Splunk Observability Cloud HTTP Server test
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../stream_to_splunk_enterprise/" class="md-nav__link">
         
   
   
@@ -475,53 +442,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#step-4a-create-streaming-integration-on-thousandeyes-for-splunk-enterprise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4.a. Create Streaming integration on ThousandEyes for Splunk Enterprise
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4b-access-splunk-enterprise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4.b. Access Splunk Enterprise
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4c-visualize-thousandeyes-telemetry-data-in-splunk-enterprise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4.c. Visualize ThousandEyes telemetry data in Splunk Enterprise
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -572,35 +492,15 @@
 
 
 
-<h1 id="step-4-stream-to-splunk-enterprise">Step 4. Stream to Splunk Enterprise</h1>
-<h2 id="step-4a-create-streaming-integration-on-thousandeyes-for-splunk-enterprise">Step 4.a. Create Streaming integration on ThousandEyes for Splunk Enterprise</h2>
+<h1 id="get-thousandeyes-agent-id-for-the-creation-of-the-thousandeyes-http-test">Get ThousandEyes Agent Id for the creation of the ThousandEyes HTTP test</h1>
+<p>When creation the ThousandEyes HTTP test you may see an error related to the agent.
+We can use a different agentId.</p>
+<h2 id="search-for-a-new-agentid">Search for a new agentId</h2>
 <ul>
-<li>Create a stream integration for Splunk Enterprise. Check the <a href="https://developer.cisco.com/docs/thousandeyes/create-data-stream">ThousandEyes API documentation</a>.</li>
-<li>Use <code>Create Streaming Integration - Splunk Enterprise</code> Postman request to create the stream
-<img alt="ThousandEyes create stream" src="../../img/postman/splunkEnterpriseStream.png" /></li>
-</ul>
-<h2 id="step-4b-access-splunk-enterprise">Step 4.b. Access Splunk Enterprise</h2>
-<ul>
-<li>Navigate to <a href="https://splunk.pseudoco.net">Splunk Enterprise</a></li>
-<li>Username: <code>antonjim+devnet&lt;seat&gt;@cisco.com</code>  (e.g. <code>antonjim+devnet1@cisco.com</code>)</li>
-<li>Password: <code>Cisco.25</code>
-<img alt="Splunk Enterprise Login" src="../../img/splunkEnterprise/login.png" /></li>
-</ul>
-<h2 id="step-4c-visualize-thousandeyes-telemetry-data-in-splunk-enterprise">Step 4.c. Visualize ThousandEyes telemetry data in Splunk Enterprise</h2>
-<ul>
-<li>In the initial page of <a href="https://splunk.pseudoco.net">Splunk Enterprise</a></li>
-<li>Navigate to <code>Search &amp; Reporting</code>
-<img alt="Search" src="../../img/splunkEnterprise/search.png" /></li>
-<li>Search by <code>index="*" source="ThousandEyesOTel"</code>
-<img alt="Search by source" src="../../img/splunkEnterprise/searchSource.png" />
-<img alt="Expand metric" src="../../img/splunkEnterprise/expandMetric.png" /></li>
-<li>Navigate to <code>Dashboards</code>
-<img alt="Dashboards" src="../../img/splunkEnterprise/dashboard.png" /></li>
-<li>Select <code>DEVWKS-2656</code>
-<img alt="Dashboards" src="../../img/splunkEnterprise/dashboardDEVWKS.png" /></li>
-<li>Visualize the data
-<img alt="Dashboard Application" src="../../img/splunkEnterprise/dashboardApplication.png" />
-<img alt="Dasboard Network" src="../../img/splunkEnterprise/dashboardNetwork.png" /></li>
+<li>Use the following Postman request to get the agents <img alt="ThousandEyes get agents" src="img/thousandeyes/postman/getAgents.png" /></li>
+<li>In the resposne, search for an agent</li>
+<li>E.g <code>Barcelona</code></li>
+<li>Save the <code>agentId</code> into the variable <code>ThousandEyes_agent_id</code> in Postman <img alt="ThousandEyes agentId" src="img/thousandeyes/postman/agentId.png" /></li>
 </ul>
 
 
@@ -634,44 +534,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../stream_to_splunk_observability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Step 3. Stream to Splunk Observability Cloudd">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Step 3. Stream to Splunk Observability Cloudd
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../../bonus_section/readme/" class="md-footer__link md-footer__link--next" aria-label="Next: Bonus Section">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Bonus Section
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
