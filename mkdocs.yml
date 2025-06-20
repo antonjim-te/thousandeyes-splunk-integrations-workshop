@@ -1,0 +1,67 @@
+
+site_name: 'DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry'
+site_description: DEVWKS-2656 Workshop
+site_author: Antonio Jimenez
+
+nav:
+  - Home: README.md
+  - Workshop Guide:
+    - Step 1. Access Postman: workshop-guide/access_postman.md
+    - Step 2. Create ThousandEyes HTTP Server test: workshop-guide/create_http_test.md
+    - Step 3. Stream to Splunk Observability Cloud: workshop-guide/stream_to_splunk_observability.md
+    - Step 4. Stream to Splunk Enterprise: workshop-guide/stream_to_splunk_enterprise.md
+  - Bonus Section: bonus_section.md
+
+theme:
+  name: material
+  logo: img/logo.png
+  favicon: img/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.code.select
+
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+
+markdown_extensions:
+  - def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+
+
+copyright: |
+  &copy; 2025 <a href="https://cisco.com"  target="_blank" rel="noopener">Cisco Systems, Inc.</a>
