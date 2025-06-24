@@ -6,13 +6,15 @@ site_author: Antonio Jimenez
 nav:
   - Home: README.md
   - Streaming ThousandEyes telemetry to Splunk Observability Cloud: 
-    - Step 1. Access Postman: access_postman.md
-    - Step 2. Create ThousandEyes HTTP Server test: create_http_test.md
-    - Step 3. Stream to Splunk Observability Cloud: stream_to_splunk_observability.md
+    - Access Postman: access_postman.md
+    - Login ThousandEyes: login_thousandeyes.md
+    - Create ThousandEyes HTTP Server test: create_http_test.md
+    - Stream to Splunk Observability Cloud: stream_to_splunk_observability.md
   - Streaming ThousandEyes telemetry to Splunk Enterprise:
-    - Step 1. Access Postman: access_postman.md
-    - Step 2. Create ThousandEyes HTTP Server test: create_http_test.md
-    - Step 3. Stream to Splunk Enterprise: stream_to_splunk_enterprise.md
+    - Access Postman: access_postman.md
+    - Login ThousandEyes: login_thousandeyes.md
+    - Create ThousandEyes HTTP Server test: create_http_test.md
+    - Stream to Splunk Enterprise: stream_to_splunk_enterprise.md
   - Cisco ThousandEyes App for Splunk: cisco_thousandeyes_app_for_splunk.md
   - Distributed Tracing - Service Map: distributed_tracing_service_map.md
 

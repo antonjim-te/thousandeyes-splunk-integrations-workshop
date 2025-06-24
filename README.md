@@ -5,3 +5,5 @@ All the docs in: https://antonjim-te.github.io/thousandeyes-splunk-integrations-
 
 # TODO
 - Postman pic without DEVWORK
+- Metrics, traces, logs
+- 
