@@ -65,6 +65,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 copyright: |
