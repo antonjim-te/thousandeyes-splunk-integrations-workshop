@@ -9,7 +9,7 @@ nav:
     - Step 1. Access Postman: access_postman.md
     - Step 2. Create ThousandEyes HTTP Server test: create_http_test.md
     - Step 3. Stream to Splunk Observability Cloud: stream_to_splunk_observability.md
-  - Streaming ThousandEyes metrics to Splunk Enterprise: streaming_to_splunk_enterprise.md
+  - Streaming ThousandEyes metrics to Splunk Enterprise:
     - Step 1. Access Postman: access_postman.md
     - Step 2. Create ThousandEyes HTTP Server test: screate_http_test.md
     - Step 3. Stream to Splunk Observability Cloud: stream_to_splunk_enterprise.md
