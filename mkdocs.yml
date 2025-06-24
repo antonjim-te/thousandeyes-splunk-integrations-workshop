@@ -1,16 +1,20 @@
 
-site_name: 'DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry'
-site_description: DEVWKS-2656 Workshop
+site_name: 'ThousandEyes - Splunk Integrations Workshop'
+site_description: ThousandEyes - Splunk Integrations Workshop
 site_author: Antonio Jimenez
 
 nav:
   - Home: README.md
-  - Workshop Guide:
-    - Step 1. Access Postman: workshop-guide/access_postman.md
-    - Step 2. Create ThousandEyes HTTP Server test: workshop-guide/create_http_test.md
-    - Step 3. Stream to Splunk Observability Cloud: workshop-guide/stream_to_splunk_observability.md
-    - Step 4. Stream to Splunk Enterprise: workshop-guide/stream_to_splunk_enterprise.md
-  - Bonus Section: bonus_section.md
+  - Streaming ThousandEyes metrics to Splunk Observability Cloud: 
+    - Step 1. Access Postman: access_postman.md
+    - Step 2. Create ThousandEyes HTTP Server test: create_http_test.md
+    - Step 3. Stream to Splunk Observability Cloud: stream_to_splunk_observability.md
+  - Streaming ThousandEyes metrics to Splunk Enterprise: streaming_to_splunk_enterprise.md
+    - Step 1. Access Postman: access_postman.md
+    - Step 2. Create ThousandEyes HTTP Server test: screate_http_test.md
+    - Step 3. Stream to Splunk Observability Cloud: stream_to_splunk_enterprise.md
+  - Cisco ThousandEyes App for Splunk: cisco_thousandeyes_app_for_splunk.md
+  - Distributed Tracing - Service Map - Splunk Observability Cloud: distributed_tracing_service_map_splunk_observability.md
 
 theme:
   name: material

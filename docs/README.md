@@ -1,6 +1,4 @@
-# DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry
-
-![DEVWKS-2656](img/DEVWKS-2656-banner.png)
+# ThousandEyes - Splunk Integrations Workshop
 
 ## Introduction
 
