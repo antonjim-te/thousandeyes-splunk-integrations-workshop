@@ -19,10 +19,6 @@ By the end of this workshop, you will:
 ## Prerequisites
 - Access to ThousandEyes and Splunk accounts.
 - Familiarity with Postman.
-- Your workshop credentials. Each attendee has a unique login:
-    - User: `antonjim+devnet<seat>@cisco.com` 
-        - E.g. `antonjim+devnet1@cisco.com`. Correspond with your seat.
-    - Password: `Cisco.25`
 
 ## Agenda
 
