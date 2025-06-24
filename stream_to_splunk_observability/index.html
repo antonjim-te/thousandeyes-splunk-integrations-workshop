@@ -468,8 +468,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -502,8 +500,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -512,6 +508,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#step-3-stream-to-splunk-observability-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3. Stream to Splunk Observability Cloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3. Stream to Splunk Observability Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#step-3a-create-streaming-integration-on-thousandeyes-for-splunk-observability-cloud" class="md-nav__link">
     <span class="md-ellipsis">
       Step 3.a. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
@@ -519,8 +525,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#step-3b-access-splunk-observability-cloud" class="md-nav__link">
     <span class="md-ellipsis">
       Step 3.b. Access Splunk Observability Cloud
@@ -528,13 +534,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#step-3c-visualize-thousandeyes-telemetry-data-in-splunk-observability-cloud" class="md-nav__link">
     <span class="md-ellipsis">
       Step 3.c. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -749,14 +760,16 @@
 
 
 
-<h1 id="step-3-stream-to-splunk-observability-cloud">Step 3. Stream to Splunk Observability Cloud</h1>
-<h2 id="step-3a-create-streaming-integration-on-thousandeyes-for-splunk-observability-cloud">Step 3.a. Create Streaming integration on ThousandEyes for Splunk Observability Cloud</h2>
+  <h1>Step 3. Stream to Splunk Observability Cloud</h1>
+
+<h2 id="step-3-stream-to-splunk-observability-cloud">Step 3. Stream to Splunk Observability Cloud</h2>
+<h3 id="step-3a-create-streaming-integration-on-thousandeyes-for-splunk-observability-cloud">Step 3.a. Create Streaming integration on ThousandEyes for Splunk Observability Cloud</h3>
 <ul>
 <li>Create a streaming integration for Splunk Observability Cloud. Check the <a href="https://developer.cisco.com/docs/thousandeyes/create-data-stream">ThousandEyes API documentation</a>.</li>
 <li>Use the <code>Create Integration - Splunk Observability</code> Postman request to create the stream</li>
 </ul>
 <p><img alt="ThousandEyes create stream" src="../img/postman/splunkObservabilityCloudStream.png" /></p>
-<h2 id="step-3b-access-splunk-observability-cloud">Step 3.b. Access Splunk Observability Cloud</h2>
+<h3 id="step-3b-access-splunk-observability-cloud">Step 3.b. Access Splunk Observability Cloud</h3>
 <ul>
 <li>Navigate to <a href="https://app.us1.signalfx.com/#/signin">Splunk Observability Cloud</a> <ul>
 <li>Email: <code>antonjim+devnet&lt;seat&gt;@cisco.com</code> <ul>
@@ -768,7 +781,7 @@
 </li>
 </ul>
 <p><img alt="Splunk Observability Cloud" src="../img/splunkObservabilityCloud/login.png" /></p>
-<h2 id="step-3c-visualize-thousandeyes-telemetry-data-in-splunk-observability-cloud">Step 3.c. Visualize ThousandEyes telemetry data in Splunk Observability Cloud</h2>
+<h3 id="step-3c-visualize-thousandeyes-telemetry-data-in-splunk-observability-cloud">Step 3.c. Visualize ThousandEyes telemetry data in Splunk Observability Cloud</h3>
 <ul>
 <li>In the initial page of <a href="https://app.us1.signalfx.com/">Splunk Observability Cloud</a></li>
 <li>Navigate to <code>Dashboards</code>
