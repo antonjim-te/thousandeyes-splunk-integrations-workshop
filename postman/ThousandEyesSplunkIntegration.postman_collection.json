@@ -23,7 +23,7 @@
 			"response": []
 		},
 		{
-			"name": "Create HTTP ThousandEyes Test",
+			"name": "Create ThousandEyes Page Load Test",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -56,7 +56,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Streaming Integration - Splunk Enterprise",
+			"name": "Create Streaming - Splunk Enterprise",
 			"request": {
 				"auth": {
 					"type": "bearer",

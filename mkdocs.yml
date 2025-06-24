@@ -8,12 +8,12 @@ nav:
   - Streaming ThousandEyes telemetry to Splunk Observability Cloud: 
     - Access Postman: access_postman.md
     - Login ThousandEyes: login_thousandeyes.md
-    - Create ThousandEyes HTTP Server test: create_http_test.md
+    - Create ThousandEyes test: create_thousandeyes_test.md
     - Stream to Splunk Observability Cloud: stream_to_splunk_observability.md
   - Streaming ThousandEyes telemetry to Splunk Enterprise:
     - Access Postman: access_postman.md
     - Login ThousandEyes: login_thousandeyes.md
-    - Create ThousandEyes HTTP Server test: create_http_test.md
+    - Create ThousandEyes Server test: create_thousandeyes_test.md
     - Stream to Splunk Enterprise: stream_to_splunk_enterprise.md
   - Cisco ThousandEyes App for Splunk: cisco_thousandeyes_app_for_splunk.md
   - Distributed Tracing - Service Map: distributed_tracing_service_map.md
