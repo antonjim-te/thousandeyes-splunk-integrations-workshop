@@ -6,32 +6,32 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="DEVWKS-2656 Workshop">
+        <meta name="description" content="ThousandEyes - Splunk Integrations Workshop">
       
       
         <meta name="author" content="Antonio Jimenez">
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../access_postman/">
       
       
-        <link rel="next" href="../create_http_test/">
+        <link rel="next" href="../cisco_thousandeyes_app_for_splunk/">
       
       
-      <link rel="icon" href="../../img/favicon.ico">
+      <link rel="icon" href="../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Step 1. Access Postman - DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry</title>
+        <title>Step 3. Stream to Splunk Observability Cloud - ThousandEyes - Splunk Integrations Workshop</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#step-1-access-postman" class="md-skip">
+        <a href="#step-4-stream-to-splunk-enterprise" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry" class="md-header__button md-logo" aria-label="DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry" data-md-component="logo">
+    <a href=".." title="ThousandEyes - Splunk Integrations Workshop" class="md-header__button md-logo" aria-label="ThousandEyes - Splunk Integrations Workshop" data-md-component="logo">
       
-  <img src="../../img/logo.png" alt="logo">
+  <img src="../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,13 +103,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry
+            ThousandEyes - Splunk Integrations Workshop
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Step 1. Access Postman
+              Step 3. Stream to Splunk Observability Cloud
             
           </span>
         </div>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -227,17 +227,37 @@
   
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../access_postman/" class="md-tabs__link">
+          
+  
+  
+  Streaming ThousandEyes metrics to Splunk Observability Cloud
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
     
   
   
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../access_postman/" class="md-tabs__link">
           
   
   
-  Workshop Guide
+  Streaming ThousandEyes metrics to Splunk Enterprise
 
         </a>
       </li>
@@ -251,13 +271,32 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../bonus_section/" class="md-tabs__link">
+      <a href="../cisco_thousandeyes_app_for_splunk/" class="md-tabs__link">
         
   
   
     
   
-  Bonus Section
+  Cisco ThousandEyes App for Splunk
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../distributed_tracing_service_map_splunk_observability/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Distributed Tracing - Service Map - Splunk Observability Cloud
 
       </a>
     </li>
@@ -288,12 +327,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry" class="md-nav__button md-logo" aria-label="DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry" data-md-component="logo">
+    <a href=".." title="ThousandEyes - Splunk Integrations Workshop" class="md-nav__button md-logo" aria-label="ThousandEyes - Splunk Integrations Workshop" data-md-component="logo">
       
-  <img src="../../img/logo.png" alt="logo">
+  <img src="../img/logo.png" alt="logo">
 
     </a>
-    DEVWKS-2656 Stream ThousandEyes Data to Splunk Using OpenTelemetry
+    ThousandEyes - Splunk Integrations Workshop
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -305,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -324,34 +363,29 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Workshop Guide
+    Streaming ThousandEyes metrics to Splunk Observability Cloud
     
   </span>
   
@@ -359,10 +393,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Workshop Guide
+            Streaming ThousandEyes metrics to Splunk Observability Cloud
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -370,19 +404,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../access_postman/" class="md-nav__link">
         
   
   
@@ -393,7 +418,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -445,6 +469,59 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Streaming ThousandEyes metrics to Splunk Enterprise
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Streaming ThousandEyes metrics to Splunk Enterprise
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -452,17 +529,132 @@
   
   
     <li class="md-nav__item">
-      <a href="../stream_to_splunk_enterprise/" class="md-nav__link">
+      <a href="../access_postman/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Step 4. Stream to Splunk Enterprise
+    Step 1. Access Postman
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../screate_http_test.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Step 2. Create ThousandEyes HTTP Server test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Step 3. Stream to Splunk Observability Cloud
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Step 3. Stream to Splunk Observability Cloud
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-4a-create-streaming-integration-on-thousandeyes-for-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4.a. Create Streaming integration on ThousandEyes for Splunk Enterprise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4b-access-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4.b. Access Splunk Enterprise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4c-visualize-thousandeyes-telemetry-data-in-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4.c. Visualize ThousandEyes telemetry data in Splunk Enterprise
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -482,12 +674,34 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bonus_section/" class="md-nav__link">
+      <a href="../cisco_thousandeyes_app_for_splunk/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Bonus Section
+    Cisco ThousandEyes App for Splunk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../distributed_tracing_service_map_splunk_observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Distributed Tracing - Service Map - Splunk Observability Cloud
     
   </span>
   
@@ -513,24 +727,35 @@
 
 
 
-<h1 id="step-1-access-postman">Step 1. Access Postman</h1>
+<h1 id="step-4-stream-to-splunk-enterprise">Step 4. Stream to Splunk Enterprise</h1>
+<h2 id="step-4a-create-streaming-integration-on-thousandeyes-for-splunk-enterprise">Step 4.a. Create Streaming integration on ThousandEyes for Splunk Enterprise</h2>
 <ul>
-<li>Navigate to <a href="https://identity.getpostman.com/login">Postman</a></li>
-<li>Sign in <ul>
-<li>Email: <code>antonjim+devnet&lt;seat&gt;@cisco.com</code> (e.g. <code>antonjim+devnet1@cisco.com</code>)</li>
-<li>Password: <code>Cisco.25</code></li>
+<li>Create a stream integration for Splunk Enterprise. Check the <a href="https://developer.cisco.com/docs/thousandeyes/create-data-stream">ThousandEyes API documentation</a>.</li>
+<li>Use <code>Create Streaming Integration - Splunk Enterprise</code> Postman request to create the stream
+<img alt="ThousandEyes create stream" src="../img/postman/splunkEnterpriseStream.png" /></li>
+</ul>
+<h2 id="step-4b-access-splunk-enterprise">Step 4.b. Access Splunk Enterprise</h2>
+<ul>
+<li>Navigate to <a href="https://splunk.pseudoco.net">Splunk Enterprise</a><ul>
+<li>Username: <code>antonjim+devnet&lt;seat&gt;@cisco.com</code>  (e.g. <code>antonjim+devnet1@cisco.com</code>)</li>
+<li>Password: ``</li>
 </ul>
 </li>
 </ul>
-<p><img alt="Postman Sign in" src="../../img/postman/signin.png" /></p>
+<p><img alt="Splunk Enterprise Login" src="../img/splunkEnterprise/login.png" /></p>
+<h2 id="step-4c-visualize-thousandeyes-telemetry-data-in-splunk-enterprise">Step 4.c. Visualize ThousandEyes telemetry data in Splunk Enterprise</h2>
 <ul>
-<li>Navigate to <code>Workspaces</code> -&gt; <code>devnet's Workspace</code></li>
+<li>In the initial page of <a href="https://splunk.pseudoco.net">Splunk Enterprise</a></li>
+<li>Navigate to <code>Search &amp; Reporting</code>
+<img alt="Search" src="../img/splunkEnterprise/search.png" /></li>
+<li>Navigate to <code>Dashboards</code>
+<img alt="Dashboards" src="../img/splunkEnterprise/dashboard.png" /></li>
+<li>Select <code>DEVWKS-2656</code>
+<img alt="Dashboards" src="../img/splunkEnterprise/dashboardDEVWKS.png" /></li>
+<li>Visualize the data
+<img alt="Dashboard Application" src="../img/splunkEnterprise/dashboardApplication.png" />
+<img alt="Dasboard Network" src="../img/splunkEnterprise/dashboardNetwork.png" /></li>
 </ul>
-<p><img alt="Postman Sign in" src="../../img/postman/workspace.png" /></p>
-<ul>
-<li>Verify the collection <code>DEVWKS-2656</code> is loaded, including requests and variables.</li>
-</ul>
-<p><img alt="Postman collection DEVWKS" src="../../img/postman/DEVWKS.png" /></p>
 
 
 
@@ -568,7 +793,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../access_postman/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Step 1. Access Postman">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -578,20 +803,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Step 1. Access Postman
               </div>
             </div>
           </a>
         
         
           
-          <a href="../create_http_test/" class="md-footer__link md-footer__link--next" aria-label="Next: Step 2. Create ThousandEyes HTTP Server test">
+          <a href="../cisco_thousandeyes_app_for_splunk/" class="md-footer__link md-footer__link--next" aria-label="Next: Cisco ThousandEyes App for Splunk">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Step 2. Create ThousandEyes HTTP Server test
+                Cisco ThousandEyes App for Splunk
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -632,10 +857,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.footer", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.footer", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
