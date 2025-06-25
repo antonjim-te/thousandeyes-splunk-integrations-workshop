@@ -9,8 +9,9 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
     Use the ThousandEyes API through Postman to create the stream programmatically.
     
     ### Create Stream via API
-    - Open the `Create metric stream - Splunk Enterprise` request in your Postman collection
-    - Review the request body and ensure all required fields are configured:
+    - Open the request in your Postman collection
+        - Splunk Cloud Platform: `Create metrics stream - Splunk Cloud Platform`
+        - Splunk Enterprise:  `Create metrics stream - Splunk Enterprise`
     - Click `Send` to execute the API request
     
     ![ThousandEyes create stream](img/postman/splunkEnterpriseStream.png)
@@ -28,16 +29,15 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
 
     - In the ThousandEyes platform, go to `Manage > Integrations > Integrations 2.0`
     - Click `+ New Connector` to select the type of connector to configure
-    - Click `Splunk Cloud Platform HEC` or `Splunk Enterprise HEC` depending on your target
-
+        - Splunk Cloud Platform: `Splunk Cloud Platform HEC`
+        - Splunk Enterprise: `Splunk Enterprise HEC`
     - Configure Connector Settings    
         - `Name`: A name for your connector (e.g., "My Splunk Integration")
         - `Target`: The target URL of the integration:
             - `Splunk Cloud Platform`: `https://http-inputs-<host>.splunkcloud.com:443/services/collector/event`
-            - `Splunk Enterprise`: `https://<splunk_hostname>/services/collector/event`
+            - `Splunk Enterprise`: `https://<host>/services/collector/event`
         - `Token`: Enter your Splunk HEC token
     - Click `Save & Assign Operation` to save the connector
-    - This connector will now be visible in the list view (`Connectors` tab)
 
     ### Create an Operation
 
@@ -49,13 +49,7 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
           - `Operation Name`: A name for your operation
           - `OpenTelemetry Signal`: `metric`
           - `Network & App Synthetics Tests`: Select the created tests.
-
-
-    ### Save the Operation
-
-    - After completing the form and testing, click `Save` to complete the creation of the integration
-    - The operation will now be visible in the list view (`Operations` tab)
-    - Your ThousandEyes data should now start streaming to your Splunk instance
+    - Click `Save` to complete the creation of the integration
 
 !!! note "Data Flow Timing"
     The stream will begin sending data to your Splunk instance within a few minutes of activation.

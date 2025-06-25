@@ -382,7 +382,7 @@
 			"input_global_trp"
 		]
 	},
-	"title": "DEVWKS-2656",
+	"title": "ThousandEyes Dashboard",
 	"description": "",
 	"defaults": {
 		"dataSources": {

@@ -8,4 +8,6 @@ All the docs in: https://antonjim-te.github.io/thousandeyes-splunk-integrations-
 - traces, logs
 - Take new screenshot of every step
 - webhook alerts
+- rewrite home
 - roadmap
+- Ask review from team + doc team
