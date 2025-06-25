@@ -56,7 +56,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Streaming - Splunk Enterprise",
+			"name": "Create metrics stream - Splunk Enterprise",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -73,7 +73,36 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_Enterprise_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://splunk.pseudoco.net:8088/services/collector/event\"\n}",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://{{Splunk_HEC_host}}:8088/services/collector/event\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.thousandeyes.com/v7/stream"
+			},
+			"response": []
+		},
+				{
+			"name": "Create metrics stream - Splunk Cloud",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{ThousandEyes_token}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{BEARER}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://http-inputs-{{Splunk_HEC_host}}.splunkcloud.com:443/services/collector/event\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -102,7 +131,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"metric\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.us1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"metric\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.{{Splunk_Observability_realm}}.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -131,7 +160,36 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"trace\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.us1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"trace\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.{{Splunk_Observability_realm}}.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.thousandeyes.com/v7/stream"
+			},
+			"response": []
+		},
+		{
+			"name": "Create activity logs stream - Splunk Observability",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{ThousandEyes_token}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{BEARER}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"log\",\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.{{Splunk_Observability_realm}}.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -183,7 +241,12 @@
 			"type": "string"
 		},
 		{
-			"key": "Splunk_Enterprise_HEC_token",
+			"key": "Splunk_HEC_host",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Splunk_HEC_token",
 			"value": "",
 			"type": "string"
 		},
@@ -194,6 +257,11 @@
 		},
 		{
 			"key": "ThousandEyes_agent_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Splunk_Observability_realm",
 			"value": "",
 			"type": "string"
 		}
