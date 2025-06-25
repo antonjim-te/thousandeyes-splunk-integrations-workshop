@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../login_splunk_observability/">
+      
+      
+        <link rel="next" href="../visualize_splunk_observability/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Create stream to splunk observability - ThousandEyes - Splunk Integrations Workshop</title>
+        <title>Create Streams to Splunk Observability Cloud - ThousandEyes - Splunk Integrations Workshop</title>
       
     
     
@@ -105,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Create stream to splunk observability
+              Create Streams to Splunk Observability Cloud
             
           </span>
         </div>
@@ -223,10 +227,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../access_postman/" class="md-tabs__link">
           
   
@@ -357,28 +363,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -391,7 +400,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Splunk Observability Cloud
@@ -494,10 +503,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../create_streams_to_splunk_observability.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Create Streams to Splunk Observability Cloud
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -508,6 +539,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-metrics-streams-on-thousandeyes-for-splunk-observability-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Metrics Streams on ThousandEyes for Splunk Observability Cloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create Metrics Streams on ThousandEyes for Splunk Observability Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-stream-via-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Stream via API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-stream-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify Stream Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigate-to-integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigate to Integrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-basic-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Basic Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-data-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Data Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-and-activate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save and Activate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -747,23 +885,21 @@
 
 
 
-  <h1>Create stream to splunk observability</h1>
-
-<h2 id="create-thousandeyes-streams-to-splunk-observability-cloud">Create ThousandEyes Streams to Splunk Observability Cloud</h2>
-<h3 id="create-metrics-streams-on-thousandeyes-for-splunk-observability-cloud">Create Metrics Streams on ThousandEyes for Splunk Observability Cloud</h3>
+<h1 id="create-thousandeyes-streams-to-splunk-observability-cloud">Create ThousandEyes Streams to Splunk Observability Cloud</h1>
+<h2 id="create-metrics-streams-on-thousandeyes-for-splunk-observability-cloud">Create Metrics Streams on ThousandEyes for Splunk Observability Cloud</h2>
 <p>Choose one of the following methods to create your stream to Splunk Observability Cloud:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">API Method</label><label for="__tabbed_1_2">UI Method</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Use the ThousandEyes API through Postman to create the stream programmatically.</p>
-<h4 id="create-stream-via-api">Create Stream via API</h4>
+<h3 id="create-stream-via-api">Create Stream via API</h3>
 <ul>
 <li>Open the <code>Create metrics stream - Splunk Observability</code> request in your Postman collection</li>
 <li>Review the request body and ensure all required fields are configured:</li>
 <li>Click <code>Send</code> to execute the API request</li>
 </ul>
 <p><img alt="ThousandEyes create stream" src="../img/postman/splunkObservabilityCloudStream.png" /></p>
-<h4 id="verify-stream-creation">Verify Stream Creation</h4>
+<h3 id="verify-stream-creation">Verify Stream Creation</h3>
 <ul>
 <li>Check the API response for successful stream creation</li>
 <li>Note the stream ID from the response for future reference</li>
@@ -777,18 +913,18 @@
 <div class="tabbed-block">
 <p>Use the ThousandEyes web interface to create the integration manually via OpenTelemetry.</p>
 <p>To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:</p>
-<h4 id="navigate-to-integrations">Navigate to Integrations</h4>
+<h3 id="navigate-to-integrations">Navigate to Integrations</h3>
 <ul>
 <li>Log in to your account on the ThousandEyes platform</li>
 <li>Go to <code>Manage &gt; Integration &gt; Integration 1.0</code></li>
 <li>Click <code>New Integration</code> and select <code>OpenTelemetry Integration</code></li>
 </ul>
-<h4 id="configure-basic-settings">Configure Basic Settings</h4>
+<h3 id="configure-basic-settings">Configure Basic Settings</h3>
 <ul>
 <li>Enter a <code>Name</code> for the integration (e.g., "Splunk Observability Cloud Integration")</li>
 <li>Set the <code>Target</code> to <code>HTTP</code></li>
 </ul>
-<h4 id="configure-endpoint">Configure Endpoint</h4>
+<h3 id="configure-endpoint">Configure Endpoint</h3>
 <ul>
 <li>Enter the <code>Endpoint URL</code> to send data in <code>OTLP (OpenTelemetry Protocol)</code> format:
   <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.{REALM}.signalfx.com/v2/datapoint/otlp
@@ -796,7 +932,7 @@
 <li>Replace <code>{REALM}</code> with your Splunk environment such as <code>us1</code>, <code>eu0</code>, <code>us0</code></li>
 <li>For <code>Preset Configuration</code>, select <code>Splunk Observability Cloud</code></li>
 </ul>
-<h4 id="configure-authentication">Configure Authentication</h4>
+<h3 id="configure-authentication">Configure Authentication</h3>
 <ul>
 <li>For <code>Auth Type</code>, select <code>Custom</code></li>
 <li>Add the following <code>Custom Headers</code>:<ul>
@@ -805,13 +941,13 @@
 </ul>
 </li>
 </ul>
-<h4 id="configure-data-settings">Configure Data Settings</h4>
+<h3 id="configure-data-settings">Configure Data Settings</h3>
 <ul>
 <li>Select <code>Metric</code> as the OpenTelemetry <code>Signal</code></li>
 <li>Select <code>v2</code> as the <code>Data Model Version</code></li>
 <li>Select a <code>test</code> that you want to stream data from</li>
 </ul>
-<h4 id="save-and-activate">Save and Activate</h4>
+<h3 id="save-and-activate">Save and Activate</h3>
 <ul>
 <li>Click <code>Save</code> to complete the integration setup</li>
 <li>Your ThousandEyes data should now be successfully integrated with Splunk Observability Cloud</li>
@@ -859,6 +995,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../login_splunk_observability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Login Splunk Observability Cloud">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Login Splunk Observability Cloud
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../visualize_splunk_observability/" class="md-footer__link md-footer__link--next" aria-label="Next: Visualize ThousandEyes data in Splunk Observability Cloud">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Visualize ThousandEyes data in Splunk Observability Cloud
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

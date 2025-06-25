@@ -16,7 +16,7 @@
         <link rel="prev" href="../create_thousandeyes_test/">
       
       
-        <link rel="next" href="../visualize_splunk_observability/">
+        <link rel="next" href="../create_streams_to_splunk_observability/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -489,6 +489,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -521,6 +523,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -529,16 +533,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#login-to-splunk-observability-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Login to Splunk Observability Cloud
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Login to Splunk Observability Cloud">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#choose-your-access-method" class="md-nav__link">
     <span class="md-ellipsis">
       Choose Your Access Method
@@ -579,8 +573,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#generate-access-token" class="md-nav__link">
     <span class="md-ellipsis">
       Generate Access Token
@@ -630,8 +624,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#add-token-to-postman-variables" class="md-nav__link">
     <span class="md-ellipsis">
       Add Token to Postman Variables
@@ -663,11 +657,6 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
@@ -685,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_streams_to_splunk_observability.md" class="md-nav__link">
+      <a href="../create_streams_to_splunk_observability/" class="md-nav__link">
         
   
   
@@ -935,16 +924,14 @@
 
 
 
-  <h1>Login Splunk Observability Cloud</h1>
-
-<h2 id="login-to-splunk-observability-cloud">Login to Splunk Observability Cloud</h2>
+<h1 id="login-to-splunk-observability-cloud">Login to Splunk Observability Cloud</h1>
 <p>This guide will help you log into Splunk Observability Cloud and obtain an access token for the ThousandEyes integration.</p>
-<h3 id="choose-your-access-method">Choose Your Access Method</h3>
+<h2 id="choose-your-access-method">Choose Your Access Method</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Existing Account</label><label for="__tabbed_1_2">Free Trial</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>If you already have a Splunk Observability Cloud account:</p>
-<h4 id="login-to-your-account">Login to Your Account</h4>
+<h3 id="login-to-your-account">Login to Your Account</h3>
 <ul>
 <li>Navigate to <a href="https://login.signalfx.com/">Splunk Observability Cloud</a></li>
 <li>Enter your <code>email address</code> and <code>password</code></li>
@@ -953,7 +940,7 @@
 </div>
 <div class="tabbed-block">
 <p>If you don't have a Splunk Observability Cloud account:</p>
-<h4 id="start-free-trial">Start Free Trial</h4>
+<h3 id="start-free-trial">Start Free Trial</h3>
 <ul>
 <li>Navigate to <a href="https://www.splunk.com/en_us/products/observability-cloud.html">Splunk Observability Cloud Free Trial</a></li>
 <li>Click <code>Start Free Trial</code> or <code>Try Free</code></li>
@@ -966,7 +953,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="verify-your-account">Verify Your Account</h4>
+<h3 id="verify-your-account">Verify Your Account</h3>
 <ul>
 <li>Check your email for a verification message</li>
 <li>Click the verification link to activate your account</li>
@@ -976,15 +963,15 @@
 </div>
 </div>
 </div>
-<h3 id="generate-access-token">Generate Access Token</h3>
+<h2 id="generate-access-token">Generate Access Token</h2>
 <p>Once you're logged into Splunk Observability Cloud, follow these steps to generate your access token:</p>
-<h4 id="navigate-to-access-token-settings">Navigate to Access Token Settings</h4>
+<h3 id="navigate-to-access-token-settings">Navigate to Access Token Settings</h3>
 <ul>
 <li>Click on your <code>profile icon</code> in the top-right corner</li>
 <li>Select <code>Organization Settings</code> from the dropdown menu</li>
 <li>In the left navigation, click on <code>Access Tokens</code></li>
 </ul>
-<h4 id="create-new-access-token">Create New Access Token</h4>
+<h3 id="create-new-access-token">Create New Access Token</h3>
 <ul>
 <li>Click <code>+ New Token</code> button</li>
 <li>Configure the token settings:<ul>
@@ -995,26 +982,26 @@
 </ul>
 </li>
 </ul>
-<h4 id="generate-and-copy-token">Generate and Copy Token</h4>
+<h3 id="generate-and-copy-token">Generate and Copy Token</h3>
 <ul>
 <li>Click <code>OK</code> to generate the token</li>
 <li><code>Copy the token immediately</code> - it will only be displayed once</li>
 <li>Store the token securely (you'll need it for Postman configuration)</li>
 </ul>
-<h4 id="note-your-realm">Note Your Realm</h4>
+<h3 id="note-your-realm">Note Your Realm</h3>
 <ul>
 <li>While in the Access Tokens section, note your <code>Realm</code> information</li>
 <li>Your realm is visible in the URL or in the organization settings (e.g., us0, us1, eu0)</li>
 <li>You'll need this realm information for the ThousandEyes integration</li>
 </ul>
-<h3 id="add-token-to-postman-variables">Add Token to Postman Variables</h3>
+<h2 id="add-token-to-postman-variables">Add Token to Postman Variables</h2>
 <p>Now that you have your Splunk Observability Cloud access token, add it to your Postman collection variables:</p>
-<h4 id="open-collection-variables">Open Collection Variables</h4>
+<h3 id="open-collection-variables">Open Collection Variables</h3>
 <ul>
 <li>In Postman, navigate to your <code>ThousandEyes Splunk Integration</code> collection</li>
 <li>Go to the <code>Variables</code> tab</li>
 </ul>
-<h4 id="set-the-splunk-access-token-variable">Set the Splunk Access Token Variable</h4>
+<h3 id="set-the-splunk-access-token-variable">Set the Splunk Access Token Variable</h3>
 <ul>
 <li>Find the variable named <code>Splunk_access_token</code> in the list</li>
 <li>In the <code>Current Value</code> column, paste your Splunk access token</li>
@@ -1076,13 +1063,13 @@
         
         
           
-          <a href="../visualize_splunk_observability/" class="md-footer__link md-footer__link--next" aria-label="Next: Visualize ThousandEyes data in Splunk Observability Cloud">
+          <a href="../create_streams_to_splunk_observability/" class="md-footer__link md-footer__link--next" aria-label="Next: Create Streams to Splunk Observability Cloud">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Visualize ThousandEyes data in Splunk Observability Cloud
+                Create Streams to Splunk Observability Cloud
               </div>
             </div>
             <div class="md-footer__button md-icon">

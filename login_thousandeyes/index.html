@@ -440,6 +440,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -472,6 +474,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -480,16 +484,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#login-to-thousandeyes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Login to ThousandEyes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Login to ThousandEyes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#get-thousandeyes-bearer-token" class="md-nav__link">
     <span class="md-ellipsis">
       Get ThousandEyes Bearer Token
@@ -521,8 +515,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#add-token-to-postman-variables" class="md-nav__link">
     <span class="md-ellipsis">
       Add Token to Postman Variables
@@ -547,11 +541,6 @@
       Set the ThousandEyes_token Variable
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -622,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_streams_to_splunk_observability.md" class="md-nav__link">
+      <a href="../create_streams_to_splunk_observability/" class="md-nav__link">
         
   
   
@@ -752,6 +741,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -784,6 +775,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -792,16 +785,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#login-to-thousandeyes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Login to ThousandEyes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Login to ThousandEyes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#get-thousandeyes-bearer-token" class="md-nav__link">
     <span class="md-ellipsis">
       Get ThousandEyes Bearer Token
@@ -833,8 +816,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#add-token-to-postman-variables" class="md-nav__link">
     <span class="md-ellipsis">
       Add Token to Postman Variables
@@ -859,11 +842,6 @@
       Set the ThousandEyes_token Variable
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -994,9 +972,7 @@
 
 
 
-  <h1>Login ThousandEyes</h1>
-
-<h2 id="login-to-thousandeyes">Login to ThousandEyes</h2>
+<h1 id="login-to-thousandeyes">Login to ThousandEyes</h1>
 <p>Choose one of the following options to access ThousandEyes:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Existing Account</label><label for="__tabbed_1_2">Free Trial</label></div>
 <div class="tabbed-content">
@@ -1020,30 +996,30 @@
 </div>
 </div>
 </div>
-<h3 id="get-thousandeyes-bearer-token">Get ThousandEyes Bearer Token</h3>
+<h2 id="get-thousandeyes-bearer-token">Get ThousandEyes Bearer Token</h2>
 <p>Once you're logged into ThousandEyes, follow these steps to generate your API bearer token:</p>
-<h4 id="navigate-to-user-profile">Navigate to User Profile</h4>
+<h3 id="navigate-to-user-profile">Navigate to User Profile</h3>
 <ul>
 <li>Click on your <code>profile icon</code> in the top-right corner of the ThousandEyes dashboard</li>
 <li>Select <code>Account Settings</code> from the dropdown menu</li>
 <li>Navigate to <code>Users and Roles</code> → <code>Profile</code></li>
 </ul>
-<h4 id="generate-api-token">Generate API Token</h4>
+<h3 id="generate-api-token">Generate API Token</h3>
 <ul>
 <li>Scroll down to the <code>API Tokens</code> section</li>
 <li>Click <code>Generate API Token</code> button</li>
 <li>Copy the token immediately - it will only be displayed once</li>
 <li>Store the token securely (you'll need it for the next step)</li>
 </ul>
-<h3 id="add-token-to-postman-variables">Add Token to Postman Variables</h3>
+<h2 id="add-token-to-postman-variables">Add Token to Postman Variables</h2>
 <p>Now that you have your ThousandEyes bearer token, add it to your Postman collection variables:</p>
-<h4 id="open-collection-variables">Open Collection Variables</h4>
+<h3 id="open-collection-variables">Open Collection Variables</h3>
 <ul>
 <li>In Postman, navigate to your <code>ThousandEyes Splunk Integration</code> collection</li>
 <li>Click on the <code>collection</code> to open its settings</li>
 <li>Go to the <code>Variables</code> tab</li>
 </ul>
-<h4 id="set-the-thousandeyes_token-variable">Set the ThousandEyes_token Variable</h4>
+<h3 id="set-the-thousandeyes_token-variable">Set the ThousandEyes_token Variable</h3>
 <ul>
 <li>Find the variable named <code>ThousandEyes_token</code> in the list</li>
 <li>In the <code>Current Value</code> column, paste your bearer token</li>
