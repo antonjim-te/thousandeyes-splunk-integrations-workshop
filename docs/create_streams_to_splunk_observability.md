@@ -15,17 +15,12 @@ Choose one of the following methods to create your stream to Splunk Observabilit
     
     ![ThousandEyes create stream](img/postman/splunkObservabilityCloudStream.png)
     
-    ### Verify Stream Creation
-    - Check the API response for successful stream creation
-    - Note the stream ID from the response for future reference
-    - The stream will begin sending data to Splunk Observability Cloud
-    
     !!! tip "API Documentation"
         For detailed API parameters and options, check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 
 === "UI Method"
 
-    Use the ThousandEyes web interface to create the integration manually via OpenTelemetry.
+    Use the ThousandEyes web interface to create the stream integration manually via OpenTelemetry.
     
     To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:
     
