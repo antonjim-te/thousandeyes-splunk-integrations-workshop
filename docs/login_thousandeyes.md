@@ -39,15 +39,10 @@ Once you're logged into ThousandEyes, follow these steps to generate your API be
 
 Now that you have your ThousandEyes bearer token, add it to your Postman collection variables:
 
-### Open Collection Variables
 - In Postman, navigate to your `ThousandEyes Splunk Integration` collection
-- Click on the `collection` to open its settings
 - Go to the `Variables` tab
-
-### Set the ThousandEyes_token Variable
 - Find the variable named `ThousandEyes_token` in the list
-- In the `Current Value` column, paste your bearer token
+    - In the `Current Value` column, paste your bearer token
 - Click `Save` to apply the changes
-
 
 ![ThousandEyes Token](img/postman/thousandeyesToken.png)
