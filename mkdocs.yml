@@ -73,8 +73,8 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed:
       alternate_style: true
-  - toc:
-      baselevel: 2
+  # - toc:
+  #     baselevel: 3
 
 
 copyright: |

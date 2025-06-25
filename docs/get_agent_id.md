@@ -5,7 +5,7 @@ We can use a different agentId.
 
 ## Search for a new agentId
 
-- Use the following Postman request to get the agents ![ThousandEyes get agents](img/thousandeyes/postman/getAgents.png)
+- Use the following Postman request to get the agents ![ThousandEyes get agents](img/postman/getAgents.png)
 - In the resposne, search for an agent
     - E.g `Barcelona`
-- Save the `agentId` into the variable `ThousandEyes_agent_id` in Postman ![ThousandEyes agentId](img/thousandeyes/postman/agentId.png)
+- Save the `agentId` into the variable `ThousandEyes_agent_id` in Postman ![ThousandEyes agentId](img/postman/agentId.png)

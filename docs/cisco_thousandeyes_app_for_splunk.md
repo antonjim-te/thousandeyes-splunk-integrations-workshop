@@ -9,15 +9,15 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 
 ![SplunkBase](img/thousandEyesApp/splunkbase.png)
 
-## Step 1. Navigate to Cisco ThousandEyes App for Splunk 
+## Navigate to Cisco ThousandEyes App for Splunk 
 
-- Once we are logged into Splunk Enterprise [Step 7. Login into Splunk Enterprise](#step-7-login-into-splunk-enterprise)
+- Once we are logged into Splunk Enterprise 
 - Navigate to `Cisco ThousandEyes App for Splunk`
 ![navigate app](img/thousandEyesApp/navigate_app.png)
 - In the app, you will find out: `configuration`, `inputs`, `search` and `dashboards`. Check the [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app)
 ![configuration](img/thousandEyesApp/configuration.png)
 
-## Step 2. Create stream test input
+## Create stream test input
 
 - In `inputs` section
 - Click `Create New Input`, select `Tests Stream`
@@ -31,14 +31,14 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 
 ![stream Input](img/thousandEyesApp/streamInput.png)
 
-## Step 3. Network and Application dashboards
+## Network and Application dashboards
 
 - In the `dashboards` section, select `Network` 
 ![dashboard_network](img/thousandEyesApp/dashboard_network.png)
 - In the `dashboards` section, select `Application`
 ![dashboard_application](img/thousandEyesApp/dashboard_application.png)
 
-## Step 4. Create activity log input
+## Create activity log input
 
 - In `inputs` section
 - Click `Create New Input`, select `Activity`
@@ -49,7 +49,7 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
     - Index: select `default`
 ![Activity Input](img/thousandEyesApp/inputActivity.png)
 
-## Step 5. Activity logs dashboards
+## Activity logs dashboards
 
 - In the `dashboards` section, select `Activity Logs` 
 ![dashboard_activity_logs](img/thousandEyesApp/dashboard_activity_logs.png)
