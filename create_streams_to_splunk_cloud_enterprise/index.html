@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#create-thousandeyes-streams-to-splunk-cloud-platform-or-splunk-enterprise" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -700,6 +705,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Create Streams to Splunk Cloud / Enterprise
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -712,6 +732,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-metrics-streams-on-thousandeyes-for-splunk-cloud-platform-or-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Metrics Streams on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create Metrics Streams on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-stream-via-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Stream via API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Connector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an Operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-the-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save the Operation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -808,9 +898,75 @@
 
 
 
-  <h1>Create Streams to Splunk Cloud / Enterprise</h1>
-
-
+<h1 id="create-thousandeyes-streams-to-splunk-cloud-platform-or-splunk-enterprise">Create ThousandEyes Streams to Splunk Cloud Platform or Splunk Enterprise</h1>
+<h2 id="create-metrics-streams-on-thousandeyes-for-splunk-cloud-platform-or-splunk-enterprise">Create Metrics Streams on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise</h2>
+<p>Choose one of the following methods to create your stream to Splunk Cloud Platform or Splunk Enterprise:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">API Method</label><label for="__tabbed_1_2">UI Method</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Use the ThousandEyes API through Postman to create the stream programmatically.</p>
+<h3 id="create-stream-via-api">Create Stream via API</h3>
+<ul>
+<li>Open the <code>Create metric stream - Splunk Enterprise</code> request in your Postman collection</li>
+<li>Review the request body and ensure all required fields are configured:</li>
+<li>Click <code>Send</code> to execute the API request</li>
+</ul>
+<p><img alt="ThousandEyes create stream" src="../img/postman/splunkEnterpriseStream.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">API Documentation</p>
+<p>For detailed API parameters and options, check the <a href="https://developer.cisco.com/docs/thousandeyes/create-data-stream">ThousandEyes API documentation</a>.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Use the ThousandEyes web interface to create the integration manually using Integrations 2.0.</p>
+<h3 id="create-a-connector">Create a Connector</h3>
+<p>To create a new integration, follow these steps:</p>
+<ul>
+<li>In the ThousandEyes platform, go to <code>Manage &gt; Integrations &gt; Integrations 2.0</code></li>
+<li>Click <code>+ New Connector</code> to select the type of connector to configure</li>
+<li>
+<p>Click <code>Splunk Cloud Platform HEC</code> or <code>Splunk Enterprise HEC</code> depending on your target</p>
+</li>
+<li>
+<p>Configure Connector Settings    </p>
+<ul>
+<li><code>Name</code>: A name for your connector (e.g., "My Splunk Integration")</li>
+<li><code>Target</code>: The target URL of the integration:<ul>
+<li><code>Splunk Cloud Platform</code>: <code>https://http-inputs-&lt;host&gt;.splunkcloud.com:443/services/collector/event</code></li>
+<li><code>Splunk Enterprise</code>: <code>https://&lt;splunk_hostname&gt;/services/collector/event</code></li>
+</ul>
+</li>
+<li><code>Token</code>: Enter your Splunk HEC token</li>
+</ul>
+</li>
+<li>Click <code>Save &amp; Assign Operation</code> to save the connector</li>
+<li>This connector will now be visible in the list view (<code>Connectors</code> tab)</li>
+</ul>
+<h3 id="create-an-operation">Create an Operation</h3>
+<p>Set up an operation to stream data to the target:</p>
+<ul>
+<li>Click <code>+ New Operation</code> to open the menu for selecting the operation type</li>
+<li>Choose <code>Splunk Enterprise, Splunk Cloud Platform</code> to proceed to the configuration form</li>
+<li>Configure Operation Settings<ul>
+<li><code>Operation Name</code>: A name for your operation</li>
+<li><code>OpenTelemetry Signal</code>: <code>metric</code></li>
+<li><code>Network &amp; App Synthetics Tests</code>: Select the created tests.</li>
+</ul>
+</li>
+</ul>
+<h3 id="save-the-operation">Save the Operation</h3>
+<ul>
+<li>After completing the form and testing, click <code>Save</code> to complete the creation of the integration</li>
+<li>The operation will now be visible in the list view (<code>Operations</code> tab)</li>
+<li>Your ThousandEyes data should now start streaming to your Splunk instance</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Data Flow Timing</p>
+<p>The stream will begin sending data to your Splunk instance within a few minutes of activation.</p>
+</div>
 
 
 
