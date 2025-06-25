@@ -85,7 +85,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Integration - Splunk Observability Cloud",
+			"name": "Create metrics stream - Splunk Observability",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -102,7 +102,36 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.us1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"metric\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.us1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.thousandeyes.com/v7/stream"
+			},
+			"response": []
+		},
+		{
+			"name": "Create traces stream - Splunk Observability",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{ThousandEyes_token}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{BEARER}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"trace\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.us1.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"

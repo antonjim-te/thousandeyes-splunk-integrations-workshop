@@ -5,12 +5,13 @@ site_author: Antonio Jimenez
 
 nav:
   - Home: README.md
-  - Streaming ThousandEyes telemetry to Splunk Observability Cloud: 
+  - Splunk Observability Cloud: 
     - Access Postman: access_postman.md
     - Login ThousandEyes: login_thousandeyes.md
     - Create ThousandEyes test: create_thousandeyes_test.md
-    - Stream to Splunk Observability Cloud: stream_to_splunk_observability.md
-  - Streaming ThousandEyes telemetry to Splunk Enterprise:
+    - Create Streams to Splunk Observability Cloud: create_streams_to_splunk_observability.md
+    - Visuzlize ThousandEyes data in Splunk Observability Cloud: visualize_in_splunk_observability.md
+  - Splunk Cloud/Enterprise:
     - Access Postman: access_postman.md
     - Login ThousandEyes: login_thousandeyes.md
     - Create ThousandEyes Server test: create_thousandeyes_test.md

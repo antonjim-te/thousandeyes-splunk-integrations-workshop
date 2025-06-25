@@ -1,13 +1,6 @@
-# Step 3. Stream to Splunk Observability Cloud
+# visualize ThousandEyes data in Splunk Observability Cloud
 
-## Step 3.a. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
-
-- Create a streaming integration for Splunk Observability Cloud. Check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
-- Use the `Create Integration - Splunk Observability` Postman request to create the stream
-
-![ThousandEyes create stream](img/postman/splunkObservabilityCloudStream.png)
-
-## Step 3.b. Access Splunk Observability Cloud
+## Access Splunk Observability Cloud
 
 - Navigate to [Splunk Observability Cloud](https://app.us1.signalfx.com/#/signin) 
     - Email: `antonjim+devnet<seat>@cisco.com` 
@@ -16,7 +9,7 @@
 
 ![Splunk Observability Cloud](img/splunkObservabilityCloud/login.png)
 
-## Step 3.c. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
+## Visualize ThousandEyes telemetry data in Splunk Observability Cloud
 
 - In the initial page of [Splunk Observability Cloud](https://app.us1.signalfx.com/)
 - Navigate to `Dashboards`
