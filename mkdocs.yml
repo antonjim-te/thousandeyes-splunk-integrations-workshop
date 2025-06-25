@@ -11,8 +11,8 @@ nav:
     - Create ThousandEyes test: create_thousandeyes_test.md
     - Login Splunk Observability Cloud: login_splunk_observability.md
     - Create Streams to Splunk Observability Cloud: create_streams_to_splunk_observability.md
-    - Visualize ThousandEyes data in Splunk Observability Cloud: visualize_in_splunk_observability.md
-  - Splunk Cloud/Enterprise:
+    - Visualize ThousandEyes data in Splunk Observability Cloud: visualize_splunk_observability.md
+  - Splunk Core (Cloud or Enterprise):
     - Access Postman: access_postman.md
     - Login ThousandEyes: login_thousandeyes.md
     - Create ThousandEyes Server test: create_thousandeyes_test.md
