@@ -235,7 +235,7 @@
           
   
   
-  Streaming ThousandEyes telemetry to Splunk Observability Cloud
+  Splunk Observability Cloud
 
         </a>
       </li>
@@ -257,7 +257,7 @@
           
   
   
-  Streaming ThousandEyes telemetry to Splunk Enterprise
+  Splunk Cloud/Enterprise
 
         </a>
       </li>
@@ -389,7 +389,7 @@
   
   
   <span class="md-ellipsis">
-    Streaming ThousandEyes telemetry to Splunk Observability Cloud
+    Splunk Observability Cloud
     
   </span>
   
@@ -400,7 +400,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Streaming ThousandEyes telemetry to Splunk Observability Cloud
+            Splunk Observability Cloud
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -513,15 +513,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#create-test-via-api" class="md-nav__link">
     <span class="md-ellipsis">
       Create Test via API
@@ -531,18 +522,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#save-test-id" class="md-nav__link">
+  <a href="#copy-test-id" class="md-nav__link">
     <span class="md-ellipsis">
-      Save Test ID
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
+      Copy Test ID
     </span>
   </a>
   
@@ -567,18 +549,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#select-agents" class="md-nav__link">
+  <a href="#get-test-id" class="md-nav__link">
     <span class="md-ellipsis">
-      Select Agents
+      Get Test ID
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-test-id-for-api-integration" class="md-nav__link">
+  <a href="#save-the-test-id-in-postman" class="md-nav__link">
     <span class="md-ellipsis">
-      Get Test ID for API Integration
+      Save the Test ID in Postman
     </span>
   </a>
   
@@ -605,12 +587,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../stream_to_splunk_observability/" class="md-nav__link">
+      <a href="../create_streams_to_splunk_observability.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Stream to Splunk Observability Cloud
+    Create Streams to Splunk Observability Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualize_in_splunk_observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visuzlize ThousandEyes data in Splunk Observability Cloud
     
   </span>
   
@@ -661,7 +666,7 @@
   
   
   <span class="md-ellipsis">
-    Streaming ThousandEyes telemetry to Splunk Enterprise
+    Splunk Cloud/Enterprise
     
   </span>
   
@@ -672,7 +677,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Streaming ThousandEyes telemetry to Splunk Enterprise
+            Splunk Cloud/Enterprise
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -785,15 +790,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#create-test-via-api" class="md-nav__link">
     <span class="md-ellipsis">
       Create Test via API
@@ -803,18 +799,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#save-test-id" class="md-nav__link">
+  <a href="#copy-test-id" class="md-nav__link">
     <span class="md-ellipsis">
-      Save Test ID
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
+      Copy Test ID
     </span>
   </a>
   
@@ -839,18 +826,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#select-agents" class="md-nav__link">
+  <a href="#get-test-id" class="md-nav__link">
     <span class="md-ellipsis">
-      Select Agents
+      Get Test ID
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-test-id-for-api-integration" class="md-nav__link">
+  <a href="#save-the-test-id-in-postman" class="md-nav__link">
     <span class="md-ellipsis">
-      Get Test ID for API Integration
+      Save the Test ID in Postman
     </span>
   </a>
   
@@ -972,24 +959,15 @@ Refer to <a href="https://docs.thousandeyes.com/product-documentation/tests">Tho
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Use the ThousandEyes API through Postman to create the test programmatically.</p>
-<h4 id="prerequisites">Prerequisites</h4>
-<ul>
-<li>Ensure you have your ThousandEyes bearer token configured in Postman</li>
-<li>Have the ThousandEyes Splunk Integration collection imported in Postman</li>
-</ul>
 <h4 id="create-test-via-api">Create Test via API</h4>
 <ul>
 <li>Open the <code>Create ThousandEyes Page Load Test</code> request in your Postman collection</li>
-<li>Click <strong>Send</strong> to execute the API request</li>
+<li>Click <code>Send</code> to execute the API request</li>
 </ul>
 <p><img alt="ThousandEyes create test" src="../img/postman/createPageLoadTest.png" /></p>
-<h4 id="save-test-id">Save Test ID</h4>
+<h4 id="copy-test-id">Copy Test ID</h4>
 <ul>
 <li>Copy the <code>testId</code> from the API response</li>
-<li>In Postman, go to your collection <strong>Variables</strong></li>
-<li>Find the <code>ThousandEyes_test_id</code> variable</li>
-<li>Paste the test ID in the <strong>Current Value</strong> field</li>
-<li>Click <strong>Save</strong></li>
 </ul>
 <p><img alt="ThousandEyes test id variable" src="../img/postman/testId.png" /></p>
 <div class="admonition tip">
@@ -1000,44 +978,36 @@ Refer to <a href="https://docs.thousandeyes.com/product-documentation/tests">Tho
 </div>
 <div class="tabbed-block">
 <p>Use the ThousandEyes web interface to create the test manually.</p>
-<h4 id="prerequisites_1">Prerequisites</h4>
-<ul>
-<li>Be logged into your ThousandEyes account</li>
-<li>Navigate to the ThousandEyes dashboard</li>
-</ul>
 <h4 id="create-test-via-ui">Create Test via UI</h4>
 <ul>
-<li>In the ThousandEyes dashboard, click <strong>Test Settings</strong></li>
-<li>Click the <strong>+ Add New Test</strong> button</li>
-<li>Select <strong>Page Load</strong> from the test type options</li>
+<li>In the ThousandEyes dashboard, click <code>Test Settings</code></li>
+<li>Click the <code>+ Add New Test</code> button</li>
+<li>Select <code>Page Load</code> from the test type options</li>
 </ul>
 <h4 id="configure-test-settings">Configure Test Settings</h4>
 <ul>
-<li><strong>Test Name</strong>: Enter a descriptive name (e.g., "Google Page Load Test")</li>
-<li><strong>URL</strong>: Enter <code>https://www.google.com</code></li>
-<li><strong>Interval</strong>: Set to desired frequency (e.g., 5 minutes)</li>
-<li><strong>Alerts</strong>: Configure as needed or leave default</li>
-</ul>
-<h4 id="select-agents">Select Agents</h4>
-<ul>
-<li>In the <strong>Agents</strong> section, select one or more Cloud Agents</li>
+<li><code>Test Name</code>: Enter a descriptive name (e.g., "Google Page Load Test")</li>
+<li><code>URL</code>: Enter <code>https://www.google.com</code></li>
+<li>In the <code>Agents</code> section, select one or more Cloud Agents</li>
 <li>Choose agents from different geographic locations for better coverage</li>
-<li>Click <strong>Create New Test</strong></li>
+<li>Click <code>Create New Test</code></li>
 </ul>
-<h4 id="get-test-id-for-api-integration">Get Test ID for API Integration</h4>
+<h4 id="get-test-id">Get Test ID</h4>
 <ul>
 <li>After creating the test, click on the test name to view details</li>
-<li>In the URL bar, note the test ID number (e.g., <code>/tests/12345</code>)</li>
-<li>Copy this test ID for use in Postman variables</li>
-<li>In Postman, set the <code>ThousandEyes_test_id</code> variable to this value</li>
+<li>In the URL bar, note the <code>Test ID</code> number (e.g., <code>/tests/12345</code>)</li>
+<li>Copy this Test ID for use in Postman variables</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Test ID Location</p>
-<p>The test ID can be found in the browser URL when viewing the test details, or in the test settings page.</p>
 </div>
 </div>
 </div>
-</div>
+<h4 id="save-the-test-id-in-postman">Save the Test ID in Postman</h4>
+<ul>
+<li>In Postman, go to your collection <code>Variables</code></li>
+<li>Find the <code>ThousandEyes_test_id</code> variable</li>
+<li>Paste the test ID in the <code>Current Value</code> field</li>
+<li>Click <code>Save</code></li>
+</ul>
 
 
 

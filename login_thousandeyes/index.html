@@ -235,7 +235,7 @@
           
   
   
-  Streaming ThousandEyes telemetry to Splunk Observability Cloud
+  Splunk Observability Cloud
 
         </a>
       </li>
@@ -257,7 +257,7 @@
           
   
   
-  Streaming ThousandEyes telemetry to Splunk Enterprise
+  Splunk Cloud/Enterprise
 
         </a>
       </li>
@@ -389,7 +389,7 @@
   
   
   <span class="md-ellipsis">
-    Streaming ThousandEyes telemetry to Splunk Observability Cloud
+    Splunk Observability Cloud
     
   </span>
   
@@ -400,7 +400,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Streaming ThousandEyes telemetry to Splunk Observability Cloud
+            Splunk Observability Cloud
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -599,12 +599,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../stream_to_splunk_observability/" class="md-nav__link">
+      <a href="../create_streams_to_splunk_observability.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Stream to Splunk Observability Cloud
+    Create Streams to Splunk Observability Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualize_in_splunk_observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visuzlize ThousandEyes data in Splunk Observability Cloud
     
   </span>
   
@@ -655,7 +678,7 @@
   
   
   <span class="md-ellipsis">
-    Streaming ThousandEyes telemetry to Splunk Enterprise
+    Splunk Cloud/Enterprise
     
   </span>
   
@@ -666,7 +689,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Streaming ThousandEyes telemetry to Splunk Enterprise
+            Splunk Cloud/Enterprise
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -960,7 +983,7 @@
 <li>Navigate to ThousandEyes Login</li>
 <li>Go to <a href="https://app.thousandeyes.com/login">ThousandEyes Login</a></li>
 <li>Enter your email address and password</li>
-<li>Click <em>Sign In</em></li>
+<li>Click <code>Sign In</code></li>
 </ul>
 </div>
 <div class="tabbed-block">
@@ -978,14 +1001,14 @@
 <p>Once you're logged into ThousandEyes, follow these steps to generate your API bearer token:</p>
 <h4 id="navigate-to-user-profile">Navigate to User Profile</h4>
 <ul>
-<li>Click on your <em>profile icon</em> in the top-right corner of the ThousandEyes dashboard</li>
-<li>Select <em>Account Settings</em> from the dropdown menu</li>
-<li>Navigate to <em>Users and Roles</em> → <em>Profile</em></li>
+<li>Click on your <code>profile icon</code> in the top-right corner of the ThousandEyes dashboard</li>
+<li>Select <code>Account Settings</code> from the dropdown menu</li>
+<li>Navigate to <code>Users and Roles</code> → <code>Profile</code></li>
 </ul>
 <h4 id="generate-api-token">Generate API Token</h4>
 <ul>
-<li>Scroll down to the <em>API Tokens</em> section</li>
-<li>Click <em>Generate API Token</em> button</li>
+<li>Scroll down to the <code>API Tokens</code> section</li>
+<li>Click <code>Generate API Token</code> button</li>
 <li>Copy the token immediately - it will only be displayed once</li>
 <li>Store the token securely (you'll need it for the next step)</li>
 </ul>
@@ -993,15 +1016,15 @@
 <p>Now that you have your ThousandEyes bearer token, add it to your Postman collection variables:</p>
 <h4 id="open-collection-variables">Open Collection Variables</h4>
 <ul>
-<li>In Postman, navigate to your <em>ThousandEyes Splunk Integration</em> collection</li>
-<li>Click on the <em>collection</em> to open its settings</li>
-<li>Go to the <em>Variables</em> tab</li>
+<li>In Postman, navigate to your <code>ThousandEyes Splunk Integration</code> collection</li>
+<li>Click on the <code>collection</code> to open its settings</li>
+<li>Go to the <code>Variables</code> tab</li>
 </ul>
 <h4 id="set-the-thousandeyes_token-variable">Set the ThousandEyes_token Variable</h4>
 <ul>
 <li>Find the variable named <code>ThousandEyes_token</code> in the list</li>
-<li>In the <em>Current Value</em> column, paste your bearer token</li>
-<li>Click <em>Save</em> to apply the changes</li>
+<li>In the <code>Current Value</code> column, paste your bearer token</li>
+<li>Click <code>Save</code> to apply the changes</li>
 </ul>
 <p><img alt="ThousandEyes Token" src="../img/postman/thousandeyesToken.png" /></p>
 
