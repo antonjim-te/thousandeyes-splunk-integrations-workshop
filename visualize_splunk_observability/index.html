@@ -257,7 +257,7 @@
           
   
   
-  Splunk Cloud/Enterprise
+  Splunk Core (Cloud or Enterprise)
 
         </a>
       </li>
@@ -577,28 +577,67 @@
         <li class="md-nav__item">
   <a href="#visualize-thousandeyes-data-in-splunk-observability-cloud" class="md-nav__link">
     <span class="md-ellipsis">
-      visualize ThousandEyes data in Splunk Observability Cloud
+      Visualize ThousandEyes data in Splunk Observability Cloud
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="visualize ThousandEyes data in Splunk Observability Cloud">
+    <nav class="md-nav" aria-label="Visualize ThousandEyes data in Splunk Observability Cloud">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#access-splunk-observability-cloud" class="md-nav__link">
+  <a href="#visualize-thousandeyes-metrics-in-splunk-observability-cloud" class="md-nav__link">
     <span class="md-ellipsis">
-      Access Splunk Observability Cloud
+      Visualize ThousandEyes metrics in Splunk Observability Cloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualize ThousandEyes metrics in Splunk Observability Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locate-dashboard-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Locate Dashboard Files
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#visualize-thousandeyes-telemetry-data-in-splunk-observability-cloud" class="md-nav__link">
+  <a href="#import-dashboard-to-splunk-observability-cloud" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualize ThousandEyes telemetry data in Splunk Observability Cloud
+      Import Dashboard to Splunk Observability Cloud
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualize-the-dashbaord" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualize the dashbaord
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -653,7 +692,7 @@
   
   
   <span class="md-ellipsis">
-    Splunk Cloud/Enterprise
+    Splunk Core (Cloud or Enterprise)
     
   </span>
   
@@ -664,7 +703,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Splunk Cloud/Enterprise
+            Splunk Core (Cloud or Enterprise)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -829,25 +868,28 @@
 
   <h1>Visualize ThousandEyes data in Splunk Observability Cloud</h1>
 
-<h2 id="visualize-thousandeyes-data-in-splunk-observability-cloud">visualize ThousandEyes data in Splunk Observability Cloud</h2>
-<h3 id="access-splunk-observability-cloud">Access Splunk Observability Cloud</h3>
+<h2 id="visualize-thousandeyes-data-in-splunk-observability-cloud">Visualize ThousandEyes data in Splunk Observability Cloud</h2>
+<h3 id="visualize-thousandeyes-metrics-in-splunk-observability-cloud">Visualize ThousandEyes metrics in Splunk Observability Cloud</h3>
+<h4 id="import-dashboard">Import dashboard</h4>
+<p>To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this workshop.</p>
+<h5 id="locate-dashboard-files">Locate Dashboard Files</h5>
 <ul>
-<li>Navigate to <a href="https://app.us1.signalfx.com/#/signin">Splunk Observability Cloud</a> <ul>
-<li>Email: <code>antonjim+devnet&lt;seat&gt;@cisco.com</code> <ul>
-<li>(e.g. <code>antonjim+devnet1@cisco.com</code>)</li>
+<li>Navigate to the <code>dashboards</code> folder in your workshop repository</li>
+<li>Find the dashboard file: <code>ThousandEyes Network monitoring_Splunk_Observability_cloud.json</code></li>
 </ul>
-</li>
-<li>Password: ``</li>
+<h5 id="import-dashboard-to-splunk-observability-cloud">Import Dashboard to Splunk Observability Cloud</h5>
+<ul>
+<li>Log into your <a href="https://app.us1.signalfx.com/">Splunk Observability Cloud</a> instance</li>
+<li>Navigate to <code>+</code> from the main menu</li>
+<li>Click <code>Import</code> from the dropdown options and select <code>Dashboard group</code></li>
+<li>Select the <code>ThousandEyes Network monitoring_Splunk_Observability_cloud.json</code> file from your local system</li>
 </ul>
-</li>
-</ul>
-<p><img alt="Splunk Observability Cloud" src="../img/splunkObservabilityCloud/login.png" /></p>
-<h3 id="visualize-thousandeyes-telemetry-data-in-splunk-observability-cloud">Visualize ThousandEyes telemetry data in Splunk Observability Cloud</h3>
+<h4 id="visualize-the-dashbaord">Visualize the dashbaord</h4>
 <ul>
 <li>In the initial page of <a href="https://app.us1.signalfx.com/">Splunk Observability Cloud</a></li>
 <li>Navigate to <code>Dashboards</code>
 <img alt="dashboards" src="../img/splunkObservabilityCloud/dashboard.png" /></li>
-<li>In <code>Custom dashboard groups</code>, expand <code>DEVWKS-2656</code> and select <code>Application</code>
+<li>In <code>Custom dashboard groups</code>, expand <code>ThousandEyes Dashboard</code> and select <code>Application</code>
 <img alt="dashboard" src="../img/splunkObservabilityCloud/dashboardDEVWKS.png" /></li>
 <li>Visualize the data
 <img alt="Dashboard Application" src="../img/splunkObservabilityCloud/dashboardApplication.png" />
