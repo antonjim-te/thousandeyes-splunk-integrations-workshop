@@ -785,15 +785,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#save-the-operation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Save the Operation
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -907,8 +898,11 @@
 <p>Use the ThousandEyes API through Postman to create the stream programmatically.</p>
 <h3 id="create-stream-via-api">Create Stream via API</h3>
 <ul>
-<li>Open the <code>Create metric stream - Splunk Enterprise</code> request in your Postman collection</li>
-<li>Review the request body and ensure all required fields are configured:</li>
+<li>Open the request in your Postman collection<ul>
+<li>Splunk Cloud Platform: <code>Create metrics stream - Splunk Cloud Platform</code></li>
+<li>Splunk Enterprise:  <code>Create metrics stream - Splunk Enterprise</code></li>
+</ul>
+</li>
 <li>Click <code>Send</code> to execute the API request</li>
 </ul>
 <p><img alt="ThousandEyes create stream" src="../img/postman/splunkEnterpriseStream.png" /></p>
@@ -923,24 +917,22 @@
 <p>To create a new integration, follow these steps:</p>
 <ul>
 <li>In the ThousandEyes platform, go to <code>Manage &gt; Integrations &gt; Integrations 2.0</code></li>
-<li>Click <code>+ New Connector</code> to select the type of connector to configure</li>
-<li>
-<p>Click <code>Splunk Cloud Platform HEC</code> or <code>Splunk Enterprise HEC</code> depending on your target</p>
+<li>Click <code>+ New Connector</code> to select the type of connector to configure<ul>
+<li>Splunk Cloud Platform: <code>Splunk Cloud Platform HEC</code></li>
+<li>Splunk Enterprise: <code>Splunk Enterprise HEC</code></li>
+</ul>
 </li>
-<li>
-<p>Configure Connector Settings    </p>
-<ul>
+<li>Configure Connector Settings    <ul>
 <li><code>Name</code>: A name for your connector (e.g., "My Splunk Integration")</li>
 <li><code>Target</code>: The target URL of the integration:<ul>
 <li><code>Splunk Cloud Platform</code>: <code>https://http-inputs-&lt;host&gt;.splunkcloud.com:443/services/collector/event</code></li>
-<li><code>Splunk Enterprise</code>: <code>https://&lt;splunk_hostname&gt;/services/collector/event</code></li>
+<li><code>Splunk Enterprise</code>: <code>https://&lt;host&gt;/services/collector/event</code></li>
 </ul>
 </li>
 <li><code>Token</code>: Enter your Splunk HEC token</li>
 </ul>
 </li>
 <li>Click <code>Save &amp; Assign Operation</code> to save the connector</li>
-<li>This connector will now be visible in the list view (<code>Connectors</code> tab)</li>
 </ul>
 <h3 id="create-an-operation">Create an Operation</h3>
 <p>Set up an operation to stream data to the target:</p>
@@ -953,12 +945,7 @@
 <li><code>Network &amp; App Synthetics Tests</code>: Select the created tests.</li>
 </ul>
 </li>
-</ul>
-<h3 id="save-the-operation">Save the Operation</h3>
-<ul>
-<li>After completing the form and testing, click <code>Save</code> to complete the creation of the integration</li>
-<li>The operation will now be visible in the list view (<code>Operations</code> tab)</li>
-<li>Your ThousandEyes data should now start streaming to your Splunk instance</li>
+<li>Click <code>Save</code> to complete the creation of the integration</li>
 </ul>
 </div>
 </div>

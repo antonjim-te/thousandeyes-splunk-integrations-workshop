@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#visualize-thousandeyes-data-in-splunk-observability-cloud" class="md-skip">
+        <a href="#visualize-thousandeyes-data-in-splunk-cloud-platform-or-splunk-enterprise" class="md-skip">
           Skip to content
         </a>
       
@@ -651,6 +651,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#visualize-thousandeyes-metrics-in-splunk-cloud-platform-or-splunk-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualize ThousandEyes metrics in Splunk Cloud Platform or Splunk Enterprise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualize ThousandEyes metrics in Splunk Cloud Platform or Splunk Enterprise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#import-dashboard" class="md-nav__link">
     <span class="md-ellipsis">
       Import dashboard
@@ -670,9 +680,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#import-dashboard-to-splunk-observability-cloud" class="md-nav__link">
+  <a href="#import-dashboard-to-splunk" class="md-nav__link">
     <span class="md-ellipsis">
-      Import Dashboard to Splunk Observability Cloud
+      Import Dashboard to Splunk
     </span>
   </a>
   
@@ -682,13 +692,18 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#visualize-the-dashbaord" class="md-nav__link">
     <span class="md-ellipsis">
       Visualize the dashbaord
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -889,24 +904,64 @@
 
 
 
-<h1 id="visualize-thousandeyes-data-in-splunk-observability-cloud">Visualize ThousandEyes data in Splunk Observability Cloud</h1>
-<h2 id="import-dashboard">Import dashboard</h2>
-<p>To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this workshop.</p>
-<h3 id="locate-dashboard-files">Locate Dashboard Files</h3>
+<h1 id="visualize-thousandeyes-data-in-splunk-cloud-platform-or-splunk-enterprise">Visualize ThousandEyes data in Splunk Cloud Platform or Splunk Enterprise</h1>
+<h2 id="visualize-thousandeyes-metrics-in-splunk-cloud-platform-or-splunk-enterprise">Visualize ThousandEyes metrics in Splunk Cloud Platform or Splunk Enterprise</h2>
+<h3 id="import-dashboard">Import dashboard</h3>
+<p>To get started quickly with ThousandEyes data visualization in Splunk, you can import pre-built dashboards that are included in this workshop.</p>
+<h4 id="locate-dashboard-files">Locate Dashboard Files</h4>
 <ul>
 <li>Navigate to the <code>dashboards</code> folder in your workshop repository</li>
-<li>Find the dashboard file: <code>ThousandEyes Network monitoring_Splunk_Observability_cloud.json</code></li>
+<li>Find the dashboard file: <code>dashboard_Splunk_Core.json</code></li>
 </ul>
-<h3 id="import-dashboard-to-splunk-observability-cloud">Import Dashboard to Splunk Observability Cloud</h3>
+<h4 id="import-dashboard-to-splunk">Import Dashboard to Splunk</h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Splunk Cloud Platform</label><label for="__tabbed_1_2">Splunk Enterprise</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
-<li>Log into your <a href="https://app.us1.signalfx.com/">Splunk Observability Cloud</a> instance</li>
-<li>Navigate to <code>+</code> from the main menu</li>
-<li>Click <code>Import</code> from the dropdown options and select <code>Dashboard group</code></li>
-<li>Select the <code>ThousandEyes Network monitoring_Splunk_Observability_cloud.json</code> file from your local system</li>
+<li>Navigate to <code>Apps &gt; Search &amp; Reporting</code></li>
+<li>Click <code>Dashboards</code> in the navigation menu</li>
+<li>Click <code>Create New Dashboard</code></li>
+<li>Select <code>Dashboard Studio</code> for modern dashboard features</li>
+<li>Choose <code>Import from file</code> option</li>
+<li>Upload the <code>dashboard_Splunk_Core.json</code> file</li>
+<li>Configure dashboard settings:<ul>
+<li><code>Title</code>: "ThousandEyes Network Monitoring"</li>
+<li><code>Description</code>: "Monitor ThousandEyes test results and network performance"</li>
+<li><code>Permissions</code>: Set appropriate sharing permissions</li>
 </ul>
-<h2 id="visualize-the-dashbaord">Visualize the dashbaord</h2>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Method 1: Simple XML Dashboard</p>
 <ul>
-<li>In the initial page of <a href="https://app.us1.signalfx.com/">Splunk Observability Cloud</a></li>
+<li>Log into your Splunk Enterprise web interface</li>
+<li>Navigate to <code>Settings &gt; User Interface &gt; Views</code></li>
+<li>Click <code>New View</code></li>
+<li>Enter dashboard details:<ul>
+<li><code>Destination App</code>: Choose target app (e.g., "Search &amp; Reporting")</li>
+<li><code>View Name</code>: "thousandeyes_network_monitoring"</li>
+<li><code>View Title</code>: "ThousandEyes Network Monitoring"</li>
+</ul>
+</li>
+<li>Select <code>Dashboard</code> as view type</li>
+<li>Copy the XML content from the JSON file into the dashboard source</li>
+<li>Click <code>Save</code></li>
+</ul>
+<p>Method 2: Upload via Apps</p>
+<ul>
+<li>Go to <code>Apps &gt; Manage Apps</code></li>
+<li>Find your target app (e.g., "Search &amp; Reporting")</li>
+<li>Navigate to the app's dashboard directory on the Splunk server</li>
+<li>Copy the dashboard file to: <code>$SPLUNK_HOME/etc/apps/[app_name]/local/data/ui/views/</code></li>
+<li>Restart Splunk or refresh your browser to see the new dashboard</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="visualize-the-dashbaord">Visualize the dashbaord</h3>
+<ul>
+<li>In the initial page of Splunk Observability Cloud</li>
 <li>Navigate to <code>Dashboards</code>
 <img alt="dashboards" src="../img/splunkObservabilityCloud/dashboard.png" /></li>
 <li>In <code>Custom dashboard groups</code>, expand <code>ThousandEyes Dashboard</code> and select <code>Application</code>
