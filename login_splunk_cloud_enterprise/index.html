@@ -768,9 +768,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-hec-token-to-postman-variables" class="md-nav__link">
+  <a href="#identify-host-of-your-splunk-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      Add HEC Token to Postman Variables
+      Identify HOST of your Splunk instance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-hec-token-and-host-to-postman-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add HEC Token and Host to Postman Variables
     </span>
   </a>
   
@@ -940,7 +949,12 @@
 <li>Copy the HEC Token</li>
 </ul>
 <p><img alt="Hec Token" src="../img/splunkEnterprise/copyHecToken.png" /></p>
-<h2 id="add-hec-token-to-postman-variables">Add HEC Token to Postman Variables</h2>
+<h2 id="identify-host-of-your-splunk-instance">Identify HOST of your Splunk instance</h2>
+<ul>
+<li>Splunk Enterprise: The host is typically the server name or IP address where Splunk is installed. For example, if you Splunk web page is <code>https://te-test-i-03af7829c8bab4176.splunk.show/en-GB/app/launcher/home</code>, your host will be: <code>te-test-i-03af7829c8bab4176.splunk.show</code></li>
+<li>Splunk Cloud Platform: The host is the URL of your Splunk Cloud instance. For example, if your Splunk Cloud URL is <code>https://your-instance.splunkcloud.com</code>, your host will be <code>your-instance</code></li>
+</ul>
+<h2 id="add-hec-token-and-host-to-postman-variables">Add HEC Token and Host to Postman Variables</h2>
 <p>Now that you have your Splunk HEC token, add it to your Postman collection variables:</p>
 <ul>
 <li>In Postman, navigate to your <code>ThousandEyes Splunk Integration</code> collection</li>
@@ -950,14 +964,15 @@
 </ul>
 </li>
 <li>Find the variable named <code>Splunk_host</code> in the list<ul>
-<li>In the <code>Current Value</code> column, enter your Splunk host URL (e.g. <code>your-instance</code> for <code>https://your-instance.splunkcloud.com:8088</code>)</li>
+<li>In the <code>Current Value</code> column, enter your Splunk host URL</li>
 </ul>
 </li>
 <li>Click <code>Save</code> to apply the changes</li>
 </ul>
+<p><img alt="Splunk Enterprise Variables" src="../img/postman/SplunkEnterpriseVariables.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Requirements</p>
-<p>URL must be reachable and secure. More info https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-splunk-integrations#url-target-requirements</p>
+<p>URL must be reachable and secure. <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-splunk-integrations#url-target-requirements">More info</a></p>
 </div>
 
 
