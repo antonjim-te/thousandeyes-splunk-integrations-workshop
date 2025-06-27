@@ -20,8 +20,6 @@ Choose one of the following methods to create your test:
     
     ### Copy Test ID
     - Copy the `testId` from the API response
-
-    ![ThousandEyes test id variable](img/postman/testId.png)
     
     !!! tip "Agent Selection"
         You can use different `agentId` values using the [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents). See [more info](<get_agent_id.md>) for details.
@@ -38,7 +36,7 @@ Choose one of the following methods to create your test:
     - Select `Page Load` from the test type options
     
     ### Configure Test Settings
-    - `Test Name`: Enter a descriptive name (e.g., "Google Page Load Test")
+    - `Test Name`: Enter a descriptive name (e.g., "Test Workshop")
     - `URL`: Enter `https://www.google.com`
     - In the `Agents` section, select one or more Cloud Agents
     - Choose agents from different geographic locations for better coverage
@@ -54,3 +52,5 @@ Choose one of the following methods to create your test:
   - Find the `ThousandEyes_test_id` variable
   - Paste the test ID in the `Current Value` field
   - Click `Save`
+
+![ThousandEyes test id variable](img/postman/testId.png)

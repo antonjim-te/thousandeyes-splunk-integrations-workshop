@@ -62,5 +62,6 @@ Now that you have your Splunk HEC token, add it to your Postman collection varia
 
 ![Splunk Enterprise Variables](img/postman/SplunkEnterpriseVariables.png)
 
+
 !!! warning "Requirements"
     URL must be reachable and secure. [More info](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-splunk-integrations#url-target-requirements)
