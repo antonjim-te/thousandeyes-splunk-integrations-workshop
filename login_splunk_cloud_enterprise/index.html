@@ -911,6 +911,10 @@
 <li>Enter your <code>username</code> and <code>password</code></li>
 <li>Click <code>Sign In</code></li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Trial Account Limitation</p>
+<p>If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the limitation https://ideas.splunk.com/ideas/PLECID-I-816</p>
+</div>
 </div>
 <div class="tabbed-block">
 <p>If you're using Splunk Enterprise (on-premises):</p>
@@ -923,10 +927,6 @@
 </div>
 </div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Trial Account Limitation</p>
-<p>If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the limitation https://ideas.splunk.com/ideas/PLECID-I-816</p>
-</div>
 <h2 id="get-splunk-hec-token">Get Splunk HEC Token</h2>
 <p>HTTP Event Collector (HEC) tokens are required to send data to Splunk from external sources like ThousandEyes.</p>
 <ul>
@@ -935,9 +935,11 @@
 <li>Click <code>HTTP Event Collector</code></li>
 <li>Click <code>New Token</code> button</li>
 <li>Configure the token settings</li>
+<li>Give a name: <code>ThousandEyesToken</code></li>
 <li>Click <code>Submit</code> to create the token</li>
 <li>Copy the HEC Token</li>
 </ul>
+<p><img alt="Hec Token" src="../img/splunkEnterprise/copyHecToken.png" /></p>
 <h2 id="add-hec-token-to-postman-variables">Add HEC Token to Postman Variables</h2>
 <p>Now that you have your Splunk HEC token, add it to your Postman collection variables:</p>
 <ul>
