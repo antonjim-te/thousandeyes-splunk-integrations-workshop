@@ -1,4 +1,4 @@
-# Create ThousandEyes Streams to Splunk Cloud Platform or Splunk Enterprise
+# Streams telemetry data to Splunk Cloud Platform or Splunk Enterprise
 
 ## Create Metrics Streams on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise
 

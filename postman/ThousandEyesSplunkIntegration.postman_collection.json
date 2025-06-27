@@ -1,8 +1,8 @@
 {
 	"info": {
 		"_postman_id": "5b93c03e-8acc-4dd6-b5de-9cc3739c27b9",
-		"name": "ThousandEyesSplunkIntegration",
-		"description": "ThousandEyesSplunkIntegration",
+		"name": "ThousandEyes Splunk Integration",
+		"description": "ThousandEyes Splunk Integration. https://antonjim-te.github.io/thousandeyes-splunk-integrations-workshop/ ",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "30292128"
 	},

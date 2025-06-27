@@ -1,4 +1,4 @@
-# Create ThousandEyes Streams to Splunk Observability Cloud
+# Streams telemetry data to Splunk Observability Cloud
 
 ## Create Metrics Streams on ThousandEyes for Splunk Observability Cloud
 
