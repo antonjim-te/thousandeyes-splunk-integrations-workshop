@@ -1,39 +1,25 @@
 # ThousandEyes - Splunk Integrations Workshop
 
-## Introduction
 
-Welcome to the workshop for streaming ThousandEyes data to Splunk using OpenTelemetry.
-This workshop will guide you through setting up integrations between ThousandEyes and Splunk, enabling you to visualize and analyze network monitoring data effectively.
+Welcome to the workshop for ThousandEyes and Splunk integration
 
-## Goals
+During the session you will learn about: 
 
-By the end of this workshop, you will:
-
-- Set up ThousandEyes HTTP Server tests.
-- Stream ThousandEyes telemetry data to both Splunk Observability Cloud and Splunk Enterprise.
-- Visualize network and application data using Splunk dashboards.
-- Explore the advanced capabilities of the Cisco ThousandEyes App for Splunk.
+- [**Streaming ThousandEyes data to Splunk Observability Cloud**](login_splunk_observability_cloud.md)
+- [**Streaming ThousandEyes data to Splunk Cloud Platform**](login_splunk_cloud_enterprise.md)
+- [**Explore the advanced capabilities of the Cisco ThousandEyes App for Splunk**](cisco_thousandeyes_app_for_splunk.md)
+- [**Visualize the service map distributed tracing in ThousandEyes**](distributed_tracing_service_map.md)
 
 ## Prerequisites
-- Access to ThousandEyes and Splunk accounts.
-- Familiarity with Postman.
 
-## Agenda
+Have an account in the following patform:
 
-- Workshop Guide:
-    - Step 1. Access Postman
-    - Step 2. Create ThousandEyes HTTP Server test
-    - Step 3. Stream to Splunk Observability Cloud
-        - Step 3.a. Create Streaming integration on ThousandEyes for Splunk Observability Cloud
-        - Step 3.b. Access Splunk Observability Cloud
-        - Step 3.c. Visualize ThousandEyes telemetry data in Splunk Observability Cloud
-    - Step 4. Stream to Splunk Enterprise
-        - Step 4.a. Create Streaming integration on ThousandEyes for Splunk Enterprise
-        - Step 4.b. Access Splunk Enterprise
-        - Step 4.c. Visualize ThousandEyes telemetry data in Splunk Enterprise
-- Bonus Section - Splunk App
-    - Step 1. Navigate to Cisco ThousandEyes App for Splunk
-    - Step 2. Create stream test input
-    - Step 3. Network and Application dashboards
-    - Step 4. Create activity log input
-    - Step 5. Activity logs dashboards
+- Postman
+- ThousandEyes 
+- Splunk Observability Cloud
+- Splunk Cloud Platform or Splunk Enterprise
+
+## Roadmap integration
+
+ - Bidirectiona ITSI: [Recording](https://demo.thousandeyes.com/player/?demoId=e0118145-9e9f-4835-b29b-c69cf00442fa&showGuide=true&showGuidesToolbar=true&showHotspots=true)
+ - ThousandEyes & Splunk RUM: [Recording](https://app.vidcast.io/share/f3b211aa-2c73-402c-a8ec-dd5b0703f113)
