@@ -13,6 +13,10 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
     - Enter your `username` and `password`
     - Click `Sign In`
 
+    !!! warning "Trial Account Limitation"
+        If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the limitation https://ideas.splunk.com/ideas/PLECID-I-816
+
+
 === "Splunk Enterprise"
 
     If you're using Splunk Enterprise (on-premises):
@@ -21,10 +25,6 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
     - Navigate to your Splunk Enterprise web interface (typically `https://your-server:8000`)
     - Enter your `username` and `password`
     - Click `Sign In`
-
-
-!!! warning "Trial Account Limitation"
-    If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the limitation https://ideas.splunk.com/ideas/PLECID-I-816
 
 
 ## Get Splunk HEC Token
@@ -36,8 +36,14 @@ HTTP Event Collector (HEC) tokens are required to send data to Splunk from exter
 - Click `HTTP Event Collector`
 - Click `New Token` button
 - Configure the token settings
+  - Give a name: `ThousandEyesToken`
 - Click `Submit` to create the token
 - Copy the HEC Token
+
+
+![Hec Token](img/splunkEnterprise/copyHecToken.png)
+
+
 
 ## Add HEC Token to Postman Variables
 
