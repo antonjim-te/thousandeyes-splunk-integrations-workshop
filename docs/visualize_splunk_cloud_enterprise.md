@@ -1,32 +1,30 @@
+# Visualize ThousandEyes data in Splunk Cloud Platform or Splunk Enterprise
 
-## Visualize ThousandEyes telemetry data in Splunk Enterprise
+## Visualize ThousandEyes metrics in Splunk Cloud Platform or Splunk Enterprise
 
-
-
-
-## Visualize ThousandEyes metrics in Splunk Observability Cloud
-
-### Import dashboard
-
-To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this workshop.
-
-- Locate Dashboard Files
-    - Navigate to the `dashboards` folder in your workshop repository
-    - Find the dashboard file: `dashboard_Splunk_Observability_Cloud.json`
-- Log into your [Splunk Observability Cloud](https://app.us1.signalfx.com/) instance
-- Navigate to `+` from the main menu
-- Click `Import` from the dropdown options and select `Dashboard group`
-- Select the `dashboard_Splunk_Observability_Cloud.json` file from your local system
-
-### Visualize the dashbaord
-
-- In the initial page of [Splunk Enterprise](https://splunk.pseudoco.net)
+- In the initial page of Splunk page
 - Navigate to `Search & Reporting`
 ![Search](img/splunkEnterprise/search.png)
-- Navigate to `Dashboards`
-![Dashboards](img/splunkEnterprise/dashboard.png)
-- Select `DEVWKS-2656`
-![Dashboards](img/splunkEnterprise/dashboardDEVWKS.png)
-- Visualize the data
-![Dashboard Application](img/splunkEnterprise/dashboardApplication.png)
-![Dasboard Network](img/splunkEnterprise/dashboardNetwork.png)
+- In the search bar, enter the following query to retrieve ThousandEyes Latency metric:
+```
+index="*" source="ThousandEyesOTel" | timechart avg("metric_name:network.latency") as "Avg" span=60s
+```
+  - Click on the `Visualization` tab to change the chart type to `Line Chart`
+  - 
+![search Latency](img/splunkEnterprise/searchLatency.png)
+
+- In the search bar, enter the following query to retrieve ThousandEyes availability metric:
+```
+index="*" source="ThousandEyesOTel" | timechart avg("metric_name:http.server.request.availability") as "Avg" span=60s
+```
+  - Click on the `Visualization` tab to change the chart type to `Line Chart`
+
+![search Availability](img/splunkEnterprise/searchAvailability.png)
+
+- Now you have the options to:
+    - Create alerts based on the search results
+    - Save the search as a report
+    - Create a dashboard panel
+    - Export the results in various formats (CSV, JSON, etc.)
+    - Correlate the data with other metrics in Splunk
+    - Apply AIOps to analyze the data further

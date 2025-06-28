@@ -20,7 +20,6 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
         
         ### Create Stream via API
         - Open the request in your Postman collection: `Create metrics stream - Splunk Cloud Platform`
-            - Splunk Enterprise:  `Create metrics stream - Splunk Enterprise`
         - Click `Send` to execute the API request
         
         ![ThousandEyes create stream](img/postman/splunkCloudPlatformStream.png)

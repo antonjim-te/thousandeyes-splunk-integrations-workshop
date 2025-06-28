@@ -4,7 +4,7 @@
 The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) enables collectos and analyze:
 
 - CEA (Cloud and Enterprise Agent) and Endpoint test results data
-- Event and
+- Event
 - Activity logs
 
 ![SplunkBase](img/thousandEyesApp/splunkbase.png)
