@@ -5,14 +5,14 @@ Welcome to the workshop for ThousandEyes and Splunk integration
 
 During the session you will learn about: 
 
-- [**Streaming ThousandEyes data to Splunk Observability Cloud**](login_splunk_observability_cloud.md)
-- [**Streaming ThousandEyes data to Splunk Cloud Platform**](login_splunk_cloud_enterprise.md)
-- [**Explore the advanced capabilities of the Cisco ThousandEyes App for Splunk**](cisco_thousandeyes_app_for_splunk.md)
+- [**Streaming ThousandEyes data to Splunk Observability Cloud**](splunk_observability/login_splunk_observability.md)
+- [**Streaming ThousandEyes data to Splunk Cloud Platform**](splunk_core/login_splunk_cloud_enterprise.md)
+- [**Explore the advanced capabilities of the Cisco ThousandEyes App for Splunk**](thousandeyes_splunk_app/getting_started.md)
 - [**Visualize the service map distributed tracing in ThousandEyes**](distributed_tracing_service_map.md)
 
 ## Prerequisites
 
-Have an account in the following patform:
+Have an account in the following platforms:
 
 - Postman
 - ThousandEyes 
