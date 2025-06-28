@@ -13,25 +13,25 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../login_splunk_observability/">
       
       
-        <link rel="next" href="../login_thousandeyes/">
+        <link rel="next" href="../visualize_splunk_observability/">
       
       
-      <link rel="icon" href="../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Access Postman - ThousandEyes - Splunk Integrations Workshop</title>
+        <title>Create Streams to Splunk Observability Cloud - ThousandEyes - Splunk Integrations Workshop</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#access-postman" class="md-skip">
+        <a href="#streams-telemetry-data-to-splunk-observability-cloud" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ThousandEyes - Splunk Integrations Workshop" class="md-header__button md-logo" aria-label="ThousandEyes - Splunk Integrations Workshop" data-md-component="logo">
+    <a href="../.." title="ThousandEyes - Splunk Integrations Workshop" class="md-header__button md-logo" aria-label="ThousandEyes - Splunk Integrations Workshop" data-md-component="logo">
       
-  <img src="../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Access Postman
+              Create Streams to Splunk Observability Cloud
             
           </span>
         </div>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -227,13 +227,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../getting_started/access_postman/" class="md-tabs__link">
           
   
   
@@ -249,10 +247,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../login_splunk_observability/" class="md-tabs__link">
           
   
@@ -273,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../login_splunk_cloud_enterprise/" class="md-tabs__link">
+        <a href="../../splunk_core/login_splunk_cloud_enterprise/" class="md-tabs__link">
           
   
   
@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../cisco_thousandeyes_app_for_splunk/" class="md-tabs__link">
+      <a href="../../cisco_thousandeyes_app_for_splunk/" class="md-tabs__link">
         
   
   
@@ -310,7 +310,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../distributed_tracing_service_map/" class="md-tabs__link">
+      <a href="../../distributed_tracing_service_map/" class="md-tabs__link">
         
   
   
@@ -347,9 +347,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ThousandEyes - Splunk Integrations Workshop" class="md-nav__button md-logo" aria-label="ThousandEyes - Splunk Integrations Workshop" data-md-component="logo">
+    <a href="../.." title="ThousandEyes - Splunk Integrations Workshop" class="md-nav__button md-logo" aria-label="ThousandEyes - Splunk Integrations Workshop" data-md-component="logo">
       
-  <img src="../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     ThousandEyes - Splunk Integrations Workshop
@@ -364,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -375,6 +375,127 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/access_postman/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Access Postman
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/login_thousandeyes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Login ThousandEyes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/create_thousandeyes_test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create ThousandEyes test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -404,182 +525,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Getting Started
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Getting Started
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Access Postman
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Access Postman
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#import-workspace" class="md-nav__link">
-    <span class="md-ellipsis">
-      Import Workspace
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../login_thousandeyes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Login ThousandEyes
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../create_thousandeyes_test/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Create ThousandEyes test
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -592,7 +541,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Splunk Observability Cloud
@@ -626,10 +575,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../create_streams_to_splunk_observability/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Create Streams to Splunk Observability Cloud
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -640,6 +611,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-metrics-streams-on-thousandeyes-for-splunk-observability-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Metrics Streams on ThousandEyes for Splunk Observability Cloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create Metrics Streams on ThousandEyes for Splunk Observability Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-stream-via-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Stream via API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigate-to-integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigate to Integrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-basic-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Basic Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-data-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Data Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-and-activate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save and Activate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -727,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../login_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../../splunk_core/login_splunk_cloud_enterprise/" class="md-nav__link">
         
   
   
@@ -750,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_streams_to_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../../splunk_core/create_streams_to_splunk_cloud_enterprise/" class="md-nav__link">
         
   
   
@@ -773,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../visualize_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../../splunk_core/visualize_splunk_cloud_enterprise/" class="md-nav__link">
         
   
   
@@ -803,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cisco_thousandeyes_app_for_splunk/" class="md-nav__link">
+      <a href="../../cisco_thousandeyes_app_for_splunk/" class="md-nav__link">
         
   
   
@@ -825,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../distributed_tracing_service_map/" class="md-nav__link">
+      <a href="../../distributed_tracing_service_map/" class="md-nav__link">
         
   
   
@@ -856,40 +925,78 @@
 
 
 
-<h1 id="access-postman">Access Postman</h1>
-<p>Choose one of the following options to access Postman:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Login to Existing Account</label><label for="__tabbed_1_2">Free Trial</label></div>
+<h1 id="streams-telemetry-data-to-splunk-observability-cloud">Streams telemetry data to Splunk Observability Cloud</h1>
+<h2 id="create-metrics-streams-on-thousandeyes-for-splunk-observability-cloud">Create Metrics Streams on ThousandEyes for Splunk Observability Cloud</h2>
+<p>Choose one of the following methods to create your stream to Splunk Observability Cloud:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">API Method</label><label for="__tabbed_1_2">UI Method</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>If you already have a Postman account:</p>
+<p>Use the ThousandEyes API through Postman to create the stream programmatically.</p>
+<h3 id="create-stream-via-api">Create Stream via API</h3>
 <ul>
-<li>Navigate to <a href="https://identity.getpostman.com/login">Postman Login</a></li>
-<li>Enter your credentials to sign in</li>
+<li>Open the <code>Create metrics stream - Splunk Observability</code> request in your Postman collection</li>
+<li>Review the request body and ensure all required fields are configured:</li>
+<li>Click <code>Send</code> to execute the API request</li>
 </ul>
+<p><img alt="ThousandEyes create stream" src="../../img/postman/splunkObservabilityCloudStream.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">API Documentation</p>
+<p>For detailed API parameters and options, check the <a href="https://developer.cisco.com/docs/thousandeyes/create-data-stream">ThousandEyes API documentation</a>.</p>
+</div>
 </div>
 <div class="tabbed-block">
-<p>If you don't have a Postman account:</p>
+<p>Use the ThousandEyes web interface to create the stream integration manually via OpenTelemetry.</p>
+<p>To integrate Splunk Observability Cloud with ThousandEyes, follow these steps:</p>
+<h3 id="navigate-to-integrations">Navigate to Integrations</h3>
 <ul>
-<li>Navigate to <a href="https://identity.getpostman.com/signup">Postman Sign Up</a></li>
-<li>Create a new account with your email</li>
-<li>Follow the verification process</li>
-<li>Access Postman with your new account</li>
+<li>Log in to your account on the ThousandEyes platform</li>
+<li>Go to <code>Manage &gt; Integration &gt; Integration 1.0</code></li>
+<li>Click <code>New Integration</code> and select <code>OpenTelemetry Integration</code></li>
 </ul>
+<h3 id="configure-basic-settings">Configure Basic Settings</h3>
+<ul>
+<li>Enter a <code>Name</code> for the integration (e.g., "Splunk Observability Cloud Integration")</li>
+<li>Set the <code>Target</code> to <code>HTTP</code></li>
+</ul>
+<h3 id="configure-endpoint">Configure Endpoint</h3>
+<ul>
+<li>Enter the <code>Endpoint URL</code> to send data in <code>OTLP (OpenTelemetry Protocol)</code> format:
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.{REALM}.signalfx.com/v2/datapoint/otlp
+</span></code></pre></div></li>
+<li>Replace <code>{REALM}</code> with your Splunk environment such as <code>us1</code>, <code>eu0</code>, <code>us0</code></li>
+<li>For <code>Preset Configuration</code>, select <code>Splunk Observability Cloud</code></li>
+</ul>
+<h3 id="configure-authentication">Configure Authentication</h3>
+<ul>
+<li>For <code>Auth Type</code>, select <code>Custom</code></li>
+<li>Add the following <code>Custom Headers</code>:<ul>
+<li><code>X-SF-Token: {TOKEN}</code> - Enter your Splunk Observability Cloud access token</li>
+<li><code>Content-Type: application/x-protobuf</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="configure-data-settings">Configure Data Settings</h3>
+<ul>
+<li>Select <code>Metric</code> as the OpenTelemetry <code>Signal</code></li>
+<li>Select <code>v2</code> as the <code>Data Model Version</code></li>
+<li>Select a <code>test</code> that you want to stream data from</li>
+</ul>
+<h3 id="save-and-activate">Save and Activate</h3>
+<ul>
+<li>Click <code>Save</code> to complete the integration setup</li>
+<li>Your ThousandEyes data should now be successfully integrated with Splunk Observability Cloud</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Test Selection</p>
+<p>For more information on creating a test, see the previous step or <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-opentelemetry-streams">General Setup Instructions</a>.</p>
 </div>
 </div>
 </div>
-<p><img alt="Postman Sign in" src="../img/postman/signin.png" /></p>
-<h2 id="import-workspace">Import Workspace</h2>
-<p>Once you have access to Postman:</p>
-<ul>
-<li>Import the <a href="https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/postman/ThousandEyesSplunkIntegration.postman_collection.json">Postman collection file</a> from the workshop repository</li>
-<li>Navigate to <code>Workspaces</code> and select the new workspace</li>
-</ul>
-<p><img alt="Postman Sign in" src="../img/postman/workspace.png" /></p>
-<ul>
-<li>Verify the collection <code>ThousandEyesSplunkIntegration</code> is loaded, including requests and variables.</li>
-</ul>
-<p><img alt="Postman workspace" src="../img/postman/DEVWKS.png" /></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Receiving data</p>
+<p>The stream will begin sending data to Splunk Observability Cloud in a couple of minutes.</p>
+</div>
 
 
 
@@ -927,7 +1034,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../login_splunk_observability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Login Splunk Observability Cloud">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -937,20 +1044,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Login Splunk Observability Cloud
               </div>
             </div>
           </a>
         
         
           
-          <a href="../login_thousandeyes/" class="md-footer__link md-footer__link--next" aria-label="Next: Login ThousandEyes">
+          <a href="../visualize_splunk_observability/" class="md-footer__link md-footer__link--next" aria-label="Next: Visualize ThousandEyes data in Splunk Observability Cloud">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Login ThousandEyes
+                Visualize ThousandEyes data in Splunk Observability Cloud
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -991,10 +1098,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.footer", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.footer", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
