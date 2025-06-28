@@ -41,7 +41,7 @@ HTTP Event Collector (HEC) tokens are required to send data to Splunk from exter
 - Copy the HEC Token
 
 
-![Hec Token](img/splunkEnterprise/copyHecToken.png)
+![Hec Token](../img/splunk_core/copyHecToken.png)
 
 ## Identify HOST of your Splunk instance
 
@@ -60,7 +60,7 @@ Now that you have your Splunk HEC token, add it to your Postman collection varia
     - In the `Current Value` column, enter your Splunk host URL
 - Click `Save` to apply the changes
 
-![Splunk Enterprise Variables](img/postman/SplunkEnterpriseVariables.png)
+![Splunk Enterprise Variables](../img/postman/SplunkEnterpriseVariables.png)
 
 
 !!! warning "Requirements"

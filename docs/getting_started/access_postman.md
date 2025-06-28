@@ -20,7 +20,7 @@ Choose one of the following options to access Postman:
     - Access Postman with your new account
 
 
-![Postman Sign in](img/postman/signin.png)
+![Postman Sign in](../img/postman/signin.png)
 
 ## Import Workspace
 
@@ -29,8 +29,8 @@ Once you have access to Postman:
 - Import the [Postman collection file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/postman/ThousandEyesSplunkIntegration.postman_collection.json) from the workshop repository
 - Navigate to `Workspaces` and select the new workspace
 
-![Postman Sign in](img/postman/workspace.png)
+![Postman Sign in](../img/postman/workspace.png)
 
 - Verify the collection `ThousandEyesSplunkIntegration` is loaded, including requests and variables.
 
-![Postman workspace](img/postman/DEVWKS.png)
+![Postman workspace](../img/postman/DEVWKS.png)

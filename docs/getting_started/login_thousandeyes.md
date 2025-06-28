@@ -45,4 +45,4 @@ Now that you have your ThousandEyes bearer token, add it to your Postman collect
     - In the `Current Value` column, paste your bearer token
 - Click `Save` to apply the changes
 
-![ThousandEyes Token](img/postman/thousandeyesToken.png)
+![ThousandEyes Token](../img/postman/thousandeyesToken.png)

@@ -15,9 +15,9 @@ To get started quickly with ThousandEyes data visualization, you can import pre-
 
 - In the initial page of Splunk Observability Cloud
 - Navigate to `Dashboards`
-![dashboards](img/splunkObservabilityCloud/dashboard.png)
+![dashboards](../img/splunk_observability/dashboard.png)
 - In `Custom dashboard groups`, expand `ThousandEyes Dashboard` and select `Application`
-![dashboard](img/splunkObservabilityCloud/dashboardDEVWKS.png)
+![dashboard](../img/splunk_observability/dashboardDEVWKS.png)
 - Visualize the data
-![Dashboard Application](img/splunkObservabilityCloud/dashboardApplication.png)
-![Dasboard Network](img/splunkObservabilityCloud/dashboardNetwork.png)
+![Dashboard Application](../img/splunk_observability/dashboardApplication.png)
+![Dasboard Network](../img/splunk_observability/dashboardNetwork.png)

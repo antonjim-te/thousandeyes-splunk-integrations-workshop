@@ -13,7 +13,7 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
         - Open the request in your Postman collection: `Create metrics stream - Splunk Enterprise`
         - Click `Send` to execute the API request
         
-        ![ThousandEyes create stream](img/postman/splunkEnterpriseStream.png)
+        ![ThousandEyes create stream](../img/postman/splunkEnterpriseStream.png)
         
     === "Splunk Cloud Platform"
         Use the ThousandEyes API through Postman to create the stream programmatically.
@@ -22,7 +22,7 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
         - Open the request in your Postman collection: `Create metrics stream - Splunk Cloud Platform`
         - Click `Send` to execute the API request
         
-        ![ThousandEyes create stream](img/postman/splunkCloudPlatformStream.png)
+        ![ThousandEyes create stream](../img/postman/splunkCloudPlatformStream.png)
 
     !!! tip "API Documentation"
         For detailed API parameters and options, check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).

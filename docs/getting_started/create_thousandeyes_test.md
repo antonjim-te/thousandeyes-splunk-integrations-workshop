@@ -16,7 +16,7 @@ Choose one of the following methods to create your test:
     - Open the `Create ThousandEyes Page Load Test` request in your Postman collection
     - Click `Send` to execute the API request
     
-    ![ThousandEyes create test](img/postman/createPageLoadTest.png)
+    ![ThousandEyes create test](../img/postman/createPageLoadTest.png)
     
     ### Copy Test ID
     - Copy the `testId` from the API response
@@ -53,4 +53,4 @@ Choose one of the following methods to create your test:
   - Paste the test ID in the `Current Value` field
   - Click `Save`
 
-![ThousandEyes test id variable](img/postman/testId.png)
+![ThousandEyes test id variable](../img/postman/testId.png)

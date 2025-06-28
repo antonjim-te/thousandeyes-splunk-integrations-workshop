@@ -11,17 +11,17 @@ validation:
 nav:
   - Home: README.md
   - Getting Started:
-    - Access Postman: access_postman.md
-    - Login ThousandEyes: login_thousandeyes.md
-    - Create ThousandEyes test: create_thousandeyes_test.md
+    - Access Postman: getting_started/access_postman.md
+    - Login ThousandEyes: getting_started/login_thousandeyes.md
+    - Create ThousandEyes test: getting_started/create_thousandeyes_test.md
   - Splunk Observability Cloud:
-    - Login Splunk Observability Cloud: login_splunk_observability.md
-    - Create Streams to Splunk Observability Cloud: create_streams_to_splunk_observability.md
-    - Visualize ThousandEyes data in Splunk Observability Cloud: visualize_splunk_observability.md
+    - Login Splunk Observability Cloud: splunk_observability/login_splunk_observability.md
+    - Create Streams to Splunk Observability Cloud: splunk_observability/create_streams_to_splunk_observability.md
+    - Visualize ThousandEyes data in Splunk Observability Cloud: splunk_observability/visualize_splunk_observability.md
   - Splunk Cloud / Enterprise:
-    - Login Splunk Cloud / Enterprise: login_splunk_cloud_enterprise.md
-    - Create Streams to Splunk Cloud / Enterprise: create_streams_to_splunk_cloud_enterprise.md
-    - Visualize ThousandEyes data in Splunk Cloud / Enterprise: visualize_splunk_cloud_enterprise.md
+    - Login Splunk Cloud / Enterprise: splunk_core/login_splunk_cloud_enterprise.md
+    - Create Streams to Splunk Cloud / Enterprise: splunk_core/create_streams_to_splunk_cloud_enterprise.md
+    - Visualize ThousandEyes data in Splunk Cloud / Enterprise: splunk_core/visualize_splunk_cloud_enterprise.md
   - Cisco ThousandEyes App for Splunk: cisco_thousandeyes_app_for_splunk.md
   - Distributed Tracing - Service Map: distributed_tracing_service_map.md
 

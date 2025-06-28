@@ -13,7 +13,7 @@ Choose one of the following methods to create your stream to Splunk Observabilit
     - Review the request body and ensure all required fields are configured:
     - Click `Send` to execute the API request
     
-    ![ThousandEyes create stream](img/postman/splunkObservabilityCloudStream.png)
+    ![ThousandEyes create stream](../img/postman/splunkObservabilityCloudStream.png)
     
     !!! tip "API Documentation"
         For detailed API parameters and options, check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
