@@ -17,7 +17,7 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 - Once we are logged into Splunk Enterprise 
 - Navigate to `Apps` > `Manage Apps`
 - Click on `Install app from file`
-- Choose [file](thousandeyes_splunk_app/cisco-thousandeyes-app-for-splunk_0022.tgz)
+- Choose [file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/raw/refs/heads/main/thousandeyes_splunk_app/cisco-thousandeyes-app-for-splunk_0022.tgz)
 - Click on `Upload`
 
 ![upload](../img/thousandeyes_splunk_app/upload.png)
