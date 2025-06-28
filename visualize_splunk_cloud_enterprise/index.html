@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#visualize-thousandeyes-telemetry-data-in-splunk-enterprise" class="md-skip">
+        <a href="#visualize-thousandeyes-data-in-splunk-cloud-platform-or-splunk-enterprise" class="md-skip">
           Skip to content
         </a>
       
@@ -728,6 +728,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -760,6 +762,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -768,44 +772,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visualize-thousandeyes-telemetry-data-in-splunk-enterprise" class="md-nav__link">
+  <a href="#visualize-thousandeyes-metrics-in-splunk-cloud-platform-or-splunk-enterprise" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualize ThousandEyes telemetry data in Splunk Enterprise
+      Visualize ThousandEyes metrics in Splunk Cloud Platform or Splunk Enterprise
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#visualize-thousandeyes-metrics-in-splunk-observability-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visualize ThousandEyes metrics in Splunk Observability Cloud
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Visualize ThousandEyes metrics in Splunk Observability Cloud">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#import-dashboard" class="md-nav__link">
-    <span class="md-ellipsis">
-      Import dashboard
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visualize-the-dashbaord" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visualize the dashbaord
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -885,35 +856,37 @@
 
 
 
-  <h1>Visualize ThousandEyes data in Splunk Cloud / Enterprise</h1>
-
-<h2 id="visualize-thousandeyes-telemetry-data-in-splunk-enterprise">Visualize ThousandEyes telemetry data in Splunk Enterprise</h2>
-<h2 id="visualize-thousandeyes-metrics-in-splunk-observability-cloud">Visualize ThousandEyes metrics in Splunk Observability Cloud</h2>
-<h3 id="import-dashboard">Import dashboard</h3>
-<p>To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this workshop.</p>
+<h1 id="visualize-thousandeyes-data-in-splunk-cloud-platform-or-splunk-enterprise">Visualize ThousandEyes data in Splunk Cloud Platform or Splunk Enterprise</h1>
+<h2 id="visualize-thousandeyes-metrics-in-splunk-cloud-platform-or-splunk-enterprise">Visualize ThousandEyes metrics in Splunk Cloud Platform or Splunk Enterprise</h2>
 <ul>
-<li>Locate Dashboard Files<ul>
-<li>Navigate to the <code>dashboards</code> folder in your workshop repository</li>
-<li>Find the dashboard file: <code>dashboard_Splunk_Observability_Cloud.json</code></li>
-</ul>
-</li>
-<li>Log into your <a href="https://app.us1.signalfx.com/">Splunk Observability Cloud</a> instance</li>
-<li>Navigate to <code>+</code> from the main menu</li>
-<li>Click <code>Import</code> from the dropdown options and select <code>Dashboard group</code></li>
-<li>Select the <code>dashboard_Splunk_Observability_Cloud.json</code> file from your local system</li>
-</ul>
-<h3 id="visualize-the-dashbaord">Visualize the dashbaord</h3>
-<ul>
-<li>In the initial page of <a href="https://splunk.pseudoco.net">Splunk Enterprise</a></li>
+<li>In the initial page of Splunk page</li>
 <li>Navigate to <code>Search &amp; Reporting</code>
 <img alt="Search" src="../img/splunkEnterprise/search.png" /></li>
-<li>Navigate to <code>Dashboards</code>
-<img alt="Dashboards" src="../img/splunkEnterprise/dashboard.png" /></li>
-<li>Select <code>DEVWKS-2656</code>
-<img alt="Dashboards" src="../img/splunkEnterprise/dashboardDEVWKS.png" /></li>
-<li>Visualize the data
-<img alt="Dashboard Application" src="../img/splunkEnterprise/dashboardApplication.png" />
-<img alt="Dasboard Network" src="../img/splunkEnterprise/dashboardNetwork.png" /></li>
+<li>In the search bar, enter the following query to retrieve ThousandEyes Latency metric:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>index=&quot;*&quot; source=&quot;ThousandEyesOTel&quot; | timechart avg(&quot;metric_name:network.latency&quot;) as &quot;Avg&quot; span=60s
+</span></code></pre></div></li>
+<li>Click on the <code>Visualization</code> tab to change the chart type to <code>Line Chart</code></li>
+<li>
+<p><img alt="search Latency" src="../img/splunkEnterprise/searchLatency.png" /></p>
+</li>
+<li>
+<p>In the search bar, enter the following query to retrieve ThousandEyes availability metric:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>index=&quot;*&quot; source=&quot;ThousandEyesOTel&quot; | timechart avg(&quot;metric_name:http.server.request.availability&quot;) as &quot;Avg&quot; span=60s
+</span></code></pre></div></p>
+</li>
+<li>Click on the <code>Visualization</code> tab to change the chart type to <code>Line Chart</code></li>
+</ul>
+<p><img alt="search Availability" src="../img/splunkEnterprise/searchAvailability.png" /></p>
+<ul>
+<li>Now you have the options to:<ul>
+<li>Create alerts based on the search results</li>
+<li>Save the search as a report</li>
+<li>Create a dashboard panel</li>
+<li>Export the results in various formats (CSV, JSON, etc.)</li>
+<li>Correlate the data with other metrics in Splunk</li>
+<li>Apply AIOps to analyze the data further</li>
+</ul>
+</li>
 </ul>
 
 
