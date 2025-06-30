@@ -558,15 +558,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-test-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Test Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#get-test-id" class="md-nav__link">
     <span class="md-ellipsis">
       Get Test ID
@@ -1029,7 +1020,6 @@
 need to create a ThousandEyes test.
 Refer to <a href="https://docs.thousandeyes.com/product-documentation/tests">ThousandEyes documentation</a> for test creation.</p>
 <p>We are going to create a <code>Page Load</code> test that validates the availability of <code>www.google.com</code>.</p>
-<p>Choose one of the following methods to create your test:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">API Method</label><label for="__tabbed_1_2">UI Method</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1051,31 +1041,38 @@ Refer to <a href="https://docs.thousandeyes.com/product-documentation/tests">Tho
 <p>Full description of the API request is available at <a href="https://developer.cisco.com/docs/thousandeyes/create-http-server-test">ThousandEyes API Reference</a>.</p>
 </div>
 <div class="tabbed-block">
-<p>Use the ThousandEyes web interface to create the test manually.</p>
+<p>Use the ThousandEyes web interface to create the test.</p>
 <h3 id="create-test-via-ui">Create Test via UI</h3>
 <ul>
-<li>In the ThousandEyes dashboard, click <code>Test Settings</code></li>
+<li>Click on <code>Network &amp; App Synthetics</code> in the left navigation bar</li>
+<li>Select <code>Test Settings</code> from the dropdown menu</li>
 <li>Click the <code>+ Add New Test</code> button</li>
-<li>Select <code>Page Load</code> from the test type options</li>
-</ul>
-<h3 id="configure-test-settings">Configure Test Settings</h3>
+<li>
+<p>Select <code>Page Load</code> from the test type options
+ <img alt="create PageLoad Test" src="../../img/thousandeyes/createPageLoadTest1.png" /></p>
+</li>
+<li>
+<p>Configure Test Settings</p>
 <ul>
 <li><code>Test Name</code>: Enter a descriptive name (e.g., "Test Workshop")</li>
 <li><code>URL</code>: Enter <code>https://www.google.com</code></li>
 <li>In the <code>Agents</code> section, select one or more Cloud Agents</li>
-<li>Choose agents from different geographic locations for better coverage</li>
-<li>Click <code>Create New Test</code></li>
+<li>Choose an agent.</li>
 </ul>
-<h3 id="get-test-id">Get Test ID</h3>
+</li>
+<li>Click <code>Create New Test</code>
+<img alt="create PageLoad Test" src="../../img/thousandeyes/createPageLoadTest2.png" /></li>
+</ul>
+<h3 id="get-test-id">Get <code>Test ID</code></h3>
 <ul>
 <li>After creating the test, click on the test name to view details</li>
-<li>In the URL bar, note the <code>Test ID</code> number (e.g., <code>/tests/12345</code>)</li>
-<li>Copy this Test ID for use in Postman variables</li>
+<li>In the URL bar, note the <code>Test ID</code> number (e.g., <code>https://app.thousandeyes.com/network-app-synthetics/views/?testId=522030</code>)</li>
+<li>Copy this <code>Test ID</code> for use in Postman variables</li>
 </ul>
 </div>
 </div>
 </div>
-<h3 id="save-the-test-id-in-postman">Save the Test ID in Postman</h3>
+<h3 id="save-the-test-id-in-postman">Save the <code>Test ID</code> in Postman</h3>
 <ul>
 <li>In Postman, go to your collection <code>Variables</code></li>
 <li>Find the <code>ThousandEyes_test_id</code> variable</li>
