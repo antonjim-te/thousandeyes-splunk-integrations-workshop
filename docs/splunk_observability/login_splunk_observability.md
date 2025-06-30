@@ -57,5 +57,6 @@ Now that you have your Splunk Observability Cloud access token and realm, add it
 - Find the variable named `Splunk_access_token` in the list
     - In the `Current Value` column, paste your Splunk access token
 - Find the variable named `Splunk_Observability_realm` in the list
-    - In the `Current Value` column, enter your Splunk realm (e.g., us0, us1, eu0)
+    - In the `Current Value` column, enter your Splunk realm (e.g., `us0`, `us1`, `eu0`)
+        - For example if your Splunk Observability Cloud URL is `https://us0.signalfx.com`, then your realm is `us0`.
 - Click `Save` to apply the changes

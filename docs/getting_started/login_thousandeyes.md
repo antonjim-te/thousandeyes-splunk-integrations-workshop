@@ -25,16 +25,17 @@ Choose one of the following options to access ThousandEyes:
 Once you're logged into ThousandEyes, follow these steps to generate your API bearer token:
 
 ### Navigate to User Profile
-- Click on your `profile icon` in the top-right corner of the ThousandEyes dashboard
+- Click on `Manage` in the left navigation bar
 - Select `Account Settings` from the dropdown menu
 - Navigate to `Users and Roles` → `Profile`
 
 ### Generate API Token
-- Scroll down to the `API Tokens` section
-- Click `Generate API Token` button
-- Copy the token immediately - it will only be displayed once
-- Store the token securely (you'll need it for the next step)
+- Scroll down to the `User API Tokens` section
+- Click `Generate OAuth Bearer Token` button
+- Copy the token
 
+![copy Token](../img/thousandeyes/copyToken.png)
+  
 ## Add Token to Postman Variables
 
 Now that you have your ThousandEyes bearer token, add it to your Postman collection variables:

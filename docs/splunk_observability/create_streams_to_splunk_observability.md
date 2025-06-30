@@ -44,7 +44,8 @@ Choose one of the following methods to create your stream to Splunk Observabilit
     ### Configure Authentication
     - For `Auth Type`, select `Custom`
     - Add the following `Custom Headers`:
-        - `X-SF-Token: {TOKEN}` - Enter your Splunk Observability Cloud access token
+        - `X-SF-Token: {TOKEN}`
+            - Enter your Splunk Observability Cloud access token
         - `Content-Type: application/x-protobuf`
     
     ### Configure Data Settings

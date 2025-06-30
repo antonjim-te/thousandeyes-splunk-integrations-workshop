@@ -6,8 +6,6 @@ Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-docu
 
 We are going to create a `Page Load` test that validates the availability of `www.google.com`.
 
-Choose one of the following methods to create your test:
-
 === "API Method"
 
     Use the ThousandEyes API through Postman to create the test programmatically.
@@ -28,29 +26,32 @@ Choose one of the following methods to create your test:
 
 === "UI Method"
 
-    Use the ThousandEyes web interface to create the test manually.
+    Use the ThousandEyes web interface to create the test.
     
     ### Create Test via UI
-    - In the ThousandEyes dashboard, click `Test Settings`
+    - Click on `Network & App Synthetics` in the left navigation bar
+    - Select `Test Settings` from the dropdown menu
     - Click the `+ Add New Test` button
     - Select `Page Load` from the test type options
-    
-    ### Configure Test Settings
-    - `Test Name`: Enter a descriptive name (e.g., "Test Workshop")
-    - `URL`: Enter `https://www.google.com`
-    - In the `Agents` section, select one or more Cloud Agents
-    - Choose agents from different geographic locations for better coverage
-    - Click `Create New Test`
-    
-    ### Get Test ID
-    - After creating the test, click on the test name to view details
-    - In the URL bar, note the `Test ID` number (e.g., `/tests/12345`)
-    - Copy this Test ID for use in Postman variables
+     ![create PageLoad Test](../img/thousandeyes/createPageLoadTest1.png)
 
-### Save the Test ID in Postman
-  - In Postman, go to your collection `Variables`
-  - Find the `ThousandEyes_test_id` variable
-  - Paste the test ID in the `Current Value` field
-  - Click `Save`
+    -  Configure Test Settings
+          - `Test Name`: Enter a descriptive name (e.g., "Test Workshop")
+          - `URL`: Enter `https://www.google.com`
+          - In the `Agents` section, select one or more Cloud Agents
+          - Choose an agent.
+    - Click `Create New Test`
+    ![create PageLoad Test](../img/thousandeyes/createPageLoadTest2.png)
+
+    ### Get `Test ID`
+    - After creating the test, click on the test name to view details
+    - In the URL bar, note the `Test ID` number (e.g., `https://app.thousandeyes.com/network-app-synthetics/views/?testId=522030`)
+    - Copy this `Test ID` for use in Postman variables
+
+### Save the `Test ID` in Postman
+- In Postman, go to your collection `Variables`
+- Find the `ThousandEyes_test_id` variable
+- Paste the test ID in the `Current Value` field
+- Click `Save`
 
 ![ThousandEyes test id variable](../img/postman/testId.png)
