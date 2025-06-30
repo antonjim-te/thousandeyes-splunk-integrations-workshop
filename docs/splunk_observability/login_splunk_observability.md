@@ -2,8 +2,6 @@
 
 This guide will help you log into Splunk Observability Cloud and obtain an access token for the ThousandEyes stream.
 
-## Choose Your Access Method
-
 === "Existing Account"
 
     If you already have a Splunk Observability Cloud account:
@@ -30,23 +28,18 @@ This guide will help you log into Splunk Observability Cloud and obtain an acces
 
 ## Generate Access Token
 
-Once you're logged into Splunk Observability Cloud, follow these steps to generate your access token:
+Once you're logged into Splunk Observability Cloud, generate your access token:
 
-### Navigate to Access Token Settings
-- Click on your `profile icon` in the top-right corner
-- Select `Organization Settings` from the dropdown menu
-- In the left navigation, click on `Access Tokens`
-
-### Create New Access Token
-- Click `+ New Token` button
+- Navigate to the `Settings` -> `Access Tokens`
+- Click `Create Token`
 - Configure the token settings:
-    - `Token Name`: Enter a descriptive name (e.g., "ThousandEyes Integration Token")
-    - `Token Type`: Select `INGEST` (required for receiving data from ThousandEyes)
+    - `Name`: Enter a descriptive name (e.g., "ThousandEyes Integration Token")
+    - `Scope`: Select `INGEST` and `API` 
+        - Check `Please accept to continue with your selection.`
+- Click `Next` to proceed
+- Copy the token
 
-### Generate and Copy Token
-- Click `OK` to generate the token
-- `Copy the token immediately` - it will only be displayed once
-- Store the token securely (you'll need it for Postman configuration)
+![access token](../img/splunk_observability/access_token.png)
 
 ## Postman Variables
 
@@ -54,9 +47,11 @@ Now that you have your Splunk Observability Cloud access token and realm, add it
 
 - In Postman, navigate to your `ThousandEyes Splunk Integration` collection
 - Go to the `Variables` tab
-- Find the variable named `Splunk_access_token` in the list
+- Find the variable named `Splunk_Observability_access_token` in the list
     - In the `Current Value` column, paste your Splunk access token
 - Find the variable named `Splunk_Observability_realm` in the list
     - In the `Current Value` column, enter your Splunk realm (e.g., `us0`, `us1`, `eu0`)
         - For example if your Splunk Observability Cloud URL is `https://us0.signalfx.com`, then your realm is `us0`.
 - Click `Save` to apply the changes
+
+![splunk observability variables](../img/postman/splunk_observability_variables.png)

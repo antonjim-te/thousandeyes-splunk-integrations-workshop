@@ -5,9 +5,7 @@ All the docs in: https://antonjim-te.github.io/thousandeyes-splunk-integrations-
 
 # TODO
 - Postman pic without DEVWORK
-- traces, logs
+- traces (splunk observability ), logs (Splunk enterprise)
 - Take new screenshot of every step
 - webhook alerts
-- rewrite home
-- roadmap
-- Ask review from team + doc team
+- Ask review from team + doc team + Joe
