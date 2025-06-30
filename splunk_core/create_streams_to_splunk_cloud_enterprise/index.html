@@ -1056,20 +1056,21 @@
 </div>
 <div class="tabbed-block">
 <p>Use the ThousandEyes web interface to create the integration manually using Integrations 2.0.</p>
-<h3 id="create-a-connector">Create a Connector</h3>
-<p>To create a new integration, follow these steps:</p>
 <ul>
-<li>In the ThousandEyes platform, go to <code>Manage &gt; Integrations &gt; Integrations 2.0</code></li>
+<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code></li>
+</ul>
+<h3 id="create-a-connector">Create a Connector</h3>
+<ul>
 <li>Click <code>+ New Connector</code> to select the type of connector to configure<ul>
 <li>Splunk Cloud Platform: <code>Splunk Cloud Platform HEC</code></li>
 <li>Splunk Enterprise: <code>Splunk Enterprise HEC</code></li>
 </ul>
 </li>
 <li>Configure Connector Settings    <ul>
-<li><code>Name</code>: A name for your connector (e.g., "My Splunk Integration")</li>
+<li><code>Name</code>: A name for your connector (e.g., "Splunk Core Integration")</li>
 <li><code>Target</code>: The target URL of the integration:<ul>
 <li><code>Splunk Cloud Platform</code>: <code>https://http-inputs-&lt;host&gt;.splunkcloud.com:443/services/collector/event</code></li>
-<li><code>Splunk Enterprise</code>: <code>https://&lt;host&gt;/services/collector/event</code></li>
+<li><code>Splunk Enterprise</code>: <code>https://&lt;host&gt;:8088/services/collector/event</code></li>
 </ul>
 </li>
 <li><code>Token</code>: Enter your Splunk HEC token</li>
@@ -1077,19 +1078,20 @@
 </li>
 <li>Click <code>Save &amp; Assign Operation</code> to save the connector</li>
 </ul>
+<p><img alt="Create Splunk Core Connector" src="../../img/thousandeyes/create_splunk_core_connector.png" /></p>
 <h3 id="create-an-operation">Create an Operation</h3>
-<p>Set up an operation to stream data to the target:</p>
 <ul>
 <li>Click <code>+ New Operation</code> to open the menu for selecting the operation type</li>
 <li>Choose <code>Splunk Enterprise, Splunk Cloud Platform</code> to proceed to the configuration form</li>
 <li>Configure Operation Settings<ul>
-<li><code>Operation Name</code>: A name for your operation</li>
-<li><code>OpenTelemetry Signal</code>: <code>metric</code></li>
-<li><code>Network &amp; App Synthetics Tests</code>: Select the created tests.</li>
+<li><code>Operation Name</code>: A name for your operation (e.g., "Splunk Core Integration")</li>
+<li><code>Signal</code>: <code>metric</code></li>
+<li><code>Network &amp; App Synthetics Tests</code>: Select the created test.</li>
 </ul>
 </li>
-<li>Click <code>Save</code> to complete the creation of the integration</li>
+<li>Click <code>Save</code></li>
 </ul>
+<p><img alt="Create Splunk Core Operation" src="../../img/thousandeyes/create_splunk_core_operation.png" /></p>
 </div>
 </div>
 </div>
