@@ -1,4 +1,4 @@
-# Distributed Tracing - Service Map - Splunk Observability
+# Getting Started with Distributed Tracing Service Map in Splunk Observability
 
 We are going to use the [OpenTelemetry demo application](https://opentelemetry.io/docs/demo/) to demonstrate how to use the Distributed Tracing Service Map in Splunk Observability.
 
@@ -58,21 +58,21 @@ We need to expose the OpenTelemetry demo application to the internet to be able 
 ### Add ngrok to the docker compose 
 
 - Change `opentelemetry-demo/docker-compose.yml` 
-    ```yaml
-    ngrok:
-        image: ngrok/ngrok
-        container_name: ngrok
-        command: ["http", "http://frontend-proxy:${ENVOY_PORT}", "--url=${NGROK_DOMAIN}", "--host-header=${NGROK_DOMAIN}"]
-        restart: unless-stopped
-        environment:
-        - NGROK_AUTHTOKEN="${NGROK_AUTHTOKEN}"
-        - ENVOY_PORT
-        - NGROK_DOMAIN
-        depends_on:
-        frontend-proxy:
-            condition: service_started
-        logging: *logging
-    ```
+```yaml
+ngrok:
+    image: ngrok/ngrok
+    container_name: ngrok
+    command: ["http", "http://frontend-proxy:${ENVOY_PORT}", "--url=${NGROK_DOMAIN}", "--host-header=${NGROK_DOMAIN}"]
+    restart: unless-stopped
+    environment:
+    - NGROK_AUTHTOKEN="${NGROK_AUTHTOKEN}"
+    - ENVOY_PORT
+    - NGROK_DOMAIN
+    depends_on:
+    frontend-proxy:
+        condition: service_started
+    logging: *logging
+```
 - Change `opentelemetry-demo/.env`
     - Add the following variables:
         ```env
@@ -84,6 +84,10 @@ We need to expose the OpenTelemetry demo application to the internet to be able 
         NGROK_AUTHTOKEN=21iZFQf5FYHou7VXd5yk1gOICI9_R46omx9uKSNnwSPiaH7N
         NGROK_DOMAIN=eternal-summary-hippo.ngrok-free.app
         ```
+- Restart the OpenTelemetry demo application
+```
+docker compose up --force-recreate --remove-orphans --detach
+```
 
 ### View a trace in Splunk Observability
 

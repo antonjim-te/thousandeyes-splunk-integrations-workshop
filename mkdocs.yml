@@ -29,6 +29,9 @@ nav:
     - Create Activity Logs input: thousandeyes_splunk_app/activity_logs_input.md
   - Distributed Tracing - Service Map: 
     - Getting Started: distributed_tracing_service_map/getting_started.md
+    - Create the Splunk APM Integration: distributed_tracing_service_map/create_splunk_apm_integration.md
+    - Create ThousandEyes HTTP Test: distributed_tracing_service_map/create_thousandeyes_http_test.md
+    - View Service Map: distributed_tracing_service_map/view_service_map.md
 
 theme:
   name: material
