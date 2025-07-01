@@ -27,7 +27,8 @@ nav:
     - Authenticate Thousandeyes user: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
     - Create Test Stream input: thousandeyes_splunk_app/test_stream_input.md
     - Create Activity Logs input: thousandeyes_splunk_app/activity_logs_input.md
-  - Distributed Tracing - Service Map: distributed_tracing_service_map.md
+  - Distributed Tracing - Service Map: 
+    - Getting Started: distributed_tracing_service_map/getting_started.md
 
 theme:
   name: material
