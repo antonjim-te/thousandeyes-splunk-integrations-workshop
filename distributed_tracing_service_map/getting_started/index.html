@@ -16,6 +16,8 @@
         <link rel="prev" href="../../thousandeyes_splunk_app/activity_logs_input/">
       
       
+        <link rel="next" href="../create_splunk_apm_integration/">
+      
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#distributed-tracing-service-map-splunk-observability" class="md-skip">
+        <a href="#getting-started-with-distributed-tracing-service-map-in-splunk-observability" class="md-skip">
           Skip to content
         </a>
       
@@ -1059,6 +1061,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_splunk_apm_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create the Splunk APM Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_thousandeyes_http_test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create ThousandEyes HTTP Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view_service_map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    View Service Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1082,7 +1153,7 @@
 
 
 
-<h1 id="distributed-tracing-service-map-splunk-observability">Distributed Tracing - Service Map - Splunk Observability</h1>
+<h1 id="getting-started-with-distributed-tracing-service-map-in-splunk-observability">Getting Started with Distributed Tracing Service Map in Splunk Observability</h1>
 <p>We are going to use the <a href="https://opentelemetry.io/docs/demo/">OpenTelemetry demo application</a> to demonstrate how to use the Distributed Tracing Service Map in Splunk Observability.</p>
 <h2 id="running-the-opentelemetry-demo-application-locally">Running the OpenTelemetry demo application locally</h2>
 <ul>
@@ -1143,7 +1214,7 @@
 <h3 id="add-ngrok-to-the-docker-compose">Add ngrok to the docker compose</h3>
 <ul>
 <li>Change <code>opentelemetry-demo/docker-compose.yml</code> 
-    <div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">ngrok</span><span class="p">:</span>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">ngrok</span><span class="p">:</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ngrok/ngrok</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ngrok</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;http&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;http://frontend-proxy:${ENVOY_PORT}&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;--url=${NGROK_DOMAIN}&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;--host-header=${NGROK_DOMAIN}&quot;</span><span class="p p-Indicator">]</span>
@@ -1168,14 +1239,17 @@
 </span></code></pre></div></li>
 </ul>
 </li>
+<li>Restart the OpenTelemetry demo application
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker compose up --force-recreate --remove-orphans --detach
+</span></code></pre></div></li>
 </ul>
 <h3 id="view-a-trace-in-splunk-observability_1">View a trace in Splunk Observability</h3>
 <ul>
 <li>Call a REST API of the OpenTelemetry demo application to generate some traces.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl &lt;your_ngrok_domain&gt;/api/cart -H &#39;traceparent: 00-1bf32f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>curl &lt;your_ngrok_domain&gt;/api/cart -H &#39;traceparent: 00-1bf32f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01&#39;
 </span></code></pre></div><ul>
 <li>Example:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>curl https://eternal-summary-hippo.ngrok-free.app/api/cart -H &#39;traceparent: 00-1bf32f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>curl https://eternal-summary-hippo.ngrok-free.app/api/cart -H &#39;traceparent: 00-1bf32f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01&#39;
 </span></code></pre></div></li>
 </ul>
 </li>
@@ -1234,6 +1308,22 @@
             </div>
           </a>
         
+        
+          
+          <a href="../create_splunk_apm_integration/" class="md-footer__link md-footer__link--next" aria-label="Next: Create the Splunk APM Integration">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Create the Splunk APM Integration
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
