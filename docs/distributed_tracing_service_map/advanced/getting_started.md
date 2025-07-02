@@ -1,5 +1,12 @@
 # Getting Started with Distributed Tracing Service Map in Splunk Observability
 
+### Prerequisites
+- Ngrok account
+- Splunk Observability account
+- git
+- docker compose
+
+
 We are going to use the [OpenTelemetry demo application](https://opentelemetry.io/docs/demo/) to demonstrate how to use the Distributed Tracing Service Map in Splunk Observability.
 
 ## Running the OpenTelemetry demo application locally
@@ -42,7 +49,7 @@ curl http://localhost:8080/api/cart -H 'traceparent: 00-4bf92f3577b34da6a3ce929d
 ```
 - Open the trace https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736
 
-![trace](../img/splunk_observability/trace.png)
+![trace](../../img/splunk_observability/trace.png)
 
 ## Reverse proxy
 
@@ -51,9 +58,9 @@ We need to expose the OpenTelemetry demo application to the internet to be able 
 ### Configure ngrok
 
 - Sign up/log in at [Ngrok](https://ngrok.com/signup). 
-- Retrieve your authentication token from the [ngrok Authtoken page](https://dashboard.ngrok.com/get-started/your-authtoken). ![Auth](../img/ngrok/auth.png)
+- Retrieve your authentication token from the [ngrok Authtoken page](https://dashboard.ngrok.com/get-started/your-authtoken). ![Auth](../../img/ngrok/auth.png)
 - Navigate to the [ngrok Domains page](https://dashboard.ngrok.com/domains) and create a new domain. This ensures your domain remains static even after ngrok container restarts.
-  - Example `eternal-summary-hippo.ngrok-free.app` ![domain](../img/ngrok/domain.png)
+  - Example `eternal-summary-hippo.ngrok-free.app` ![domain](../../img/ngrok/domain.png)
   
 ### Add ngrok to the docker compose 
 
@@ -101,4 +108,4 @@ curl <your_ngrok_domain>/api/cart -H 'traceparent: 00-1bf32f3577b34da6a3ce929d0e
     ```
 - Open the trace https://app.us1.signalfx.com/#/apm/traces/1bf32f3577b34da6a3ce929d0e0e4736
 
-![trace](../img/splunk_observability/trace.png)
+![trace](../../img/splunk_observability/trace.png)

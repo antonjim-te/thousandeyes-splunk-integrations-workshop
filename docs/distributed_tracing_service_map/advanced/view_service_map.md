@@ -8,17 +8,16 @@ Access to the view of your ThousandEyes HTTP Test.
           - `traceparent`
           - `tracestate`
 
-![Trace headers](../img/thousandeyes/headers.png)
+![Trace headers](../../img/thousandeyes/headers.png)
 
 - Open the **Service Map** tab in ThousandEyes.
-      - Use the service map to analyze the trace path
-      - :
+      - Use the service map to analyze the trace path:
           - The services involved in the request.
           - Any latency issues, highlighted in red if thresholds are exceeded.
           - Any errors between services, shown as red lines if a request fails.
           - Trace metadata, such as the trace ID and request flow details.
 
-![Service Map](../img/thousandeyes/service_map.png)
+![Service Map](../../img/thousandeyes/advanced_service_map.png)
 
 ## Debug the Trace in Splunk Observability Cloud
 
@@ -27,14 +26,18 @@ From the **Service Map** tab in ThousandEyes, follow the link to the trace in Sp
 * Drill into service-level trace data.
 * Use Splunk’s trace search, filters, and dashboards for deeper analysis.
 
-![trace from ThousandEyes](../img/splunk_observability/trace_from_thousandeyes.png)
+![trace from ThousandEyes](../../img/splunk_observability/advanced_trace_from_thousandeyes.png)
 Splunk enriches the trace with the following attributes:
 
-* `thousandeyes.account.id`
-* `thousandeyes.test.id`
-* `thousandeyes.permalink`
-* `thousandeyes.source.agent.id`
+- `thousandeyes.account.id`
+- `thousandeyes.test.id`
+- `thousandeyes.permalink`
+- `thousandeyes.source.agent.id`
 
 These attributes provide context and allow you to navigate back to the related test in ThousandEyes.
 
-![attributes in the traces](../img/splunk_observability/attributes_in_the_traces.png)
+![attributes in the traces](../../img/splunk_observability/attributes_in_the_traces.png)
+
+In the Splunk Observability Cloud, you will have a link back to ThousandEyes, allowing you to easily navigate between the two platforms for a comprehensive view of your distributed tracing data.
+
+![Trace link to ThousandEyes](../../img/splunk_observability/trace_link_to_thousandeyes.png)

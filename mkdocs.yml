@@ -31,11 +31,17 @@ nav:
     - Authenticate Thousandeyes user: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
     - Create Test Stream input: thousandeyes_splunk_app/test_stream_input.md
     - Create Activity Logs input: thousandeyes_splunk_app/activity_logs_input.md
-  - Distributed Tracing - Service Map: 
-    - Getting Started: distributed_tracing_service_map/getting_started.md
-    - Create the Splunk APM Integration: distributed_tracing_service_map/create_splunk_apm_integration.md
-    - Create ThousandEyes HTTP Test: distributed_tracing_service_map/create_thousandeyes_http_test.md
-    - View Service Map: distributed_tracing_service_map/view_service_map.md
+  - Distributed Tracing - Service Map:
+    - Basic Integration: 
+      - Getting Started: distributed_tracing_service_map/basic/getting_started.md
+      - Create the Splunk APM Integration: distributed_tracing_service_map/basic/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: distributed_tracing_service_map/basic/create_thousandeyes_http_test.md
+      - View Service Map: distributed_tracing_service_map/basic/view_service_map.md
+    - Advanced Integration:
+      - Getting Started: distributed_tracing_service_map/advanced/getting_started.md
+      - Create the Splunk APM Integration: distributed_tracing_service_map/advanced/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: distributed_tracing_service_map/advanced/create_thousandeyes_http_test.md
+      - View Service Map: distributed_tracing_service_map/advanced/view_service_map.md
 
 theme:
   name: material
