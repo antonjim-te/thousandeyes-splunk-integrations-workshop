@@ -25,3 +25,7 @@ During the session you will learn about:
 
  - Bidirectiona ITSI: [Recording](https://demo.thousandeyes.com/player/?demoId=e0118145-9e9f-4835-b29b-c69cf00442fa&showGuide=true&showGuidesToolbar=true&showHotspots=true)
  - ThousandEyes & Splunk RUM: [Recording](https://app.vidcast.io/share/f3b211aa-2c73-402c-a8ec-dd5b0703f113)
+
+## Other integrations
+
+- [Stream ThousandEyes alerts to Splunk Cloud Platform or Splunk Enterprise](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-webhook-examples/splunk-alert-notifs)

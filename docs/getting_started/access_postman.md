@@ -30,4 +30,4 @@ Once you have access to Postman:
 - Navigate to the new collection `ThousandEyesSplunkIntegration`
 - Verify the collection `ThousandEyesSplunkIntegration` is loaded, including requests and variables.
 
-![Postman workspace](../img/postman/DEVWKS.png)
+![Postman workspace](../img/postman/collection.png)

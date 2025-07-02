@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5b93c03e-8acc-4dd6-b5de-9cc3739c27b9",
+		"_postman_id": "def4b031-b9e4-4905-aafb-7cefc39500cc",
 		"name": "ThousandEyes Splunk Integration",
 		"description": "ThousandEyes Splunk Integration. https://antonjim-te.github.io/thousandeyes-splunk-integrations-workshop/ ",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
@@ -44,14 +44,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"interval\": 60,\n    \"agents\": [\n        {\n            \"agentId\": {{ThousandEyes_agent_id}}\n        }\n    ],\n    \"testName\": \"Test Workshop\",\n    \"url\": \"www.google.com\"\n}",
+					"raw": "{\n    \"interval\": 60,\n    \"agents\": [\n        {\n            \"agentId\": {{ThousandEyes_agent_id}}\n        }\n    ],\n    \"testName\": \"Test Workshop\",\n    \"url\": \"www.google.com\",\n    \"alertsEnabled\": 0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "https://api.thousandeyes.com/v7/tests/http-server"
+				"url": "https://api.thousandeyes.com/v7/tests/page-load"
 			},
 			"response": []
 		},
@@ -84,7 +84,36 @@
 			},
 			"response": []
 		},
-				{
+		{
+			"name": "Create Logs stream - Splunk Enterprise",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{ThousandEyes_token}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{BEARER}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"signal\": \"log\",\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://{{Splunk_HEC_host}}:8088/services/collector/event\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.thousandeyes.com/v7/stream"
+			},
+			"response": []
+		},
+		{
 			"name": "Create metrics stream - Splunk Cloud Platform",
 			"request": {
 				"auth": {
@@ -102,7 +131,36 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://http-inputs-{{Splunk_HEC_host}}.splunkcloud.com:443/services/collector/event\"\n}",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"signal\": \"metric\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://http-inputs-{{Splunk_HEC_host}}.splunkcloud.com:443/services/collector/event\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.thousandeyes.com/v7/stream"
+			},
+			"response": []
+		},
+		{
+			"name": "Create logs stream - Splunk Cloud Platform",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{ThousandEyes_token}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{BEARER}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"splunk-hec\",\n    \"signal\": \"log\",\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://http-inputs-{{Splunk_HEC_host}}.splunkcloud.com:443/services/collector/event\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -202,12 +260,12 @@
 	],
 	"variable": [
 		{
-			"key": "ThousandEyes_token",
+			"key": "Splunk_Observability_access_token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"key": "ThousandEyes_test_id",
+			"key": "Splunk_Observability_realm",
 			"value": "",
 			"type": "string"
 		},
@@ -222,18 +280,18 @@
 			"type": "string"
 		},
 		{
-			"key": "Splunk_Observability_access_token",
+			"key": "ThousandEyes_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "ThousandEyes_test_id",
 			"value": "",
 			"type": "string"
 		},
 		{
 			"key": "ThousandEyes_agent_id",
 			"value": "7",
-			"type": "string"
-		},
-		{
-			"key": "Splunk_Observability_realm",
-			"value": "",
 			"type": "string"
 		}
 	]
