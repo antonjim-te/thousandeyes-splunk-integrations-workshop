@@ -12,12 +12,14 @@ During the session you will learn about:
 
 ## Prerequisites
 
-Have an account in the following platforms:
-
-- Postman
-- ThousandEyes 
-- Splunk Observability Cloud
-- Splunk Cloud Platform or Splunk Enterprise
+- Have an account in the following platforms:
+    - Postman
+    - ThousandEyes 
+    - Splunk Observability Cloud
+    - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to https://ideas.splunk.com/ideas/PLECID-I-816)
+    - Ngrok
+- Have the following tools installed on your machine:
+    - docker-compose
 
 ## Roadmap integration
 
