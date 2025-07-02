@@ -16,12 +16,14 @@ nav:
     - Create ThousandEyes test: getting_started/create_thousandeyes_test.md
   - Splunk Observability Cloud:
     - Login Splunk Observability Cloud: splunk_observability/login_splunk_observability.md
-    - Create Streams to Splunk Observability Cloud: splunk_observability/create_streams_to_splunk_observability.md
-    - Visualize ThousandEyes data in Splunk Observability Cloud: splunk_observability/visualize_splunk_observability.md
+    - Create Metric Stream to Splunk Observability Cloud: splunk_observability/create_metric_stream_to_splunk_observability.md
+    - Create Trace Stream to Splunk Observability Cloud: splunk_observability/create_trace_stream_to_splunk_observability.md
+    - Visualize ThousandEyes Metrics in Splunk Observability Cloud: splunk_observability/visualize_metrics_in_splunk_observability.md
+    - Visualize ThousandEyes Traces in Splunk Observability Cloud: splunk_observability/visualize_traces_in_splunk_observability.md
   - Splunk Cloud / Enterprise:
     - Login Splunk Cloud / Enterprise: splunk_core/login_splunk_cloud_enterprise.md
-    - Create Streams to Splunk Cloud / Enterprise: splunk_core/create_streams_to_splunk_cloud_enterprise.md
-    - Visualize ThousandEyes data in Splunk Cloud / Enterprise: splunk_core/visualize_splunk_cloud_enterprise.md
+    - Create Stream to Splunk Cloud / Enterprise: splunk_core/create_stream_to_splunk_cloud_enterprise.md
+    - Visualize ThousandEyes Metrics in Splunk Cloud / Enterprise: splunk_core/visualize_metrics_in_splunk_cloud_enterprise.md
   - Cisco ThousandEyes App for Splunk: 
     - Getting Started: thousandeyes_splunk_app/getting_started.md
     - Authenticate Thousandeyes user: thousandeyes_splunk_app/authenticate_thousandeyes_user.md

@@ -1,6 +1,7 @@
 
-## Visualize ThousandEyes metrics in Splunk Observability Cloud
-### Import dashboard
+# Visualize ThousandEyes Metrics in Splunk Observability Cloud
+
+## Import dashboard
 
 To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this workshop.
 
@@ -11,7 +12,7 @@ To get started quickly with ThousandEyes data visualization, you can import pre-
 - Select the `dashboard_Splunk_Observability_Cloud.json` file from your local system
 
 
-### Visualize the dashboard
+## Visualize the dashboard
 
 - In the initial page of Splunk Observability Cloud
 - Navigate to `Dashboards`

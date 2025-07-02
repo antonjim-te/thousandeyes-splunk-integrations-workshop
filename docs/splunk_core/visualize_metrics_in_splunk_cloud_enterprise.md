@@ -1,6 +1,4 @@
-# Visualize ThousandEyes data in Splunk Cloud Platform or Splunk Enterprise
-
-## Visualize ThousandEyes metrics in Splunk Cloud Platform or Splunk Enterprise
+# Visualize ThousandEyes Metrics in Splunk Cloud Platform or Splunk Enterprise
 
 - In the initial page of Splunk page
 - Navigate to `Search & Reporting`
