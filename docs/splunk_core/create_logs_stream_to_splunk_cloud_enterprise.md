@@ -1,4 +1,4 @@
-# Create Metrics Stream on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise
+# Create Logs Stream on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise
 
 Choose one of the following methods to create your stream to Splunk Cloud Platform or Splunk Enterprise:
 
@@ -8,24 +8,24 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
         Use the ThousandEyes API through Postman to create the stream programmatically.
         
         ### Create Stream via API
-        - Open the request in your Postman collection: `Create metrics stream - Splunk Enterprise`
+        - Open the request in your Postman collection: `Create logs stream - Splunk Enterprise`
         - Click `Send` to execute the API request
-        
-        ![ThousandEyes create stream](../img/postman/splunkEnterpriseStream.png)
-        
+
+        ![ThousandEyes create logs stream](../img/postman/splunk_enterprise_logs_stream.png)
+
     === "Splunk Cloud Platform"
         Use the ThousandEyes API through Postman to create the stream programmatically.
         
         ### Create Stream via API
-        - Open the request in your Postman collection: `Create metrics stream - Splunk Cloud Platform`
+        - Open the request in your Postman collection: `Create logs stream - Splunk Cloud Platform`
         - Click `Send` to execute the API request
-        
-        ![ThousandEyes create stream](../img/postman/splunkCloudPlatformStream.png)
+
+        ![ThousandEyes create logs stream](../img/postman/splunk_cloud_platform_logs_stream.png)
 
     !!! tip "API Documentation"
         For detailed API parameters and options, check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 
-=== "UI Method"
+=== "UI Method (Under a feature flag)"
 
     Use the ThousandEyes web interface to create the integration manually using Integrations 2.0.
 
@@ -51,12 +51,11 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
     - Click `+ New Operation` to open the menu for selecting the operation type
     - Choose `Splunk Enterprise, Splunk Cloud Platform` to proceed to the configuration form
     - Configure Operation Settings
-          - `Operation Name`: A name for your operation (e.g., "Splunk Core Integration")
-          - `Signal`: `metric`
-          - `Network & App Synthetics Tests`: Select the created test.
+          - `Operation Name`: A name for your operation (e.g., "Splunk Core Logs Integration")
+          - `Signal`: `logs`
     - Click `Save`
 
-    ![Create Splunk Core Operation](../img/thousandeyes/create_splunk_core_operation.png)
+    ![Create Splunk Core Operation](../img/thousandeyes/create_splunk_core_logs_operation.png)
 
 !!! note "Data Flow Timing"
     The stream will begin sending data to your Splunk instance within a few minutes of activation.
