@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../create_streams_to_splunk_observability/">
+        <link rel="prev" href="../create_metric_stream_to_splunk_observability/">
       
       
-        <link rel="next" href="../../splunk_core/login_splunk_cloud_enterprise/">
+        <link rel="next" href="../visualize_metrics_in_splunk_observability/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Visualize ThousandEyes data in Splunk Observability Cloud - ThousandEyes - Splunk Integrations Workshop</title>
+        <title>Create Trace Stream to Splunk Observability Cloud - ThousandEyes - Splunk Integrations Workshop</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#visualize-thousandeyes-metrics-in-splunk-observability-cloud" class="md-skip">
+        <a href="#create-trace-streams-on-thousandeyes-for-splunk-observability-cloud" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Visualize ThousandEyes data in Splunk Observability Cloud
+              Create Trace Stream to Splunk Observability Cloud
             
           </span>
         </div>
@@ -580,12 +580,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_streams_to_splunk_observability/" class="md-nav__link">
+      <a href="../create_metric_stream_to_splunk_observability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Create Streams to Splunk Observability Cloud
+    Create Metric Stream to Splunk Observability Cloud
     
   </span>
   
@@ -609,13 +609,15 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    Visualize ThousandEyes data in Splunk Observability Cloud
+    Create Trace Stream to Splunk Observability Cloud
     
   </span>
   
@@ -628,7 +630,7 @@
   
   
   <span class="md-ellipsis">
-    Visualize ThousandEyes data in Splunk Observability Cloud
+    Create Trace Stream to Splunk Observability Cloud
     
   </span>
   
@@ -641,6 +643,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -649,35 +653,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visualize-thousandeyes-metrics-in-splunk-observability-cloud" class="md-nav__link">
+  <a href="#create-trace-stream-via-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualize ThousandEyes metrics in Splunk Observability Cloud
+      Create Trace Stream via API
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Visualize ThousandEyes metrics in Splunk Observability Cloud">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#import-dashboard" class="md-nav__link">
-    <span class="md-ellipsis">
-      Import dashboard
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visualize-the-dashboard" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visualize the dashboard
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -685,6 +665,52 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualize_metrics_in_splunk_observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visualize ThousandEyes Metrics in Splunk Observability Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualize_traces_in_splunk_observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visualize ThousandEyes Traces in Splunk Observability Cloud
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -772,12 +798,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/create_streams_to_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../../splunk_core/create_stream_to_splunk_cloud_enterprise/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Create Streams to Splunk Cloud / Enterprise
+    Create Stream to Splunk Cloud / Enterprise
     
   </span>
   
@@ -795,12 +821,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../splunk_core/visualize_splunk_cloud_enterprise/" class="md-nav__link">
+      <a href="../../splunk_core/visualize_metrics_in_splunk_cloud_enterprise/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Visualize ThousandEyes data in Splunk Cloud / Enterprise
+    Visualize ThousandEyes Metrics in Splunk Cloud / Enterprise
     
   </span>
   
@@ -1122,29 +1148,64 @@
 
 
 
-  <h1>Visualize ThousandEyes data in Splunk Observability Cloud</h1>
-
-<h2 id="visualize-thousandeyes-metrics-in-splunk-observability-cloud">Visualize ThousandEyes metrics in Splunk Observability Cloud</h2>
-<h3 id="import-dashboard">Import dashboard</h3>
-<p>To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this workshop.</p>
+<h1 id="create-trace-streams-on-thousandeyes-for-splunk-observability-cloud">Create Trace Streams on ThousandEyes for Splunk Observability Cloud</h1>
+<p>Choose one of the following methods to create your stream to Splunk Observability Cloud:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">API Method</label><label for="__tabbed_1_2">UI Method</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Use the ThousandEyes API through Postman to create the trace stream programmatically.</p>
+<h3 id="create-trace-stream-via-api">Create Trace Stream via API</h3>
 <ul>
-<li>Download <a href="https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/dashboards/dashboard_Splunk_Observability_Cloud.json">dashboard file</a></li>
-<li>Log into your <code>Splunk Observability Cloud</code> instance</li>
-<li>Navigate to <code>+</code> from the main menu</li>
-<li>Click <code>Import</code> from the dropdown options and select <code>Dashboard group</code></li>
-<li>Select the <code>dashboard_Splunk_Observability_Cloud.json</code> file from your local system</li>
+<li>Open the <code>Create traces stream - Splunk Observability</code> request in your Postman collection</li>
+<li>Click <code>Send</code> to execute the API request</li>
 </ul>
-<h3 id="visualize-the-dashboard">Visualize the dashboard</h3>
+<p><img alt="ThousandEyes create stream" src="../../img/postman/splunk_observability_trace_stream.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">API Documentation</p>
+<p>For detailed API parameters and options, check the <a href="https://developer.cisco.com/docs/thousandeyes/create-data-stream">ThousandEyes API documentation</a>.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Use the ThousandEyes web interface to create the trace stream integration manually via OpenTelemetry.</p>
+<p>To integrate trace streaming from ThousandEyes to Splunk Observability Cloud, follow these steps:</p>
 <ul>
-<li>In the initial page of Splunk Observability Cloud</li>
-<li>Navigate to <code>Dashboards</code>
-<img alt="dashboards" src="../../img/splunk_observability/dashboard.png" /></li>
-<li>In <code>Custom dashboard groups</code>, expand <code>ThousandEyes Dashboard</code> and select <code>Application</code>
-<img alt="dashboard" src="../../img/splunk_observability/dashboardDEVWKS.png" /></li>
-<li>Visualize the data
-<img alt="Dashboard Application" src="../../img/splunk_observability/dashboardApplication.png" />
-<img alt="Dashboard Network" src="../../img/splunk_observability/dashboardNetwork.png" /></li>
+<li>Navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integration 1.0</code></li>
+<li>Click <code>+ New Integration</code> and select <code>OpenTelemetry Integration</code>
+<img alt="opentelemetry integration" src="../../img/thousandeyes/opentelemetry_integration.png" /></li>
+<li>Configure the integration settings:<ul>
+<li>Enter a <code>Name</code> for the integration (e.g., "Splunk Observability Cloud Trace Integration")</li>
+<li>Set the <code>Target</code> to <code>HTTP</code></li>
+<li>Enter the <code>Endpoint URL</code> to send trace data in <code>OTLP (OpenTelemetry Protocol)</code> format:
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://ingest.{REALM}.signalfx.com/v2/trace/otlp
+</span></code></pre></div><ul>
+<li>Replace <code>{REALM}</code> with your Splunk environment such as <code>us1</code>, <code>eu0</code>, <code>us0</code></li>
 </ul>
+</li>
+<li>For <code>Preset Configuration</code>, select <code>Splunk Observability Cloud</code></li>
+<li>For <code>Auth Type</code>, select <code>Custom</code></li>
+<li>Set the following <code>Custom Headers</code>:<ul>
+<li><code>X-SF-Token: {TOKEN}</code><ul>
+<li>Enter your Splunk Observability Cloud access token</li>
+</ul>
+</li>
+<li><code>Content-Type: application/x-protobuf</code></li>
+</ul>
+</li>
+<li>Select <code>Trace</code> as the OpenTelemetry <code>Signal</code></li>
+<li>Select <code>v2</code> as the <code>Data Model Version</code></li>
+<li>For <code>Network &amp; App Synthetic</code>, select a the test that you want to stream data from</li>
+</ul>
+</li>
+<li>Click <code>Save</code></li>
+</ul>
+<p><img alt="Create OpenTelemetry trace integration" src="../../img/thousandeyes/create_opentelemetry_trace_integration.png" /></p>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Receiving trace data</p>
+<p>The trace stream will begin sending distributed tracing data to Splunk Observability Cloud in a couple of minutes. You can view these traces in the APM section of Splunk Observability Cloud.</p>
+</div>
 
 
 
@@ -1182,7 +1243,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../create_streams_to_splunk_observability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create Streams to Splunk Observability Cloud">
+          <a href="../create_metric_stream_to_splunk_observability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create Metric Stream to Splunk Observability Cloud">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1192,20 +1253,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Create Streams to Splunk Observability Cloud
+                Create Metric Stream to Splunk Observability Cloud
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../splunk_core/login_splunk_cloud_enterprise/" class="md-footer__link md-footer__link--next" aria-label="Next: Login Splunk Cloud / Enterprise">
+          <a href="../visualize_metrics_in_splunk_observability/" class="md-footer__link md-footer__link--next" aria-label="Next: Visualize ThousandEyes Metrics in Splunk Observability Cloud">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Login Splunk Cloud / Enterprise
+                Visualize ThousandEyes Metrics in Splunk Observability Cloud
               </div>
             </div>
             <div class="md-footer__button md-icon">
