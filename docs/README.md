@@ -17,7 +17,8 @@ During the session you will learn about:
     - ThousandEyes 
     - Splunk Observability Cloud
     - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
-
+- Go through the [**Getting Started**](getting_started/access_postman.md) before starting the different sections of the workshop
+  
 ## Roadmap integration
 
  - Bidirectional ITSI: [Recording](https://demo.thousandeyes.com/player/?demoId=e0118145-9e9f-4835-b29b-c69cf00442fa&showGuide=true&showGuidesToolbar=true&showHotspots=true)
