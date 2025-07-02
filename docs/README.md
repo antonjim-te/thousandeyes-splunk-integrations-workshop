@@ -16,14 +16,11 @@ During the session you will learn about:
     - Postman
     - ThousandEyes 
     - Splunk Observability Cloud
-    - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to https://ideas.splunk.com/ideas/PLECID-I-816)
-    - Ngrok
-- Have the following tools installed on your machine:
-    - docker-compose
+    - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
 
 ## Roadmap integration
 
- - Bidirectiona ITSI: [Recording](https://demo.thousandeyes.com/player/?demoId=e0118145-9e9f-4835-b29b-c69cf00442fa&showGuide=true&showGuidesToolbar=true&showHotspots=true)
+ - Bidirectional ITSI: [Recording](https://demo.thousandeyes.com/player/?demoId=e0118145-9e9f-4835-b29b-c69cf00442fa&showGuide=true&showGuidesToolbar=true&showHotspots=true)
  - ThousandEyes & Splunk RUM: [Recording](https://app.vidcast.io/share/f3b211aa-2c73-402c-a8ec-dd5b0703f113)
 
 ## Other integrations
