@@ -29,9 +29,9 @@ Choose one of the following methods to create your stream to Splunk Observabilit
         - Set the `Target` to `HTTP`
         - Enter the `Endpoint URL` to send trace data in `OTLP (OpenTelemetry Protocol)` format:
           ```
-          https://ingest.{REALM}.signalfx.com/v2/trace/otlp
+          https://ingest.<REALM>.signalfx.com/v2/trace/otlp
           ```
-            - Replace `{REALM}` with your Splunk environment such as `us1`, `eu0`, `us0`
+            - Replace `<REALM>` with your Splunk environment such as `us1`, `eu0`, `us0`
         - For `Preset Configuration`, select `Splunk Observability Cloud`
         - For `Auth Type`, select `Custom`
         - Set the following `Custom Headers`:
