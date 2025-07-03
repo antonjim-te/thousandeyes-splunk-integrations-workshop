@@ -14,7 +14,7 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
     - Click `Sign In`
 
     !!! warning "Trial Account Limitation"
-        If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the limitation https://ideas.splunk.com/ideas/PLECID-I-816
+        If you're using a Splunk Cloud trial account, you won't be able to stream ThousandEyes data due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816)
 
 
 === "Splunk Enterprise"
