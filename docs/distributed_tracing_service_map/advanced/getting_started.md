@@ -1,13 +1,12 @@
 # Getting Started with Distributed Tracing Service Map in Splunk Observability
 
+In the advanced section of the Distributed Tracing Service Map documentation, we will walk through the steps to set up the [OpenTelemetry demo application](https://opentelemetry.io/docs/demo/) publically avaiable and configure it to send traces to Splunk Observability. This will allow you to visualize the service map in ThousandEyes and traces in Splunk Observability.
+
 ### Prerequisites
 - Ngrok account
 - Splunk Observability account
 - git
 - docker compose
-
-
-We are going to use the [OpenTelemetry demo application](https://opentelemetry.io/docs/demo/) to demonstrate how to use the Distributed Tracing Service Map in Splunk Observability.
 
 ## Running the OpenTelemetry demo application locally
 
