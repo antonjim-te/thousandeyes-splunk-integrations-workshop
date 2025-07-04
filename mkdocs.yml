@@ -31,7 +31,7 @@ nav:
     - Authenticate Thousandeyes user: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
     - Create Test Stream input: thousandeyes_splunk_app/test_stream_input.md
     - Create Activity Logs input: thousandeyes_splunk_app/activity_logs_input.md
-  - Distributed Tracing - Service Map:
+  - Service Map:
     - Basic Integration: 
       - Getting Started: distributed_tracing_service_map/basic/getting_started.md
       - Create the Splunk APM Integration: distributed_tracing_service_map/basic/create_splunk_apm_integration.md

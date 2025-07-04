@@ -1,4 +1,4 @@
-# Getting Started with Distributed Tracing Service Map in Splunk Observability
+# Getting Started with Distributed Tracing in Splunk Observability
 
 Due to time limitations, we will not be able to run an application locally, instrument it with OpenTelemetry, and make it public so it can be reach by ThousandEyes. However, you can refer to the [advanced guide](../advanced/getting_started.md) for more information.
 
