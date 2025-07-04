@@ -19,13 +19,23 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
 
 === "Splunk Enterprise"
 
-    If you're using Splunk Enterprise (on-premises):
-    
-    ### Login to Splunk Enterprise
-    - Navigate to your Splunk Enterprise web interface (typically `https://your-server:8000`)
-    - Enter your `username` and `password`
-    - Click `Sign In`
+    === "Your Splunk Enterprise Instance"
 
+        If you're using Splunk Enterprise (on-premises):
+        
+        ### Login to Splunk Enterprise
+        - Navigate to your Splunk Enterprise web interface (typically `https://your-server:8000`)
+        - Enter your `username` and `password`
+        - Click `Sign In`
+
+    === "Using Splunk Show"
+
+        - Access the workshop for 9 July https://splunk.show/teworkshop 
+        ![splunk show](../img/splunk_core/splunk_show.png)
+        - Sign in to Splunk Cloud Platform (Register if you don't have an account)
+        - Enroll event `ThousandEyes Integration Workshop`
+        ![Enroll event](../img/splunk_core/enroll_event.png)
+        - Once the event starts, you will see the instance information with the URL and credentials to access the Splunk instance
 
 ## Get Splunk HEC Token
 
