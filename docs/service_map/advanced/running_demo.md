@@ -15,8 +15,8 @@ cd opentelemetry-demo
       otlphttp/splunk:
         traces_endpoint: https://ingest.<Splunk_Observability_realm>.signalfx.com:443/v2/trace/otlp
         headers:
-        "X-SF-Token": "<Splunk_Observability_access_token>"
-        "Content-Type": "application/x-protobuf"
+            "X-SF-Token": "<Splunk_Observability_access_token>"
+            "Content-Type": "application/x-protobuf"
 
     service:
       pipelines:
