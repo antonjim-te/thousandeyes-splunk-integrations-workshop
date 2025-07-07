@@ -33,15 +33,16 @@ nav:
     - Create Activity Logs input: thousandeyes_splunk_app/activity_logs_input.md
   - Service Map:
     - Basic Integration: 
-      - Getting Started: distributed_tracing_service_map/basic/getting_started.md
-      - Create the Splunk APM Integration: distributed_tracing_service_map/basic/create_splunk_apm_integration.md
-      - Create ThousandEyes HTTP Test: distributed_tracing_service_map/basic/create_thousandeyes_http_test.md
-      - View Service Map: distributed_tracing_service_map/basic/view_service_map.md
+      - Getting Started: service_map/basic/getting_started.md
+      - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
+      - View Service Map: service_map/basic/view_service_map.md
     - Advanced Integration:
-      - Getting Started: distributed_tracing_service_map/advanced/getting_started.md
-      - Create the Splunk APM Integration: distributed_tracing_service_map/advanced/create_splunk_apm_integration.md
-      - Create ThousandEyes HTTP Test: distributed_tracing_service_map/advanced/create_thousandeyes_http_test.md
-      - View Service Map: distributed_tracing_service_map/advanced/view_service_map.md
+      - Getting Started: service_map/advanced/getting_started.md
+      - Login Splunk Observability Cloud: service_map/advanced/login_splunk_observability.md
+      - Create the Splunk APM Integration: service_map/advanced/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: service_map/advanced/create_thousandeyes_http_test.md
+      - View Service Map: service_map/advanced/view_service_map.md
 
 theme:
   name: material
