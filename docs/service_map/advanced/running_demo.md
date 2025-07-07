@@ -57,7 +57,7 @@ We need to expose the OpenTelemetry demo application to the internet to be able 
 
 - Change `opentelemetry-demo/docker-compose.yml` 
 ```yaml
-ngrok:
+  ngrok:
     image: ngrok/ngrok
     container_name: ngrok
     command: ["http", "http://frontend-proxy:${ENVOY_PORT}", "--url=${NGROK_DOMAIN}", "--host-header=${NGROK_DOMAIN}"]
@@ -67,7 +67,7 @@ ngrok:
     - ENVOY_PORT
     - NGROK_DOMAIN
     depends_on:
-    frontend-proxy:
+      frontend-proxy:
         condition: service_started
     logging: *logging
 ```
