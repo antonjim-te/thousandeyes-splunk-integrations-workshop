@@ -30,7 +30,7 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
 
     === "Using Splunk Show"
 
-        - Access the workshop for 9 July https://splunk.show/teworkshop 
+        - Access the workshop for 9 July [https://splunk.show/teworkshop](https://splunk.show/teworkshop)
         ![splunk show](../img/splunk_core/splunk_show.png)
         - Sign in to Splunk Cloud Platform (Register if you don't have an account)
         - Enroll event `ThousandEyes Integration Workshop`

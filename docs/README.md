@@ -10,8 +10,7 @@ During the session you will learn about:
 - [**Explore the advanced capabilities of the Cisco ThousandEyes App for Splunk**](thousandeyes_splunk_app/getting_started.md)
 - [**Visualize the service map using distributed tracing in ThousandEyes**](distributed_tracing_service_map/basic/getting_started.md)
 
-![alt text](../img/workflow_digram.png)
-![alt text](image.png)
+![workflow](img/workflow_digram.png)
 
 ## Prerequisites
 
