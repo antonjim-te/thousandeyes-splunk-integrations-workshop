@@ -21,7 +21,7 @@ cd opentelemetry-demo
     service:
       pipelines:
         traces:
-        exporters: [spanmetrics, otlphttp/splunk]
+            exporters: [spanmetrics, otlphttp/splunk]
     ```
         - Replace `<Splunk_Observability_realm>` with your Splunk Observability realm (e.g., `us0`, `us1`, `eu0`, etc.)
         - Replace `<Splunk_Observability_access_token>` with your Splunk Observability access token.
