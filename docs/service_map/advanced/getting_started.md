@@ -38,7 +38,7 @@ cd opentelemetry-demo
 docker compose up --force-recreate --remove-orphans --detach
 ```
 
-- Verify that the application is running by visiting `http://localhost:8080` in your web browser. You should see the OpenTelemetry demo application homepage.
+- Verify that the application is running by visiting [http://localhost:8080](http://localhost:8080) in your web browser. You should see the OpenTelemetry demo application homepage.
 
 ## View a trace in Splunk Observability
 
@@ -46,7 +46,7 @@ docker compose up --force-recreate --remove-orphans --detach
 ```
 curl http://localhost:8080/api/cart -H 'traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01'
 ```
-- Open the trace https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736
+- Open the trace [https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736](https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736).
 
 ![trace](../../img/splunk_observability/trace.png)
 
@@ -105,6 +105,6 @@ curl <your_ngrok_domain>/api/cart -H 'traceparent: 00-1bf32f3577b34da6a3ce929d0e
     ```
     curl https://eternal-summary-hippo.ngrok-free.app/api/cart -H 'traceparent: 00-1bf32f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01'
     ```
-- Open the trace https://app.us1.signalfx.com/#/apm/traces/1bf32f3577b34da6a3ce929d0e0e4736
+- Open the trace [https://app.us1.signalfx.com/#/apm/traces/1bf32f3577b34da6a3ce929d0e0e4736](https://app.us1.signalfx.com/#/apm/traces/1bf32f3577b34da6a3ce929d0e0e4736).
 
 ![trace](../../img/splunk_observability/trace.png)
