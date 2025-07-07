@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../getting_started/">
+        <link rel="prev" href="../create_thousandeyes_http_test/">
       
       
-        <link rel="next" href="../create_thousandeyes_http_test/">
+        <link rel="next" href="../../advanced/getting_started/">
       
       
       <link rel="icon" href="../../../img/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Create the Splunk APM Integration - ThousandEyes - Splunk Integrations Workshop</title>
+        <title>View Service Map - ThousandEyes - Splunk Integrations Workshop</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-splunk-apm-integration" class="md-skip">
+        <a href="#view-service-map-in-splunk-observability" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Create the Splunk APM Integration
+              View Service Map
             
           </span>
         </div>
@@ -1115,19 +1115,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../create_splunk_apm_integration/" class="md-nav__link">
         
   
   
@@ -1138,7 +1129,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1171,10 +1161,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../view_service_map/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    View Service Map
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1185,6 +1197,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#debug-the-trace-in-splunk-observability-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug the Trace in Splunk Observability Cloud
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1259,6 +1300,29 @@
   
   <span class="md-ellipsis">
     Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/login_splunk_observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Login Splunk Observability Cloud
     
   </span>
   
@@ -1369,32 +1433,52 @@
 
 
 
-<h1 id="create-splunk-apm-integration">Create Splunk APM Integration</h1>
-<p>We need to provide to ThousandEyes the Splunk Observabiltiy APM url and token to be able to get the traces and represent it as a Service Map.
-We will be using the credentials from the Splunk Observability owned by ThousandEyes, as the traces will be coming from the OpenTelemetry demo application running in the cloud.</p>
+<h1 id="view-service-map-in-splunk-observability">View Service Map in Splunk Observability</h1>
+<p>Access to the view of your ThousandEyes HTTP Test.</p>
 <ul>
-<li>In the ThousandEyes platform, navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code></li>
-<li>Create a <strong>Generic Connector</strong> with the following details:<ul>
-<li>Target URL: <code>https://api.us1.signalfx.com</code></li>
-<li>Custom headers:<ul>
-<li><code>X-SF-Token</code>: <code>Gtw-MEqWXLAoUERCoYTwkA</code></li>
-<li>It will expire after a week after the workshop.</li>
+<li>As you enabled the Distributed Tracing in the test.<ul>
+<li>ThousandEyes automatically injects the following trace headers into requests:<ul>
+<li><code>b3</code></li>
+<li><code>traceparent</code></li>
+<li><code>tracestate</code></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<p><img alt="Create connector Splunk APM" src="../../../img/thousandeyes/create_connector_splunk_APM.png" /></p>
+<p><img alt="Trace headers" src="../../../img/thousandeyes/headers.png" /></p>
 <ul>
-<li>Create an <strong>Operation</strong>:<ul>
-<li>Click <code>+ New Operation</code> to open the menu to select the operation type</li>
-<li>Choose <code>Splunk Observability APM</code> to proceed to the configration form</li>
-<li>Enter the Operation Name</li>
-<li>Enable the operation</li>
+<li>Open the <strong>Service Map</strong> tab in ThousandEyes.<ul>
+<li>Use the service map to analyze the trace path:<ul>
+<li>The services involved in the request.</li>
+<li>Any latency issues, highlighted in red if thresholds are exceeded.</li>
+<li>Any errors between services, shown as red lines if a request fails.</li>
+<li>Trace metadata, such as the trace ID and request flow details.</li>
 </ul>
 </li>
 </ul>
-<p><img alt="Create Operation Splunk APM" src="../../../img/thousandeyes/create_operation_splunk_APM.png" /></p>
+</li>
+</ul>
+<p><img alt="Service Map" src="../../../img/thousandeyes/basic_service_map.png" /></p>
+<h2 id="debug-the-trace-in-splunk-observability-cloud">Debug the Trace in Splunk Observability Cloud</h2>
+<p>As you dont have access to our Splunk Observability Cloud instance, you will not be able to access the traces in Splunk Observability Cloud. However, if you had access, you would follow these steps:</p>
+<p>From the <strong>Service Map</strong> tab in ThousandEyes, follow the link to the trace in Splunk. There, you can:</p>
+<ul>
+<li>Drill into service-level trace data.</li>
+<li>Use Splunk’s trace search, filters, and dashboards for deeper analysis.</li>
+</ul>
+<p><img alt="trace from ThousandEyes" src="../../../img/splunk_observability/basic_trace_from_thousandeyes.png" /></p>
+<p>Splunk enriches the trace with the following attributes:</p>
+<ul>
+<li><code>thousandeyes.account.id</code></li>
+<li><code>thousandeyes.test.id</code></li>
+<li><code>thousandeyes.permalink</code></li>
+<li><code>thousandeyes.source.agent.id</code></li>
+</ul>
+<p>These attributes provide context and allow you to navigate back to the related test in ThousandEyes.</p>
+<p><img alt="attributes in the traces" src="../../../img/splunk_observability/attributes_in_the_traces.png" /></p>
+<p>In the Splunk Observability Cloud, you will have a link back to ThousandEyes, allowing you to easily navigate between the two platforms for a comprehensive view of your distributed tracing data.</p>
+<p><img alt="Trace link to ThousandEyes" src="../../../img/splunk_observability/trace_link_to_thousandeyes.png" /></p>
 
 
 
@@ -1432,7 +1516,7 @@ We will be using the credentials from the Splunk Observability owned by Thousand
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../getting_started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started">
+          <a href="../create_thousandeyes_http_test/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create ThousandEyes HTTP Test">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1442,20 +1526,20 @@ We will be using the credentials from the Splunk Observability owned by Thousand
                 Previous
               </span>
               <div class="md-ellipsis">
-                Getting Started
+                Create ThousandEyes HTTP Test
               </div>
             </div>
           </a>
         
         
           
-          <a href="../create_thousandeyes_http_test/" class="md-footer__link md-footer__link--next" aria-label="Next: Create ThousandEyes HTTP Test">
+          <a href="../../advanced/getting_started/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Create ThousandEyes HTTP Test
+                Getting Started
               </div>
             </div>
             <div class="md-footer__button md-icon">
