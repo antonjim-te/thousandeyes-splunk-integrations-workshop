@@ -8,3 +8,8 @@ In the advanced section of the Distributed Tracing Service Map documentation, we
 - Splunk Observability account
 - git
 - docker compose
+
+
+### Diagram
+
+![Diagram of the Advanced Service Map](../../img/diagram_advanced_service_map.png)
