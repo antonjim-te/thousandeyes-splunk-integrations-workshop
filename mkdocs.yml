@@ -40,6 +40,7 @@ nav:
     - Advanced Integration:
       - Getting Started: service_map/advanced/getting_started.md
       - Login Splunk Observability Cloud: service_map/advanced/login_splunk_observability.md
+      - Running the OpenTelemetry demo application: service_map/advanced/running_demo.md
       - Create the Splunk APM Integration: service_map/advanced/create_splunk_apm_integration.md
       - Create ThousandEyes HTTP Test: service_map/advanced/create_thousandeyes_http_test.md
       - View Service Map: service_map/advanced/view_service_map.md
