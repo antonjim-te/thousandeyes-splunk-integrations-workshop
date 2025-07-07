@@ -11,6 +11,7 @@ During the session you will learn about:
 - [**Visualize the service map using distributed tracing in ThousandEyes**](distributed_tracing_service_map/basic/getting_started.md)
 
 ![alt text](../img/workflow_digram.png)
+![alt text](image.png)
 
 ## Prerequisites
 
