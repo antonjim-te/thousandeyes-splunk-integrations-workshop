@@ -1,5 +1,7 @@
 # Log In to ThousandEyes
 
+## 1. Sign In
+
 Choose one of the following options to access ThousandEyes:
 
 === "Existing Account"
@@ -20,7 +22,7 @@ Choose one of the following options to access ThousandEyes:
     1. Verify your email address.
     1. Sign in to your trial account.
 
-## Get Your ThousandEyes Bearer Token
+## 2. Get Your ThousandEyes Bearer Token
 
 Once you're logged into ThousandEyes, follow these steps to generate your API bearer token:
 
@@ -38,7 +40,7 @@ Once you're logged into ThousandEyes, follow these steps to generate your API be
 
    ![copy Token](../img/thousandeyes/copyToken.png)
   
-## Add Your Token to Your Postman Variables
+## 3. Add Your Token to Your Postman Variables
 
 Now that you have your ThousandEyes bearer token, add it to your Postman collection variables:
 
