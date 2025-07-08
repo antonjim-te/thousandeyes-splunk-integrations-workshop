@@ -1,12 +1,15 @@
 # Access Postman
 
+## 1. Sign in
+
 Choose one of the following options to access Postman:
 
-=== "Login to Existing Account"
+=== "Log in to Existing Account"
+<!-- FIXME: Consistency note: the headings in the top-level README.md use sentence case; elsewhere (such as here) I'm seeing headline case. -->
 
     If you already have a Postman account:
     
-    - Navigate to [Postman Login](https://identity.getpostman.com/login)
+    - Navigate to the [Postman Login](https://identity.getpostman.com/login)
     - Enter your credentials to sign in
     
 
@@ -22,14 +25,14 @@ Choose one of the following options to access Postman:
 
 ![Postman Sign in](../img/postman/signin.png)
 
-## Import Workspace
+## 2. Import the Workspace
 
 Once you have access to Postman:
 
-- Download [Postman collection file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/postman/ThousandEyesSplunkIntegration.postman_collection.json) from the workshop repository
-![download](../img/postman/download.png)
-- Import the collection in postman
-- Navigate to the new collection `ThousandEyesSplunkIntegration`
-- Verify the collection `ThousandEyesSplunkIntegration` is loaded, including requests and variables.
+1. Download the [Postman collection file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/postman/ThousandEyesSplunkIntegration.postman_collection.json) from the workshop repository
+![download](../img/postman/download.png).
+1. Import the collection in Postman.
+1. Navigate to the new collection called `ThousandEyesSplunkIntegration`.
+1. Verify that the `ThousandEyesSplunkIntegration` collection is loaded, including requests and variables.
 
-![Postman workspace](../img/postman/collection.png)
+   ![Postman workspace](../img/postman/collection.png)
