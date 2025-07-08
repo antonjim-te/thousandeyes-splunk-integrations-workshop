@@ -20,7 +20,7 @@ We are going to create a `Page Load` test that validates the availability of `ww
     - Copy the `testId` from the API response
     
     !!! tip "Agent Selection"
-        You can use different `agentId` values using the [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents). See [more info](<get_agent_id.md>) for details.
+        You can use different `agentId` values using the [ThousandEyes API List Agents](https://developer.cisco.com/docs/thousandeyes/list-cloud-and-enterprise-agents). See [more info](<../getting_started/get_agent_id.md>) for details.
 
     Full description of the API request is available at [ThousandEyes API Reference](https://developer.cisco.com/docs/thousandeyes/create-http-server-test).
 
