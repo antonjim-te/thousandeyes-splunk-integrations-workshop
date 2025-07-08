@@ -45,7 +45,7 @@ Now that you have your ThousandEyes bearer token, add it to your Postman collect
 1. In Postman, navigate to your `ThousandEyes Splunk Integration` collection.
 1. Go to the **Variables** tab.
 1. Find the variable named `ThousandEyes_token` in the list.
-    - In the **Current Value** column, paste your bearer token.
+1. In the **Current Value** column, paste your bearer token.  
 1. Click **Save** to apply the changes.
 
    ![ThousandEyes Token](../img/postman/thousandeyesToken.png)
