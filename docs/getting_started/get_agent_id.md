@@ -1,5 +1,7 @@
 # Get ThousandEyes Agent Id for the creation of the ThousandEyes HTTP test
 
+<!-- FIXME: Are you using this file in the workshop? I can find it in the published pages if I search, but from the POV of the TOC, it seems orphaned. -->
+
 When creation the ThousandEyes HTTP test you may see an error related to the agent.
 We can use a different agentId.
 
