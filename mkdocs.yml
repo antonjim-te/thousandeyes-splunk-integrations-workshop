@@ -14,6 +14,19 @@ nav:
     - Access Postman: getting_started/access_postman.md
     - Login ThousandEyes: getting_started/login_thousandeyes.md
     - Create ThousandEyes test: getting_started/create_thousandeyes_test.md
+  - Service Map:
+    - Basic Integration: 
+      - Getting Started: service_map/basic/getting_started.md
+      - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
+      - View Service Map: service_map/basic/view_service_map.md
+    - Advanced Integration:
+      - Getting Started: service_map/advanced/getting_started.md
+      - Login Splunk Observability Cloud: service_map/advanced/login_splunk_observability.md
+      - Running the OpenTelemetry demo application: service_map/advanced/running_demo.md
+      - Create the Splunk APM Integration: service_map/advanced/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: service_map/advanced/create_thousandeyes_http_test.md
+      - View Service Map: service_map/advanced/view_service_map.md
   - Splunk Observability Cloud:
     - Login Splunk Observability Cloud: splunk_observability/login_splunk_observability.md
     - Create Metric Stream to Splunk Observability Cloud: splunk_observability/create_metric_stream_to_splunk_observability.md
@@ -31,19 +44,6 @@ nav:
     - Authenticate Thousandeyes user: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
     - Create Test Stream input: thousandeyes_splunk_app/test_stream_input.md
     - Create Activity Logs input: thousandeyes_splunk_app/activity_logs_input.md
-  - Service Map:
-    - Basic Integration: 
-      - Getting Started: service_map/basic/getting_started.md
-      - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
-      - Create ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
-      - View Service Map: service_map/basic/view_service_map.md
-    - Advanced Integration:
-      - Getting Started: service_map/advanced/getting_started.md
-      - Login Splunk Observability Cloud: service_map/advanced/login_splunk_observability.md
-      - Running the OpenTelemetry demo application: service_map/advanced/running_demo.md
-      - Create the Splunk APM Integration: service_map/advanced/create_splunk_apm_integration.md
-      - Create ThousandEyes HTTP Test: service_map/advanced/create_thousandeyes_http_test.md
-      - View Service Map: service_map/advanced/view_service_map.md
 
 theme:
   name: material
