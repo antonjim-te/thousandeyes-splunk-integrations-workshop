@@ -9,18 +9,18 @@ Choose one of the following options to access Postman:
 
     If you already have a Postman account:
     
-    - Navigate to the [Postman Login](https://identity.getpostman.com/login)
-    - Enter your credentials to sign in
+    1. Navigate to the [Postman Login](https://identity.getpostman.com/login).
+    1. Enter your credentials to sign in.
     
 
 === "Free Trial"
 
     If you don't have a Postman account:
     
-    - Navigate to [Postman Sign Up](https://identity.getpostman.com/signup)
-    - Create a new account with your email
-    - Follow the verification process
-    - Access Postman with your new account
+    1. Navigate to the [Postman Sign Up](https://identity.getpostman.com/signup) page.
+    1. Create a new account with your email address.
+    1. Follow the verification process.
+    1. Access Postman with your new account.
 
 
 ![Postman Sign in](../img/postman/signin.png)
