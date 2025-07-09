@@ -2,6 +2,7 @@
 
 - In the initial page of Splunk Observability Cloud
 - Navigate to `APM` -> `Traces`
+![Trace view](../img/splunk_observability/trace_view.png)
 - Filter by `Services` and select `www.google.com`
 ![Search traces](../img/splunk_observability/searchTraces.png)
 - Click on a trace to view details

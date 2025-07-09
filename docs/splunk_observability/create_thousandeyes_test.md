@@ -4,14 +4,18 @@ For ThousandEyes to be able to stream data to Splunk, the data first needs to be
 need to create a ThousandEyes test.
 Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/tests) for test creation.
 
-We are going to create a `Page Load` test that validates the availability of `www.google.com`. In case you already have a `Page Load` test created, you can skip this step and use the existing test ID.
+We are going to create a `Page Load` test that validates the availability of `www.google.com`. 
+
+!!! note "Skip Test Creation if Already Created"
+    In case you already have a `Page Load` test created, you can skip this step and use the existing test ID.
+
 
 === "API Method"
 
     Use the ThousandEyes API through Postman to create the test programmatically.
     
     ### Create a Test via API
-    - Open the `Create ThousandEyes Page Load Test` request in your Postman collection
+    - Open the `Create ThousandEyVisualize ThousandEyes Page Load HAR as a trace in Splunk Observability Cloudes Page Load Test` request in your Postman collection
     - Click `Send` to execute the API request
     
     ![ThousandEyes create test](../img/postman/createPageLoadTest.png)
