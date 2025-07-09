@@ -38,7 +38,11 @@ Once you're logged into ThousandEyes, follow these steps to generate your API be
   
     ![Revoke Token](../img/thousandeyes/revoke_token.png)
 
-    - Copy the token
+    - Enter the verification email received in your inbox.
+
+    ![verification email](../img/thousandeyes/verification_email.png)
+
+    - Copy the token.
   
     ![copy Token](../img/thousandeyes/copyToken.png)
 
@@ -47,7 +51,11 @@ Once you're logged into ThousandEyes, follow these steps to generate your API be
     If you don't have a bearer token, follow these steps to generate one:
 
     - Click `Generate OAuth Bearer Token` button.
-    - Copy the token
+    - Enter the verification email received in your inbox.
+
+    ![verification email](../img/thousandeyes/verification_email.png)
+
+    - Copy the token.
   
     ![copy Token](../img/thousandeyes/copyToken.png)
   
