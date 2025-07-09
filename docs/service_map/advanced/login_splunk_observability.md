@@ -2,9 +2,9 @@
 
 This guide will help you log into Splunk Observability Cloud and obtain an access token for the ThousandEyes stream.
 
-=== "Existing Account"
+=== "Existing Account with *Admin* Privileges"
 
-    If you already have a Splunk Observability Cloud account:
+    If you already have a Splunk Observability Cloud account and you have *Admin* privileges:
     
     ### Log In to Your Account
     - Navigate to [Splunk Observability Cloud](https://login.signalfx.com/)
@@ -36,7 +36,11 @@ Once you're logged into Splunk Observability Cloud, generate your access token:
     - `Name`: Enter a descriptive name (e.g., "ThousandEyes Integration Token")
     - `Scope`: Select `INGEST` and `API` 
         - Check `Please accept to continue with your selection.`
-- Click `Next` to proceed
+- Click `Next` to proceed the `Name and Scope` section
+- Keep the default permissions settings
+- Click `Next` to proceed the `Permissions` section
+- Keep the default `Expiration` settings
+- Click `Create Token`
 - Copy the token
 
 ![access token](../../img/splunk_observability/access_token.png)
