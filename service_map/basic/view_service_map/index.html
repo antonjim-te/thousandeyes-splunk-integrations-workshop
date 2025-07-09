@@ -1483,19 +1483,23 @@
 <p>Under <code>Network &amp; App Synthetics</code> -&gt; <code>Views</code>, you can select your  HTTP Test to view.</p>
 <p><img alt="HTTP Server View" src="../../../img/thousandeyes/http_server_view.png" /></p>
 <ul>
-<li>As you enabled the Distributed Tracing in the test. ThousandEyes automatically injects the following trace headers into requests:
-          - <code>b3</code>
-          - <code>traceparent</code>
-          - <code>tracestate</code></li>
+<li>As you enabled the Distributed Tracing in the test. ThousandEyes automatically injects the following trace headers into requests:<ul>
+<li><code>b3</code></li>
+<li><code>traceparent</code></li>
+<li><code>tracestate</code></li>
+</ul>
+</li>
 </ul>
 <p><img alt="Trace headers" src="../../../img/thousandeyes/headers.png" /></p>
 <ul>
-<li>Under the <code>HTTP Server</code> layer, open the <code>Service Map</code> tab.
-          - Use the service map to analyze the trace path:
-          - The services involved in the request.
-          - Any latency issues, highlighted in red if thresholds are exceeded.
-          - Any errors between services, shown as red lines if a request fails.
-          - Trace metadata, such as the trace ID and request flow details.</li>
+<li>Under the <code>HTTP Server</code> layer, open the <code>Service Map</code> tab.<ul>
+<li>Use the service map to analyze the trace path:</li>
+<li>The services involved in the request.</li>
+<li>Any latency issues, highlighted in red if thresholds are exceeded.</li>
+<li>Any errors between services, shown as red lines if a request fails.</li>
+<li>Trace metadata, such as the trace ID and request flow details.</li>
+</ul>
+</li>
 </ul>
 <p><img alt="Service Map" src="../../../img/thousandeyes/basic_service_map.png" /></p>
 <div class="admonition note">
