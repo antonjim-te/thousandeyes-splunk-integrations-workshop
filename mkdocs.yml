@@ -100,6 +100,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
+plugins: 
+  - search
+  - open-in-new-tab
 
 copyright: |
   &copy; 2025 <a href="https://cisco.com"  target="_blank" rel="noopener">Cisco Systems, Inc.</a>
