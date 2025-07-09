@@ -12,7 +12,7 @@ Use the ThousandEyes web interface to create the test.
 - Select `HTTP Test` from the test type options
 ![create HTTP Test](../../img/thousandeyes/createHttpTest1.png)
 - Configure Test Settings
-      - `Test Name`: Enter a descriptive name (e.g., "Basic - Test Workshop Distributed Tracing")
+      - `Test Name`: e.g., "Basic - Test Workshop Distributed Tracing"
       - `URL`: Enter `http://13.52.215.7:8080/api/test`
       - In the `Agents` section, select a Cloud Agent
       - Under `Advanced settings`: ![advanced setting](../../img/thousandeyes/advanced_setting.png)
