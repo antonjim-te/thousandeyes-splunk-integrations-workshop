@@ -5,7 +5,7 @@
 - Fill the form:
     - Name: unique name
     - ThousandEyes User: select you user
-    - Account Group: selec your account
+    - Account Group: select your account
     - Cloud & Enterprise Agent Tests: select your HTTP test
     - HEC Token: select `ThousandEyesToken`
     - Test Index: select `default`

@@ -5,7 +5,7 @@
 - Fill the form:
     - Name: unique name
     - ThousandEyes User: select you user
-    - Account Group: selec your account
+    - Account Group: select your account
     - Index: select `default`
 ![Activity Input](../img/thousandeyes_splunk_app/inputActivity.png)
 
