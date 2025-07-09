@@ -15,6 +15,7 @@ During this session you will learn about:
 ## Prerequisites
 
 To prepare for this workshop:
+
 - Have an account in the following platforms:
     - Postman
     - ThousandEyes 

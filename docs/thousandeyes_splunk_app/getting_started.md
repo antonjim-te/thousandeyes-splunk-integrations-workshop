@@ -10,7 +10,7 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 ![SplunkBase](../img/thousandeyes_splunk_app/splunkbase.png)
 
 !!! tip "Docs"
-    You can find [documentation](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app).
+    You can find documentation [here](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app).
 
 ## Install Cisco ThousandEyes App for Splunk
 
@@ -27,7 +27,7 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 
 - Navigate to `Cisco ThousandEyes App for Splunk`
 ![navigate app](../img/thousandeyes_splunk_app/navigate_app.png)
-- In the app, you will find out: `configuration`, `inputs`, `search` and `dashboards`. Check the [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/splunk-app)
+- In the app, you will find out: `configuration`, `inputs`, `search` and `dashboards`.
 ![configuration](../img/thousandeyes_splunk_app/configuration.png)
 
 
