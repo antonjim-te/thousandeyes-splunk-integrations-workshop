@@ -1439,35 +1439,50 @@
 
 
 <h1 id="create-a-splunk-apm-integration">Create a Splunk APM Integration</h1>
-<p>We need to provide to ThousandEyes the Splunk Observabiltiy APM url and token to be able to get the traces and represent it as a Service Map.</p>
+<p>We need to provide to ThousandEyes the Splunk Observabiltiy APM url and token to be able to get the traces and represent it as a Service Map.
+We will be using the credentials from the Splunk Observability owned by ThousandEyes, as the traces will be coming from the OpenTelemetry demo application running in the cloud.</p>
 <ul>
 <li>In the ThousandEyes platform, navigate to <code>Manage</code> &gt; <code>Integrations</code> &gt; <code>Integrations 2.0</code></li>
-<li>Create a <strong>Generic Connector</strong> with the following details:<ul>
-<li>Target URL: <code>https://api.&lt;REALM&gt;.signalfx.com</code><ul>
+<li>
+<p>Create a <strong>Generic Connector</strong> with the following details:</p>
+<ul>
+<li>Click <code>+ New Connector</code>, then select <code>Generic Connector</code></li>
+<li>Enter the <code>Name</code>: <code>Splunk Observability APM</code></li>
+<li>Enter the <code>Target URL</code>: <code>https://api.&lt;REALM&gt;.signalfx.com</code><ul>
 <li>Replace <code>&lt;REALM&gt;</code> with your Splunk realm (for example, <code>us0</code>, <code>us1</code>, <code>eu1</code>)</li>
 </ul>
 </li>
-<li>Custom headers:<ul>
+<li>Select the <code>Splunk Observability APM</code> from the <code>Preset Configuration</code> dropdown</li>
+<li>Set the Custom headers:<ul>
 <li><code>X-SF-Token</code>: <code>&lt;access_token&gt;</code><ul>
 <li>Replace <code>&lt;access_token&gt;</code> with your Splunk Observability access token</li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
+<li>Click <code>Save &amp; Assign Operation</code></li>
 </ul>
 <p><img alt="Create connector Splunk APM" src="../../../img/thousandeyes/create_connector_splunk_APM.png" /></p>
+</li>
+<li>
+<p>Create an <strong>Operation</strong>:</p>
 <ul>
-<li>Create an <strong>Operation</strong>:<ul>
 <li>Click <code>+ New Operation</code> to open the menu to select the operation type</li>
 <li>Choose <code>Splunk Observability APM</code> to proceed to the configration form</li>
-<li>Enter the Operation Name</li>
-<li>Enable the operation</li>
+<li>Enter the <code>Operation Name</code>: <code>Splunk Observability APM</code></li>
+<li>Click <code>Save &amp; Assign Connector</code></li>
 </ul>
 </li>
 </ul>
 <p><img alt="Create Operation Splunk APM" src="../../../img/thousandeyes/create_operation_splunk_APM.png" /></p>
+<ul>
+<li>Assign the Operation to the Connector:<ul>
+<li>Select the <code>Splunk Observability APM</code> from the <code>Connector</code> dropdown</li>
+<li>Click <code>Save &amp; Assign Operation</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Create Operation Assignment Splunk APM" src="../../../img/thousandeyes/create_operation_assignment_splunk_APM.png" /></p>
 
 
 
