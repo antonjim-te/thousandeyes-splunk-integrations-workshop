@@ -4,7 +4,7 @@ For ThousandEyes to be able to stream data to Splunk, the data first needs to be
 need to create a ThousandEyes test.
 Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/tests) for test creation.
 
-We are going to create a `Page Load` test that validates the availability of `www.google.com`.
+We are going to create a `Page Load` test that validates the availability of `www.google.com`. In case you already have a `Page Load` test created, you can skip this step and use the existing test ID.
 
 === "API Method"
 
