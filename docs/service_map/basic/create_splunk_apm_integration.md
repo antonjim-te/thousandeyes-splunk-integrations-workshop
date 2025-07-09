@@ -7,7 +7,7 @@ We will be using the credentials from the Splunk Observability owned by Thousand
 - Create a **Generic Connector** with the following details:
     - Target URL: `https://api.us1.signalfx.com`
     - Custom headers:
-        - `X-SF-Token`: `Gtw-MEqWXLAoUERCoYTwkA`
+        - `X-SF-Token`: `<To be shared during the workshop>`
         - It will expire after a week after the workshop.
 
 ![Create connector Splunk APM](../../img/thousandeyes/create_connector_splunk_APM.png)
