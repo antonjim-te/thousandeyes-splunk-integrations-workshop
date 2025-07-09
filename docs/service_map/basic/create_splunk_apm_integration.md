@@ -5,17 +5,26 @@ We will be using the credentials from the Splunk Observability owned by Thousand
 
 - In the ThousandEyes platform, navigate to `Manage` > `Integrations` > `Integrations 2.0`
 - Create a **Generic Connector** with the following details:
-    - Target URL: `https://api.us1.signalfx.com`
-    - Custom headers:
-        - `X-SF-Token`: `<To be shared during the workshop>`
-        - It will expire after a week after the workshop.
+    - Click `+ New Connector`, then select `Generic Connector`
+    - Enter the `Name`: `Splunk Observability APM`
+    - Enter the `Target URL`: `https://api.us1.signalfx.com`
+    - Select the `Splunk Observability APM` from the `Preset Configuration` dropdown
+    - Set the Custom headers: `X-SF-Token`: `<To be shared during the workshop>`
+    - Click `Save & Assign Operation`
 
-![Create connector Splunk APM](../../img/thousandeyes/create_connector_splunk_APM.png)
+    ![Create connector Splunk APM](../../img/thousandeyes/create_connector_splunk_APM.png)
 
 -  Create an **Operation**:
       -  Click `+ New Operation` to open the menu to select the operation type
       -  Choose `Splunk Observability APM` to proceed to the configration form
-      -  Enter the Operation Name
-      -  Enable the operation
+      -  Enter the `Operation Name`: `Splunk Observability APM`
+      - Click `Save & Assign Connector`
+
 
 ![Create Operation Splunk APM](../../img/thousandeyes/create_operation_splunk_APM.png)
+
+- Assign the Operation to the Connector:
+      -  Select the `Splunk Observability APM` from the `Connector` dropdown
+      -  Click `Save & Assign Operation`
+
+![Create Operation Assignment Splunk APM](../../img/thousandeyes/create_operation_assignment_splunk_APM.png)
