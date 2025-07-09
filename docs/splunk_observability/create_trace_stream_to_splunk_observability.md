@@ -1,4 +1,4 @@
-# Create Trace Streams on ThousandEyes for Splunk Observability Cloud
+# Create a Trace Streams on ThousandEyes for Splunk Observability Cloud
 
 Choose one of the following methods to create your stream to Splunk Observability Cloud:
 
@@ -6,7 +6,7 @@ Choose one of the following methods to create your stream to Splunk Observabilit
 
     Use the ThousandEyes API through Postman to create the trace stream programmatically.
     
-    ### Create Trace Stream via API
+    ### Create a Trace Stream via API
     - Open the `Create traces stream - Splunk Observability` request in your Postman collection
     - Click `Send` to execute the API request
     

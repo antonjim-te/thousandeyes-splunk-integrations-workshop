@@ -2,7 +2,7 @@
 
 ## Let's generate some logs
 - In the ThousandEyes platform:
-  - Login to the ThousandEyes platform
+  - Log In to the ThousandEyes platform
   - Create a test
   - Update a test
   - Logout from the ThousandEyes platform

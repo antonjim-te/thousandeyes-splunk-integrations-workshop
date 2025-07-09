@@ -1,4 +1,4 @@
-# Login to ThousandEyes
+# Log In to ThousandEyes
 
 Choose one of the following options to access ThousandEyes:
 
@@ -6,8 +6,7 @@ Choose one of the following options to access ThousandEyes:
 
     If you already have a ThousandEyes account:
     
-    - Navigate to ThousandEyes Login
-    - Go to [ThousandEyes Login](https://app.thousandeyes.com/login)
+    - Go to the [ThousandEyes Log In page](https://app.thousandeyes.com/login).
     - Enter your email address and password
     - Click `Sign In`
 
@@ -15,35 +14,51 @@ Choose one of the following options to access ThousandEyes:
 
     If you don't have a ThousandEyes account:
     
-    - Start Free Trial
-    - Navigate to [ThousandEyes Free Trial](https://www.thousandeyes.com/signup)
+    - Navigate to [create a ThousandEyes Free Trial](https://www.thousandeyes.com/signup).
     - Fill out the registration form with your business information
     - Verify your email address
+    - Sign in to your trial account.
 
-## Get ThousandEyes Bearer Token
+## Get Your ThousandEyes Bearer Token
 
 Once you're logged into ThousandEyes, follow these steps to generate your API bearer token:
 
-### Navigate to User Profile
-- Click on `Manage` in the left navigation bar
-- Select `Account Settings` from the dropdown menu
-- Navigate to `Users and Roles` → `Profile`
-
-### Generate API Token
+- Navigate to User Profile
+   - In the left-hand navigation bar:
+       - select  `Manage >Account Settings > Users and Roles > Profiles`.
 - Scroll down to the `User API Tokens` section
-- Click `Generate OAuth Bearer Token` button
-- Copy the token
+- Here you have two options:
 
-![copy Token](../img/thousandeyes/copyToken.png)
+=== "You already have a Bearer Token"
+
+    If you remember your bearer token, you can skip to the next section.
+
+    Else, you can revoke the existing token and generate a new one.
+    - Click the `Revoke Token` button.
   
-## Add Token to Postman Variables
+    ![Revoke Token](../img/thousandeyes/revoke_token.png)
+
+    - Copy the token
+  
+    ![copy Token](../img/thousandeyes/copyToken.png)
+
+=== "You don't have a Bearer Token"
+
+    If you don't have a bearer token, follow these steps to generate one:
+
+    - Click `Generate OAuth Bearer Token` button.
+    - Copy the token
+  
+    ![copy Token](../img/thousandeyes/copyToken.png)
+  
+## Add Your Token to Your Postman Variables
 
 Now that you have your ThousandEyes bearer token, add it to your Postman collection variables:
 
-- In Postman, navigate to your `ThousandEyes Splunk Integration` collection
-- Go to the `Variables` tab
-- Find the variable named `ThousandEyes_token` in the list
-    - In the `Current Value` column, paste your bearer token
-- Click `Save` to apply the changes
+- In Postman, navigate to your `ThousandEyes Splunk Integration` collection.
+- Go to the `Variables` tab.
+- Find the variable named `ThousandEyes_token` in the list.
+    - In the `Current Value` column, paste your bearer token.
+- Click `Save` to apply the changes.
 
-![ThousandEyes Token](../img/postman/thousandeyesToken.png)
+    ![ThousandEyes Token](../img/postman/thousandeyesToken.png)

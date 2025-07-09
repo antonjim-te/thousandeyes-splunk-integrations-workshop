@@ -1,4 +1,4 @@
-# Login to Splunk Cloud Platform or Splunk Enterprise
+# Log In to Splunk Cloud Platform or Splunk Enterprise
 
 This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and obtain an HEC token for the ThousandEyes stream.
 
@@ -8,7 +8,7 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
 
     If you're using Splunk Cloud Platform:
     
-    ### Login to Splunk Cloud
+    ### Log In to Splunk Cloud
     - Navigate to your Splunk Cloud instance URL (e.g., `https://your-instance.splunkcloud.com`)
     - Enter your `username` and `password`
     - Click `Sign In`
@@ -23,7 +23,7 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
 
         If you're using Splunk Enterprise (on-premises):
         
-        ### Login to Splunk Enterprise
+        ### Log In to Splunk Enterprise
         - Navigate to your Splunk Enterprise web interface (typically `https://your-server:8000`)
         - Enter your `username` and `password`
         - Click `Sign In`

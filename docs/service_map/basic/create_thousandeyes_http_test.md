@@ -1,4 +1,4 @@
-# Create ThousandEyes HTTP Test with Distributed Tracing
+# Create a ThousandEyes HTTP Test with Distributed Tracing
 
 We are going to create a `HTTP Test` test an endpoint to our OpenTelemetry demo application, which is already instrumented with OpenTelemetry and sending telemetry data to Splunk Observability.
 

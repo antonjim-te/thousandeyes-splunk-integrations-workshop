@@ -1,4 +1,4 @@
-# Create ThousandEyes HTTP Test with Distributed Tracing
+# Create a ThousandEyes HTTP Test with Distributed Tracing
 
 We are going to create a `HTTP Test` test to our endpoint `<your_ngrok_domain>/api/cart`
 

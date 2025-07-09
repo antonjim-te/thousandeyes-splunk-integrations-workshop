@@ -1,4 +1,4 @@
-# Create Metrics Streams on ThousandEyes for Splunk Observability Cloud
+# Create a Metrics Streams on ThousandEyes for Splunk Observability Cloud
 
 Choose one of the following methods to create your stream to Splunk Observability Cloud:
 

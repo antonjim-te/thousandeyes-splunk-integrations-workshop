@@ -1,4 +1,4 @@
-# Create Splunk APM Integration
+# Create a Splunk APM Integration
 
 We need to provide to ThousandEyes the Splunk Observabiltiy APM url and token to be able to get the traces and represent it as a Service Map.
 

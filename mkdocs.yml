@@ -12,39 +12,39 @@ nav:
   - Home: README.md
   - Getting Started:
     - Access Postman: getting_started/access_postman.md
-    - Login ThousandEyes: getting_started/login_thousandeyes.md
+    - Log In to ThousandEyes: getting_started/login_thousandeyes.md
   - Service Map:
     - Basic Integration: 
       - Getting Started: service_map/basic/getting_started.md
       - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
-      - Create ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
-      - View Service Map: service_map/basic/view_service_map.md
+      - Create a ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
+      - View the Service Map: service_map/basic/view_service_map.md
     - Advanced Integration:
       - Getting Started: service_map/advanced/getting_started.md
-      - Login Splunk Observability Cloud: service_map/advanced/login_splunk_observability.md
+      - Log In to Splunk Observability Cloud: service_map/advanced/login_splunk_observability.md
       - Running the OpenTelemetry demo application: service_map/advanced/running_demo.md
       - Create the Splunk APM Integration: service_map/advanced/create_splunk_apm_integration.md
       - Create ThousandEyes HTTP Test: service_map/advanced/create_thousandeyes_http_test.md
-      - View Service Map: service_map/advanced/view_service_map.md
+      - View the Service Map: service_map/advanced/view_service_map.md
   - Splunk Observability Cloud:
-    - Create ThousandEyes test: splunk_observability/create_thousandeyes_test.md
-    - Login Splunk Observability Cloud: splunk_observability/login_splunk_observability.md
-    - Create Metric Stream to Splunk Observability Cloud: splunk_observability/create_metric_stream_to_splunk_observability.md
-    - Create Trace Stream to Splunk Observability Cloud: splunk_observability/create_trace_stream_to_splunk_observability.md
+    - Create a ThousandEyes test: splunk_observability/create_thousandeyes_test.md
+    - Log In to Splunk Observability Cloud: splunk_observability/login_splunk_observability.md
+    - Create a Metric Stream to Splunk Observability Cloud: splunk_observability/create_metric_stream_to_splunk_observability.md
+    - Create a Trace Stream to Splunk Observability Cloud: splunk_observability/create_trace_stream_to_splunk_observability.md
     - Visualize ThousandEyes Metrics in Splunk Observability Cloud: splunk_observability/visualize_metrics_in_splunk_observability.md
     - Visualize ThousandEyes Traces in Splunk Observability Cloud: splunk_observability/visualize_traces_in_splunk_observability.md
-  - Splunk Cloud / Enterprise:
-    - Create ThousandEyes test: splunk_core/create_thousandeyes_test.md
-    - Login Splunk Cloud / Enterprise: splunk_core/login_splunk_cloud_enterprise.md
-    - Create Metrics Stream to Splunk Cloud / Enterprise: splunk_core/create_metrics_stream_to_splunk_cloud_enterprise.md
-    - Create Logs Stream to Splunk Cloud / Enterprise: splunk_core/create_logs_stream_to_splunk_cloud_enterprise.md
-    - Visualize ThousandEyes Metrics in Splunk Cloud / Enterprise: splunk_core/visualize_metrics_in_splunk_cloud_enterprise.md
-    - Visualize ThousandEyes Logs in Splunk Cloud / Enterprise: splunk_core/visualize_logs_in_splunk_cloud_enterprise.md
-  - Cisco ThousandEyes App for Splunk: 
+  - Splunk Cloud/Enterprise:
+    - Create a ThousandEyes test: splunk_core/create_thousandeyes_test.md
+    - Log In to Splunk Cloud/Enterprise: splunk_core/login_splunk_cloud_enterprise.md
+    - Create a Metrics Stream to Splunk Cloud/Enterprise: splunk_core/create_metrics_stream_to_splunk_cloud_enterprise.md
+    - Create a Logs Stream to Splunk Cloud/Enterprise: splunk_core/create_logs_stream_to_splunk_cloud_enterprise.md
+    - Visualize ThousandEyes Metrics in Splunk Cloud/Enterprise: splunk_core/visualize_metrics_in_splunk_cloud_enterprise.md
+    - Visualize ThousandEyes Logs in Splunk Cloud/Enterprise: splunk_core/visualize_logs_in_splunk_cloud_enterprise.md
+  - Cisco ThousandEyes App for Splunk:
     - Getting Started: thousandeyes_splunk_app/getting_started.md
-    - Authenticate Thousandeyes user: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
-    - Create Test Stream input: thousandeyes_splunk_app/test_stream_input.md
-    - Create Activity Logs input: thousandeyes_splunk_app/activity_logs_input.md
+    - Authenticate the ThousandEyes User: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
+    - Create a Test Stream Input: thousandeyes_splunk_app/test_stream_input.md
+    - Create an Activity Log Input: thousandeyes_splunk_app/activity_logs_input.md
 
 theme:
   name: material

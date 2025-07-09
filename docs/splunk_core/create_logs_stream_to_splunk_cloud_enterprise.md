@@ -1,4 +1,4 @@
-# Create Logs Stream on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise
+# Create a Logs Stream on ThousandEyes for Splunk Cloud Platform or Splunk Enterprise
 
 Choose one of the following methods to create your stream to Splunk Cloud Platform or Splunk Enterprise:
 

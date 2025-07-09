@@ -1,4 +1,4 @@
-## Create stream test input
+## Create a Stream Test Input
 
 - In `inputs` section
 - Click `Create New Input`, select `Tests Stream`

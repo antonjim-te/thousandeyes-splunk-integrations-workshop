@@ -1,4 +1,4 @@
-## Add ThousandEyes user
+## Authenticate the ThousandEyes User
 
 - Navigate to `Configuration` > `ThousandEyes User`
 - Click on `Add ThousandEyes User`

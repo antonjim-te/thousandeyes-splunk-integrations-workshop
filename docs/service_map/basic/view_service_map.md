@@ -1,4 +1,4 @@
-# View Service Map in Splunk Observability
+# View the Service Map in Splunk Observability
 
 Access to the view of your ThousandEyes HTTP Test.
 

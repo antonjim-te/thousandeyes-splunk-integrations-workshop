@@ -1,4 +1,4 @@
-## Create activity log input
+## Create an Activity Log Input
 
 - In `inputs` section
 - Click `Create New Input`, select `Activity`
@@ -9,7 +9,7 @@
     - Index: select `default`
 ![Activity Input](../img/thousandeyes_splunk_app/inputActivity.png)
 
-## Activity logs dashboards
+## Activity Log Dashboards
 
-- In the `dashboards` section, select `Activity Logs` 
+- In the `dashboards` section, select `Activity Log` 
 ![dashboard_activity_logs](../img/thousandeyes_splunk_app/dashboard_activity_logs.png)

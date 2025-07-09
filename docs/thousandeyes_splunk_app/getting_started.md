@@ -5,7 +5,7 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 
 - CEA (Cloud and Enterprise Agent) and Endpoint test results data
 - Event
-- Activity logs
+- Activity Log
 
 ![SplunkBase](../img/thousandeyes_splunk_app/splunkbase.png)
 

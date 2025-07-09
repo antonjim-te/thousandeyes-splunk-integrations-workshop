@@ -1,4 +1,4 @@
-# Login to Splunk Observability Cloud
+# Log In to Splunk Observability Cloud
 
 This guide will help you log into Splunk Observability Cloud and obtain an access token for the ThousandEyes stream.
 
@@ -6,7 +6,7 @@ This guide will help you log into Splunk Observability Cloud and obtain an acces
 
     If you already have a Splunk Observability Cloud account:
     
-    ### Login to Your Account
+    ### Log In to Your Account
     - Navigate to [Splunk Observability Cloud](https://login.signalfx.com/)
     - Enter your `email address` and `password`
     - Click `Sign In`
