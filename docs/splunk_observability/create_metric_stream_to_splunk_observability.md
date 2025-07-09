@@ -6,7 +6,6 @@ Choose one of the following methods to create your stream to Splunk Observabilit
 
     Use the ThousandEyes API through Postman to create the stream programmatically.
     
-    ### Create Stream via API
     - Open the `Create metrics stream - Splunk Observability` request in your Postman collection
     - Click `Send` to execute the API request
     

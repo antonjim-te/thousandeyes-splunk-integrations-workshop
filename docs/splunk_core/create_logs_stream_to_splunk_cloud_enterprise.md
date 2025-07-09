@@ -7,7 +7,6 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
     === "Splunk Enterprise"
         Use the ThousandEyes API through Postman to create the stream programmatically.
         
-        ### Create Stream via API
         - Open the request in your Postman collection: `Create logs stream - Splunk Enterprise`
         - Click `Send` to execute the API request
 
@@ -16,7 +15,6 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
     === "Splunk Cloud Platform"
         Use the ThousandEyes API through Postman to create the stream programmatically.
         
-        ### Create Stream via API
         - Open the request in your Postman collection: `Create logs stream - Splunk Cloud Platform`
         - Click `Send` to execute the API request
 
