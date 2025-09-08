@@ -23,7 +23,7 @@ Choose one of the following methods to create your stream to Splunk Cloud Platfo
     !!! tip "API Documentation"
         For detailed API parameters and options, check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).
 
-=== "UI Method (Under a feature flag)"
+=== "UI Method"
 
     Use the ThousandEyes web interface to create the integration manually using Integrations 2.0.
 

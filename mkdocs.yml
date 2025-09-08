@@ -13,6 +13,7 @@ nav:
   - Getting Started:
     - Access Postman: getting_started/access_postman.md
     - Log In to ThousandEyes: getting_started/login_thousandeyes.md
+    - Save Agent ID: getting_started/get_agent_id.md
   - Service Map:
     - Basic Integration: 
       - Getting Started: service_map/basic/getting_started.md
