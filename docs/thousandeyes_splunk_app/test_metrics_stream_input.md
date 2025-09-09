@@ -1,7 +1,7 @@
-## Create a Stream Test Input
+## Create a Test Stream - Metrics Input
 
 - In `inputs` section
-- Click `Create New Input`, select `Tests Stream`
+- Click `Create New Input`, select `Test Stream - Metrics`
 - Fill the form:
     - Name: unique name
     - ThousandEyes User: select you user

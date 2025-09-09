@@ -4,10 +4,7 @@ All the docs in: https://antonjim-te.github.io/thousandeyes-splunk-integrations-
 
 
 # TODO
-- Add traces to Splunk App
 - Add ThousandEyes alerts into Splunk (using Splunk App)
-- Activity log
-    - In the Splunk App - Activity log dashboard -> add resource column
 - Splunk App latest version
 
 

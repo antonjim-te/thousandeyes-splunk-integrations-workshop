@@ -44,8 +44,9 @@ nav:
   - Cisco ThousandEyes App for Splunk:
     - Getting Started: thousandeyes_splunk_app/getting_started.md
     - Authenticate the ThousandEyes User: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
-    - Create a Test Stream Input: thousandeyes_splunk_app/test_stream_input.md
+    - Create a Test Stream - Metrics Input: thousandeyes_splunk_app/test_metrics_stream_input.md
     - Create an Activity Log Input: thousandeyes_splunk_app/activity_logs_input.md
+    - Create a Test Stream - Traces Input: thousandeyes_splunk_app/test_traces_stream_input.md
 
 theme:
   name: material

@@ -21,7 +21,7 @@ To prepare for this workshop:
     - ThousandEyes 
     - Splunk Observability Cloud
     - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
-        - Version requirements for Splunk Enterprise: 9.4 or later.
+        - Version requirements: 9.4 or later.
 - Permissions and roles:
     - ThousandEyes: View/Edit streaming integrations; View tests.
     - Splunk Observability Cloud: role `power` or `admin` (to create access tokens and dashboards).
