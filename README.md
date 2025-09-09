@@ -8,7 +8,7 @@ All the docs in: https://antonjim-te.github.io/thousandeyes-splunk-integrations-
 - Add ThousandEyes alerts into Splunk (using Splunk App)
 - Activity log
     - In the Splunk App - Activity log dashboard -> add resource column
-    - update the steps to use the new input
+- Splunk App latest version
 
 
 # Run it locally

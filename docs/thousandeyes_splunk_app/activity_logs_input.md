@@ -1,13 +1,18 @@
 ## Create an Activity Log Input
 
 - In `inputs` section
-- Click `Create New Input`, select `Activity`
+- Click `Create New Input`, select `Activity logs Stream`
 - Fill the form:
     - Name: unique name
     - ThousandEyes User: select you user
     - Account Group: select your account
-    - Index: select `default`
-![Activity Input](../img/thousandeyes_splunk_app/inputActivity.png)
+    - HEC Target: The HEC target of your Splunk instance. Example HEC Target:
+        - For Splunk Cloud Platform: `https://http-inputs-<host>.splunkcloud.com:443/services/collector/event`
+        - For Splunk Enterprise: `https://<host>:8088/services/collector/event`
+    - HEC Token: select `ThousandEyesToken`
+    - Activity logs Index: select `default`
+
+![Activity Input](../img/thousandeyes_splunk_app/inputActivityLogStream.png)
 
 ## Activity Log Dashboards
 
