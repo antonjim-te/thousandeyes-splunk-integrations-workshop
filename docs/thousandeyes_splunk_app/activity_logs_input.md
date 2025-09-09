@@ -18,3 +18,5 @@
 
 - In the `dashboards` section, select `Activity Log` 
 ![dashboard_activity_logs](../img/thousandeyes_splunk_app/dashboard_activity_logs.png)
+- In case you do not have data in the table, you can generate by using ThousandEyes. For example: creating/deleting tests.
+- Once you see data, you can filter by account group, user, event and time interval.
