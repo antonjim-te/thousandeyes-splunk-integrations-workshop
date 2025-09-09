@@ -4,7 +4,6 @@ All the docs in: https://antonjim-te.github.io/thousandeyes-splunk-integrations-
 
 
 # TODO
-- Document the ThousandEyes permissions 
 - Add traces to Splunk App
 - Add ThousandEyes alerts into Splunk (using Splunk App)
 - Activity log
