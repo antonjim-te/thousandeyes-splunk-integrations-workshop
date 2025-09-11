@@ -23,7 +23,9 @@ To prepare for this workshop:
     - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
         - Version requirements: 9.4 or later.
 - Permissions and roles:
-    - ThousandEyes: View/Edit streaming integrations; View tests.
+    - ThousandEyes: 
+        - View/Edit streaming integrations
+        - View/Edit tests
     - Splunk Observability Cloud: role `power` or `admin` (to create access tokens and dashboards).
     - Splunk Cloud Platform / Splunk Enterprise: role `admin` or `sc_admin`.
 - Go through the [**Getting Started**](getting_started/access_postman.md) before starting the different sections of the workshop
