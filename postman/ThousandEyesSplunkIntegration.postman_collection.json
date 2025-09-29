@@ -44,7 +44,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"interval\": 60,\n    \"agents\": [\n        {\n            \"agentId\": {{ThousandEyes_agent_id}}\n        }\n    ],\n    \"testName\": \"Test Workshop\",\n    \"url\": \"www.google.com\",\n    \"alertsEnabled\": 0\n}",
+					"raw": "{\n    \"interval\": 60,\n    \"agents\": [\n        {\n            \"agentId\": {{ThousandEyes_agent_id}}\n        }\n    ],\n    \"testName\": \"Test\",\n    \"url\": \"www.google.com\",\n    \"alertsEnabled\": 0\n}",
 					"options": {
 						"raw": {
 							"language": "json"

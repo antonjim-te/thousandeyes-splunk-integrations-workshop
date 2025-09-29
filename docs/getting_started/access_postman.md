@@ -26,7 +26,7 @@ Choose one of the following options to access Postman:
 
 Once you have access to Postman:
 
-- Download the [Postman collection file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/postman/ThousandEyesSplunkIntegration.postman_collection.json) from the workshop repository.
+- Download the [Postman collection file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/postman/ThousandEyesSplunkIntegration.postman_collection.json) from the repository.
 ![download](../img/postman/download.png)
 - Import the collection in Postman.
 - Navigate to the new collection called `ThousandEyesSplunkIntegration`

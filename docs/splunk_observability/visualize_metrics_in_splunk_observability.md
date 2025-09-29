@@ -3,7 +3,7 @@
 
 ## Import dashboard
 
-To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this workshop.
+To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this session.
 
 - Download [dashboard file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/dashboards/dashboard_Splunk_Observability_Cloud.json)
 - Log in to your `Splunk Observability Cloud` instance

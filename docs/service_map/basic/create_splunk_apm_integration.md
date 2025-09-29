@@ -9,7 +9,7 @@ We will be using the credentials from the Splunk Observability owned by Thousand
     - Enter the `Name`: `Splunk Observability APM`
     - Enter the `Target URL`: `https://api.us1.signalfx.com`
     - Select the `Splunk Observability APM` from the `Preset Configuration` dropdown
-    - Set the Custom headers: `X-SF-Token`: `<To be shared during the workshop>`
+    - Set the Custom headers: `X-SF-Token`: `<To be shared during the session>`
     - Click `Save & Assign Operation`
 
     ![Create connector Splunk APM](../../img/thousandeyes/create_connector_splunk_APM.png)

@@ -35,7 +35,7 @@ We are going to create a `Page Load` test that validates the availability of `ww
     - Select `Page Load` from the test type options
     ![create PageLoad Test](../img/thousandeyes/createPageLoadTest1.png)
     -  Configure Test Settings
-          - `Test Name`: Enter a descriptive name (e.g., "Test Workshop")
+          - `Test Name`: Enter a descriptive name (e.g., "Test")
           - `URL`: Enter `https://www.google.com`
           - In the `Agents` section, select a Cloud Agent
     - Click `Create New Test`
