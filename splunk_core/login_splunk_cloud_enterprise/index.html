@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../img/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting_started/access_postman/" class="md-tabs__link">
+        <a href="../../getting_started/access_bruno/" class="md-tabs__link">
           
   
   
@@ -443,12 +443,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/access_postman/" class="md-nav__link">
+      <a href="../../getting_started/access_bruno/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Access Postman
+    Access Bruno
     
   </span>
   
@@ -1269,9 +1269,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-hec-token-and-host-to-postman-variables" class="md-nav__link">
+  <a href="#add-hec-token-and-host-to-bruno-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Add HEC Token and Host to Postman Variables
+      Add HEC Token and Host to Bruno Variables
     </span>
   </a>
   
@@ -1545,6 +1545,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thousandeyes_splunk_app/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1600,7 +1623,7 @@
 </div>
 <div class="tabbed-block">
 <ul>
-<li>Access the Splunk Show <a href="https://splunk.show/teworkshop">https://splunk.show/teworkshop</a>
+<li>Access the Splunk Show <a href="https://splunk.show/te-splunk">https://splunk.show/te-splunk</a>
 <img alt="splunk show" src="../../img/splunk_core/splunk_show.png" /></li>
 <li>Sign in to Splunk Cloud Platform (Register if you don't have an account)</li>
 <li>Enroll event <code>ThousandEyes Integration Workshop</code>
@@ -1632,22 +1655,22 @@
 <li>Splunk Enterprise: The host is typically the server name or IP address where Splunk is installed. For example, if you Splunk web page is <code>https://te-test-i-03af7829c8bab4176.splunk.show/en-GB/app/launcher/home</code>, your host will be: <code>te-test-i-03af7829c8bab4176.splunk.show</code></li>
 <li>Splunk Cloud Platform: The host is the URL of your Splunk Cloud instance. For example, if your Splunk Cloud URL is <code>https://your-instance.splunkcloud.com</code>, your host will be <code>your-instance</code></li>
 </ul>
-<h2 id="add-hec-token-and-host-to-postman-variables">Add HEC Token and Host to Postman Variables</h2>
-<p>Now that you have your Splunk HEC token, add it to your Postman collection variables:</p>
+<h2 id="add-hec-token-and-host-to-bruno-variables">Add HEC Token and Host to Bruno Variables</h2>
+<p>Now that you have your Splunk HEC token, add it to your Bruno collection variables:</p>
 <ul>
-<li>In Postman, navigate to your <code>ThousandEyes Splunk Integration</code> collection</li>
+<li>In Bruno, navigate to your <code>ThousandEyes Splunk Integration</code> collection</li>
 <li>Go to the <code>Variables</code> tab</li>
 <li>Find the variable named <code>Splunk_HEC_token</code> in the list<ul>
-<li>In the <code>Current Value</code> column, paste your HEC token</li>
+<li>In the <code>Value</code> column, paste your HEC token</li>
 </ul>
 </li>
 <li>Find the variable named <code>Splunk_host</code> in the list<ul>
-<li>In the <code>Current Value</code> column, enter your Splunk host URL</li>
+<li>In the <code>Value</code> column, enter your Splunk host URL</li>
 </ul>
 </li>
 <li>Click <code>Save</code> to apply the changes</li>
 </ul>
-<p><img alt="Splunk Enterprise Variables" src="../../img/postman/SplunkEnterpriseVariables.png" /></p>
+<p><img alt="Splunk Enterprise Variables" src="../../img/bruno/splunk_enterprise_variables.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Requirements</p>
 <p>URL must be reachable and secure. <a href="https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/opentelemetry/configure-splunk-integrations#url-target-requirements">More info</a></p>
