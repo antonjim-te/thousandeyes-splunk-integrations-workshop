@@ -4,12 +4,12 @@ Choose one of the following methods to create your stream to Splunk Observabilit
 
 === "API Method"
 
-    Use the ThousandEyes API through Postman to create the stream programmatically.
+    Use the ThousandEyes API through Bruno to create the stream programmatically.
     
-    - Open the `Create metrics stream - Splunk Observability` request in your Postman collection
+    - Open the `Create metrics stream - Splunk Observability` request in your Bruno collection
     - Click `Send` to execute the API request
     
-    ![ThousandEyes create stream](../img/postman/splunk_observability_metric_stream.png)
+    ![ThousandEyes create stream](../img/bruno/splunk_observability_metric_stream.png)
 
     !!! tip "API Documentation"
         For detailed API parameters and options, check the [ThousandEyes API documentation](https://developer.cisco.com/docs/thousandeyes/create-data-stream).

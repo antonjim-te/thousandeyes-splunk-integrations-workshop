@@ -4,7 +4,7 @@ When creation the ThousandEyes test you will need to select an agent.
 
 ## Search for a new agentId
 
-- Use the following Postman request to get the agents ![ThousandEyes get agents](../img/postman/getAgents.png)
-- In the resposne, search for an agent
+- Use the following Bruno request to get the agents ![ThousandEyes get agents](../img/bruno/getAgents.png)
+- In the response, search for an agent
     - E.g `Barcelona` or `Atlanta`
-- Save the `agentId` into the variable `ThousandEyes_agent_id` in Postman ![ThousandEyes agentId](../img/postman/agent_id.png)
+- Save the `agentId` into the variable `ThousandEyes_agent_id` in Bruno ![ThousandEyes agentId](../img/bruno/agent_id.png)

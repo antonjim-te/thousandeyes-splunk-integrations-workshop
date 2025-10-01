@@ -21,7 +21,7 @@ During this session you will learn about:
 To prepare for this Hackathon:
 
 - Have accounts for:
-    - Postman
+    - Bruno
     - ThousandEyes 
     - Splunk Observability Cloud
     - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
@@ -32,7 +32,7 @@ To prepare for this Hackathon:
         - View/Edit tests
     - Splunk Observability Cloud: role `power` or `admin` (to create access tokens and dashboards).
     - Splunk Cloud Platform / Splunk Enterprise: role `admin` or `sc_admin`.
-- Go through the [**Getting Started**](getting_started/access_postman.md) before starting the different sections of the Hackathon
+- Go through the [**Getting Started**](getting_started/access_bruno.md) before starting the different sections of the Hackathon
 
 ## Other integrations
 
