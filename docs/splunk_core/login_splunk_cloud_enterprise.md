@@ -32,7 +32,7 @@ This guide will help you log into Splunk Cloud Platform or Splunk Enterprise and
 
         - Access the Splunk Show [https://splunk.show/te-splunk](https://splunk.show/te-splunk)
         ![splunk show](../img/splunk_core/splunk_show.png)
-        - Sign in to Splunk Cloud Platform (Register if you don't have an account)
+        - Sign in to `splunk.com` (Register if you don't have an account)
         - Enroll event `ThousandEyes Integration Workshop`
         ![Enroll event](../img/splunk_core/enroll_event.png)
         - Once the event starts, you will see the instance information with the URL and credentials to access the Splunk instance
