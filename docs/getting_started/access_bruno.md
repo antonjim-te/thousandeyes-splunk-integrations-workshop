@@ -7,7 +7,7 @@
 
 ## Import the collection
 
-- Download the [Bruno collection file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/bruno/ThousandEyesSplunkIntegration.collection.json) from the repository.
+- Download the [Bruno collection file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/bruno/ThousandEyesSplunkIntegration.json) from the repository.
 ![download](../img/bruno/download.png)
 - Import the collection in Bruno.
 - Navigate to the new collection called `ThousandEyes Splunk Integration`
