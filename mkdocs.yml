@@ -11,7 +11,7 @@ validation:
 nav:
   - Home: README.md
   - Getting Started:
-    - Access Postman: getting_started/access_postman.md
+    - Access Bruno: getting_started/access_bruno.md
     - Log In to ThousandEyes: getting_started/login_thousandeyes.md
     - Save Agent ID: getting_started/get_agent_id.md
   - Service Map:
@@ -50,6 +50,7 @@ nav:
     - Create a Test Stream - Metrics Input: thousandeyes_splunk_app/test_metrics_stream_input.md
     - Create an Activity Log Input: thousandeyes_splunk_app/activity_logs_input.md
     - Create a Test Stream - Traces Input: thousandeyes_splunk_app/test_traces_stream_input.md
+    - Troubleshooting: thousandeyes_splunk_app/troubleshooting.md
 
 theme:
   name: material

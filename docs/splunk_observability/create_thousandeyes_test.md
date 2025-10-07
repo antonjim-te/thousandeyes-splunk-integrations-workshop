@@ -12,13 +12,13 @@ We are going to create a `Page Load` test that validates the availability of `ww
 
 === "API Method"
 
-    Use the ThousandEyes API through Postman to create the test programmatically.
+    Use the ThousandEyes API through Bruno to create the test programmatically.
     
     ### Create a Test via API
-    - Open the `Create ThousandEyVisualize ThousandEyes Page Load HAR as a trace in Splunk Observability Cloudes Page Load Test` request in your Postman collection
+    - Open the `Create ThousandEyVisualize ThousandEyes Page Load HAR as a trace in Splunk Observability Cloudes Page Load Test` request in your Bruno collection
     - Click `Send` to execute the API request
     
-    ![ThousandEyes create test](../img/postman/createPageLoadTest.png)
+    ![ThousandEyes create test](../img/bruno/createPageLoadTest.png)
     
     ### Copy Test ID
     - Copy the `testId` from the API response
@@ -44,13 +44,13 @@ We are going to create a `Page Load` test that validates the availability of `ww
 
     ### Get `Test ID`
     - After creating the test, click on the test name to view details
-    - In the URL bar, note the `Test ID` number (e.g., `https://app.thousandeyes.com/network-app-synthetics/views/?testId=522030`)
-    - Copy this `Test ID` for use in Postman variables
+    - In the URL bar, note the `Test ID` number (e.g., `https://app.thousandeyes.com/network-app-synthetics/views/?testId=7685220`)
+    - Copy this `Test ID` for use in Bruno variables
 
-### Save the `Test ID` in Postman
-- In Postman, go to your collection `Variables`
+### Save the `Test ID` in Bruno
+- In Bruno, go to your collection `Variables`
 - Find the `ThousandEyes_test_id` variable
-- Paste the test ID in the `Current Value` field
+- Paste the test ID in the `Value` field
 - Click `Save`
 
-![ThousandEyes test id variable](../img/postman/testId.png)
+![ThousandEyes test id variable](../img/bruno/testId.png)

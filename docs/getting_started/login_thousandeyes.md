@@ -59,14 +59,14 @@ Once you're logged into ThousandEyes, follow these steps to generate your API be
   
     ![copy Token](../img/thousandeyes/copyToken.png)
   
-## Add Your Token to Your Postman Variables
+## Add Your Token to Your Bruno Variables
 
-Now that you have your ThousandEyes bearer token, add it to your Postman collection variables:
+Now that you have your ThousandEyes bearer token, add it to your Bruno collection variables:
 
-- In Postman, navigate to your `ThousandEyes Splunk Integration` collection.
+- In Bruno, navigate to your `ThousandEyes Splunk Integration` collection.
 - Go to the `Variables` tab.
 - Find the variable named `ThousandEyes_token` in the list.
-    - In the `Current Value` column, paste your bearer token.
+    - In the `Value` column, paste your bearer token.
 - Click `Save` to apply the changes.
 
-    ![ThousandEyes Token](../img/postman/thousandeyesToken.png)
+    ![ThousandEyes Token](../img/bruno/thousandeyesToken.png)

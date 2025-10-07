@@ -1,0 +1,401 @@
+{
+	"name": "ThousandEyes Splunk Integration",
+	"version": "1",
+	"items": [
+	  {
+		"type": "http",
+		"name": "Create Logs stream - Splunk Enterprise",
+		"filename": "Create Logs stream - Splunk Enterprise.bru",
+		"seq": 4,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/stream",
+		  "method": "POST",
+		  "headers": [
+			{
+			  "name": "Authorization",
+			  "value": "Bearer {{BEARER}}",
+			  "enabled": true
+			}
+		  ],
+		  "params": [],
+		  "body": {
+			"mode": "json",
+			"json": "{\n    \"type\": \"splunk-hec\",\n    \"signal\": \"log\",\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://{{Splunk_HEC_host}}:8088/services/collector/event\"\n}",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  },
+	  {
+		"type": "http",
+		"name": "Create ThousandEyes Page Load Test",
+		"filename": "Create ThousandEyes Page Load Test.bru",
+		"seq": 2,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/tests/page-load",
+		  "method": "POST",
+		  "headers": [
+			{
+			  "name": "Content-Type",
+			  "value": "application/json",
+			  "enabled": true
+			},
+			{
+			  "name": "Authorization",
+			  "value": "Bearer $BEARER_TOKEN",
+			  "enabled": true
+			}
+		  ],
+		  "params": [],
+		  "body": {
+			"mode": "json",
+			"json": "{\n    \"interval\": 60,\n    \"agents\": [\n        {\n            \"agentId\": {{ThousandEyes_agent_id}}\n        }\n    ],\n    \"testName\": \"Test\",\n    \"url\": \"www.google.com\",\n    \"alertsEnabled\": 0\n}",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  },
+	  {
+		"type": "http",
+		"name": "Create logs stream - Splunk Cloud Platform",
+		"filename": "Create logs stream - Splunk Cloud Platform.bru",
+		"seq": 6,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/stream",
+		  "method": "POST",
+		  "headers": [
+			{
+			  "name": "Authorization",
+			  "value": "Bearer {{BEARER}}",
+			  "enabled": true
+			}
+		  ],
+		  "params": [],
+		  "body": {
+			"mode": "json",
+			"json": "{\n    \"type\": \"splunk-hec\",\n    \"signal\": \"log\",\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://http-inputs-{{Splunk_HEC_host}}.splunkcloud.com:443/services/collector/event\"\n}",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  },
+	  {
+		"type": "http",
+		"name": "Create metrics stream - Splunk Cloud Platform",
+		"filename": "Create metrics stream - Splunk Cloud Platform.bru",
+		"seq": 5,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/stream",
+		  "method": "POST",
+		  "headers": [
+			{
+			  "name": "Authorization",
+			  "value": "Bearer {{BEARER}}",
+			  "enabled": true
+			}
+		  ],
+		  "params": [],
+		  "body": {
+			"mode": "json",
+			"json": "{\n    \"type\": \"splunk-hec\",\n    \"signal\": \"metric\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://http-inputs-{{Splunk_HEC_host}}.splunkcloud.com:443/services/collector/event\"\n}",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  },
+	  {
+		"type": "http",
+		"name": "Create metrics stream - Splunk Enterprise",
+		"filename": "Create metrics stream - Splunk Enterprise.bru",
+		"seq": 3,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/stream",
+		  "method": "POST",
+		  "headers": [
+			{
+			  "name": "Authorization",
+			  "value": "Bearer {{BEARER}}",
+			  "enabled": true
+			}
+		  ],
+		  "params": [],
+		  "body": {
+			"mode": "json",
+			"json": "{\n    \"type\": \"splunk-hec\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"exporterConfig\": {\n        \"splunkHec\":{\n            \"token\": \"{{Splunk_HEC_token}}\"\n        }\n    },\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://{{Splunk_HEC_host}}:8088/services/collector/event\"\n}",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  },
+	  {
+		"type": "http",
+		"name": "Create metrics stream - Splunk Observability",
+		"filename": "Create metrics stream - Splunk Observability.bru",
+		"seq": 7,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/stream",
+		  "method": "POST",
+		  "headers": [
+			{
+			  "name": "Authorization",
+			  "value": "Bearer {{BEARER}}",
+			  "enabled": true
+			}
+		  ],
+		  "params": [],
+		  "body": {
+			"mode": "json",
+			"json": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"metric\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.{{Splunk_Observability_realm}}.signalfx.com:443/v2/datapoint/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  },
+	  {
+		"type": "http",
+		"name": "Create traces stream - Splunk Observability",
+		"filename": "Create traces stream - Splunk Observability.bru",
+		"seq": 8,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/stream",
+		  "method": "POST",
+		  "headers": [
+			{
+			  "name": "Authorization",
+			  "value": "Bearer {{BEARER}}",
+			  "enabled": true
+			}
+		  ],
+		  "params": [],
+		  "body": {
+			"mode": "json",
+			"json": "{\n    \"type\": \"openTelemetry\",\n    \"signal\": \"trace\",\n    \"testMatch\": [\n        {\n            \"id\": \"{{ThousandEyes_test_id}}\",\n            \"domain\": \"cea\"\n        }\n    ],\n    \"endpointType\": \"http\",\n    \"streamEndpointUrl\": \"https://ingest.{{Splunk_Observability_realm}}.signalfx.com:443/v2/trace/otlp\",\n    \"customHeaders\": {\n        \"X-SF-Token\": \"{{Splunk_Observability_access_token}}\",\n        \"Content-Type\": \"application/x-protobuf\"\n    }\n}",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  },
+	  {
+		"type": "http",
+		"name": "Get agents",
+		"filename": "Get agents.bru",
+		"seq": 1,
+		"settings": {
+		  "encodeUrl": true
+		},
+		"tags": [],
+		"request": {
+		  "url": "https://api.thousandeyes.com/v7/agents",
+		  "method": "GET",
+		  "headers": [],
+		  "params": [],
+		  "body": {
+			"mode": "none",
+			"formUrlEncoded": [],
+			"multipartForm": [],
+			"file": []
+		  },
+		  "script": {},
+		  "vars": {},
+		  "assertions": [],
+		  "tests": "",
+		  "docs": "",
+		  "auth": {
+			"mode": "bearer",
+			"bearer": {
+			  "token": "{{ThousandEyes_token}}"
+			}
+		  }
+		}
+	  }
+	],
+	"environments": [],
+	"root": {
+	  "request": {
+		"auth": {
+		  "mode": "bearer",
+		  "bearer": {
+			"token": "{{ThousandEyes_token}}"
+		  }
+		},
+		"vars": {
+		  "req": [
+			{
+			  "name": "Splunk_Observability_access_token",
+			  "value": "",
+			  "enabled": true,
+			  "local": false,
+			  "uid": "e7AvDoWddCNjK3DHmALaS"
+			},
+			{
+			  "name": "Splunk_Observability_realm",
+			  "value": "",
+			  "enabled": true,
+			  "local": false,
+			  "uid": "FywLlnRWLoXAd5y829Q9Q"
+			},
+			{
+			  "name": "Splunk_HEC_host",
+			  "value": "",
+			  "enabled": true,
+			  "local": false,
+			  "uid": "t52435oiOOQAOkMX6ccVP"
+			},
+			{
+			  "name": "Splunk_HEC_token",
+			  "value": "",
+			  "enabled": true,
+			  "local": false,
+			  "uid": "ZQswgGAPUIg5N2cdOt4dV"
+			},
+			{
+			  "name": "ThousandEyes_token",
+			  "value": "",
+			  "enabled": true,
+			  "local": false,
+			  "uid": "bEOEO2Qos4jUDts1WMS2O"
+			},
+			{
+			  "name": "ThousandEyes_test_id",
+			  "value": "",
+			  "enabled": true,
+			  "local": false,
+			  "uid": "cP7JhJTlZ10G8U5RL1LDb"
+			},
+			{
+			  "name": "ThousandEyes_agent_id",
+			  "value": "",
+			  "enabled": true,
+			  "local": false,
+			  "uid": "4JxDFD4sjJ1bPS26UeCWi"
+			}
+		  ]
+		}
+	  },
+	  "docs": "ThousandEyes Splunk Integration. https://antonjim-te.github.io/thousandeyes-splunk-integrations-workshop/ ",
+	  "meta": {
+		"name": "ThousandEyes Splunk Integration"
+	  }
+	},
+	"brunoConfig": {
+	  "version": "1",
+	  "name": "ThousandEyes Splunk Integration",
+	  "type": "collection",
+	  "ignore": [
+		"node_modules",
+		".git"
+	  ]
+	}
+}

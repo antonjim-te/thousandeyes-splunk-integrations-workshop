@@ -15,12 +15,12 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 ## Install Cisco ThousandEyes App for Splunk
 
 - Once we are logged into Splunk Enterprise 
-- Navigate to `Apps` > `Manage Apps`
-- Click on `Install app from file`
-- Choose [file](https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/raw/refs/heads/main/thousandeyes_splunk_app/cisco-thousandeyes-app-for-splunk_003.tgz)
-- Click on `Upload`
+- Navigate to `Apps` > `Find More Apps`
+- Search for `Cisco ThousandEyes App for Splunk` 
+- Click on `Install`
+    - Login `splunk.com`
 
-![upload](../img/thousandeyes_splunk_app/upload.png)
+![install](../img/thousandeyes_splunk_app/install.png)
 
 
 ## Access Cisco ThousandEyes App for Splunk
@@ -34,7 +34,7 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 ## Configuring Server name
 
 - Go to `Setttings` > `General Settings` > `Server Name`
-- Set the `Server Name` to the hostname of your Splunk instance. Same value that the postman variaable `splunk_hec_host` is set to.
+- Set the `Server Name` to the hostname of your Splunk instance. Same value that the Bruno variable `splunk_hec_host` is set to.
 
 ![Server name](../img/thousandeyes_splunk_app/config_server_name.png)
 
