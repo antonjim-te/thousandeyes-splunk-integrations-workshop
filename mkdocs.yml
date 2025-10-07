@@ -15,14 +15,14 @@ nav:
     - Log In to ThousandEyes: getting_started/login_thousandeyes.md
     - Save Agent ID: getting_started/get_agent_id.md
   - Service Map:
-    - Advanced Integration (running locally ):
+    - Advanced Integration (running locally):
       - Getting Started: service_map/advanced_locally/getting_started.md
       - Log In to Splunk Observability Cloud: service_map/advanced_locally/login_splunk_observability.md
       - Running the OpenTelemetry demo application: service_map/advanced_locally/running_demo_locally.md
       - Create the Splunk APM Integration: service_map/advanced_locally/create_splunk_apm_integration.md
       - Create ThousandEyes HTTP Test: service_map/advanced_locally/create_thousandeyes_http_test.md
       - View the Service Map: service_map/advanced_locally/view_service_map.md
-    - Advanced Integration (using AWS ):
+    - Advanced Integration (using AWS):
       - Getting Started: service_map/advanced_aws/getting_started.md
       - Log In to Splunk Observability Cloud: service_map/advanced_aws/login_splunk_observability.md
       - Setup AWS: service_map/advanced_aws/setup_aws_ec2.md

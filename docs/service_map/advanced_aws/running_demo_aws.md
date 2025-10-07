@@ -1,4 +1,5 @@
 # Running the OpenTelemetry demo application in AWS
+
 - Clone the [OpenTelemetry demo application](https://github.com/open-telemetry/opentelemetry-demo) repository.
 ```
 git clone https://github.com/open-telemetry/opentelemetry-demo.git

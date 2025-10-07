@@ -13,7 +13,7 @@ Use the ThousandEyes web interface to create the test.
 ![create HTTP Test](../../img/thousandeyes/createHttpTest1.png)
 - Configure Test Settings
       - `Test Name`: e.g., "Test Distributed Tracing"
-      - `URL`: Enter `<your_aws_domain>/api/cart`
+      - `URL`: Enter `<your_ngrok_domain>/api/cart`
       - In the `Agents` section, select a Cloud Agent
       - Under `Advanced settings`: ![advanced setting](../../img/thousandeyes/advanced_setting.png)
           - Check `Enable Distributed Tracing`
