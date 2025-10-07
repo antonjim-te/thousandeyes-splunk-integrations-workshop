@@ -15,18 +15,21 @@ nav:
     - Log In to ThousandEyes: getting_started/login_thousandeyes.md
     - Save Agent ID: getting_started/get_agent_id.md
   - Service Map:
-    - Basic Integration: 
-      - Getting Started: service_map/basic/getting_started.md
-      - Create the Splunk APM Integration: service_map/basic/create_splunk_apm_integration.md
-      - Create a ThousandEyes HTTP Test: service_map/basic/create_thousandeyes_http_test.md
-      - View the Service Map: service_map/basic/view_service_map.md
-    - Advanced Integration:
-      - Getting Started: service_map/advanced/getting_started.md
-      - Log In to Splunk Observability Cloud: service_map/advanced/login_splunk_observability.md
-      - Running the OpenTelemetry demo application: service_map/advanced/running_demo.md
-      - Create the Splunk APM Integration: service_map/advanced/create_splunk_apm_integration.md
-      - Create ThousandEyes HTTP Test: service_map/advanced/create_thousandeyes_http_test.md
-      - View the Service Map: service_map/advanced/view_service_map.md
+    - Advanced Integration (running locally):
+      - Getting Started: service_map/advanced_locally/getting_started.md
+      - Log In to Splunk Observability Cloud: service_map/advanced_locally/login_splunk_observability.md
+      - Running the OpenTelemetry demo application: service_map/advanced_locally/running_demo_locally.md
+      - Create the Splunk APM Integration: service_map/advanced_locally/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: service_map/advanced_locally/create_thousandeyes_http_test.md
+      - View the Service Map: service_map/advanced_locally/view_service_map.md
+    - Advanced Integration (using AWS):
+      - Getting Started: service_map/advanced_aws/getting_started.md
+      - Log In to Splunk Observability Cloud: service_map/advanced_aws/login_splunk_observability.md
+      - Setup AWS: service_map/advanced_aws/setup_aws_ec2.md
+      - Running the OpenTelemetry demo application: service_map/advanced_aws/running_demo_aws.md
+      - Create the Splunk APM Integration: service_map/advanced_aws/create_splunk_apm_integration.md
+      - Create ThousandEyes HTTP Test: service_map/advanced_aws/create_thousandeyes_http_test.md
+      - View the Service Map: service_map/advanced_aws/view_service_map.md
   - Splunk Observability Cloud:
     - Create a ThousandEyes test: splunk_observability/create_thousandeyes_test.md
     - Log In to Splunk Observability Cloud: splunk_observability/login_splunk_observability.md
