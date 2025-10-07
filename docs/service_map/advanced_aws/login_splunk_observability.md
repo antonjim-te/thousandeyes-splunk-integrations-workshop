@@ -11,6 +11,9 @@ This guide will help you log into Splunk Observability Cloud and obtain an acces
     - Enter your `email address` and `password`
     - Click `Sign In`
 
+    !!! note "If you are in Splunk AppDynamics PS Team"
+        You should have access to Splunk Observability Cloud Playground - please log in at https://app.us1.signalfx.com and use your Cisco credentials.
+
 === "Free Trial"
 
     If you don't have a Splunk Observability Cloud account:
@@ -39,7 +42,7 @@ Once you're logged into Splunk Observability Cloud, generate your access token:
 - Click `Next` to proceed the `Name and Scope` section
 - Keep the default permissions settings
 - Click `Next` to proceed the `Permissions` section
-- Keep the default `Expiration` settings
+- Set appropriate `Expiration date` (e.g. one day)
 - Click `Create Token`
 - Copy the token
 

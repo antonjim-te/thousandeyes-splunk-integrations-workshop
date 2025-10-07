@@ -1,6 +1,6 @@
 # Create a ThousandEyes HTTP Test with Distributed Tracing
 
-We are going to create a `HTTP Test` test to our endpoint `<your_ngrok_domain>/api/cart`
+We are going to create a `HTTP Test` test to our endpoint `<your_ec2_public-ip>/api/cart`
 
 Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/tests) for test creation.
 
@@ -13,7 +13,7 @@ Use the ThousandEyes web interface to create the test.
 ![create HTTP Test](../../img/thousandeyes/createHttpTest1.png)
 - Configure Test Settings
       - `Test Name`: e.g., "Test Distributed Tracing"
-      - `URL`: Enter `<your_ngrok_domain>/api/cart`
+      - `URL`: Enter `<your_ec2_public-ip>/api/cart`
       - In the `Agents` section, select a Cloud Agent
       - Under `Advanced settings`: ![advanced setting](../../img/thousandeyes/advanced_setting.png)
           - Check `Enable Distributed Tracing`
