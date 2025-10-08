@@ -22,6 +22,7 @@ nav:
       - Create the Splunk APM Integration: service_map/advanced_locally/create_splunk_apm_integration.md
       - Create ThousandEyes HTTP Test: service_map/advanced_locally/create_thousandeyes_http_test.md
       - View the Service Map: service_map/advanced_locally/view_service_map.md
+      - Obtain your star: service_map/advanced_locally/star.md
     - Advanced Integration (using AWS):
       - Getting Started: service_map/advanced_aws/getting_started.md
       - Log In to Splunk Observability Cloud: service_map/advanced_aws/login_splunk_observability.md
@@ -30,6 +31,7 @@ nav:
       - Create the Splunk APM Integration: service_map/advanced_aws/create_splunk_apm_integration.md
       - Create ThousandEyes HTTP Test: service_map/advanced_aws/create_thousandeyes_http_test.md
       - View the Service Map: service_map/advanced_aws/view_service_map.md
+      - Obtain your star: service_map/advanced_aws/star.md
   - Splunk Observability Cloud:
     - Create a ThousandEyes test: splunk_observability/create_thousandeyes_test.md
     - Log In to Splunk Observability Cloud: splunk_observability/login_splunk_observability.md
@@ -37,6 +39,7 @@ nav:
     - Create a Trace Stream to Splunk Observability Cloud: splunk_observability/create_trace_stream_to_splunk_observability.md
     - Visualize ThousandEyes Metrics in Splunk Observability Cloud: splunk_observability/visualize_metrics_in_splunk_observability.md
     - Visualize ThousandEyes Traces in Splunk Observability Cloud: splunk_observability/visualize_traces_in_splunk_observability.md
+    - Obtain your star: splunk_observability/star.md
   - Splunk Cloud/Enterprise:
     - Create a ThousandEyes test: splunk_core/create_thousandeyes_test.md
     - Log In to Splunk Cloud/Enterprise: splunk_core/login_splunk_cloud_enterprise.md
@@ -44,6 +47,7 @@ nav:
     - Create a Logs Stream to Splunk Cloud/Enterprise: splunk_core/create_logs_stream_to_splunk_cloud_enterprise.md
     - Visualize ThousandEyes Metrics in Splunk Cloud/Enterprise: splunk_core/visualize_metrics_in_splunk_cloud_enterprise.md
     - Visualize ThousandEyes Logs in Splunk Cloud/Enterprise: splunk_core/visualize_logs_in_splunk_cloud_enterprise.md
+    - Obtain your star: splunk_core/star.md
   - Cisco ThousandEyes App for Splunk:
     - Getting Started: thousandeyes_splunk_app/getting_started.md
     - Authenticate the ThousandEyes User: thousandeyes_splunk_app/authenticate_thousandeyes_user.md
@@ -51,7 +55,7 @@ nav:
     - Create an Activity Log Input: thousandeyes_splunk_app/activity_logs_input.md
     - Create a Test Stream - Traces Input: thousandeyes_splunk_app/test_traces_stream_input.md
     - Troubleshooting: thousandeyes_splunk_app/troubleshooting.md
-
+    - Obtain your star: thousandeyes_splunk_app/star.md  
 theme:
   name: material
   logo: img/logo.png

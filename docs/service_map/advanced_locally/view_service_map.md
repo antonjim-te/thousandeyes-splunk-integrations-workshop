@@ -46,12 +46,3 @@ These attributes provide context and allow you to navigate back to the related t
 In the Splunk Observability Cloud, you will have a link back to ThousandEyes, allowing you to easily navigate between the two platforms for a comprehensive view of your distributed tracing data.
 
 ![Trace link to ThousandEyes](../../img/splunk_observability/trace_link_to_thousandeyes.png)
-
-## Obtain your star
-![Star](../../img/star.png) 
-
-**CHALLENGE-1:**
-To obtain your first star please post in the [CX Observability Hackathons Webex Space](https://eurl.io/#_mvufmNou):
-
-- Screenshot of your Service Map from ThousandEyes
-- Screenshot of the trace from Splunk
