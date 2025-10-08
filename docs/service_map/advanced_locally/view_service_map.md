@@ -47,11 +47,11 @@ In the Splunk Observability Cloud, you will have a link back to ThousandEyes, al
 
 ![Trace link to ThousandEyes](../../img/splunk_observability/trace_link_to_thousandeyes.png)
 
-## Obtain your start
+## Obtain your star
 ![Star](../../img/star.png) 
 
 **CHALLENGE-1:**
-To obtain your start please post in the [CX Observability Hackathons Webex Space](https://eurl.io/#_mvufmNou):
+To obtain your first star please post in the [CX Observability Hackathons Webex Space](https://eurl.io/#_mvufmNou):
 
 - Screenshot of your Service Map from ThousandEyes
 - Screenshot of the trace from Splunk
