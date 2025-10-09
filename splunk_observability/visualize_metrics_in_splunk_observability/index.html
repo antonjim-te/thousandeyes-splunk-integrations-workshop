@@ -250,15 +250,8 @@
   
     
     
-      
-  
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
-        <a href="../../service_map/advanced_locally/getting_started/" class="md-tabs__link">
+        <a href="../../service_map/introduction/" class="md-tabs__link">
           
   
   
@@ -266,9 +259,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -563,6 +553,29 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../service_map/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -579,10 +592,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -595,8 +608,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Advanced Integration (running locally)
           </label>
@@ -793,10 +806,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -809,8 +822,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Advanced Integration (using AWS)
           </label>
@@ -1738,6 +1751,13 @@
 <p>To get started quickly with ThousandEyes data visualization, you can import pre-built dashboards that are included in this session.</p>
 <ul>
 <li>Download <a href="https://github.com/antonjim-te/thousandeyes-splunk-integrations-workshop/blob/main/dashboards/dashboard_Splunk_Observability_Cloud.json">dashboard file</a></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">If you're using a shared Splunk Observability Cloud instance</p>
+<p>Use a unique dashboard group name to avoid creating duplicate dashboards.</p>
+<p>Instead of <code>"name": "ThousandEyes Dashboard",</code> use <code>"name": "ThousandEyes Dashboard by &lt;your_userId&gt;",</code></p>
+</div>
+<ul>
 <li>Log in to your <code>Splunk Observability Cloud</code> instance</li>
 <li>Navigate to <code>+</code> from the main menu</li>
 <li>Click <code>Import</code> from the dropdown options and select <code>Dashboard group</code></li>
