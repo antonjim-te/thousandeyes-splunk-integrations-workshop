@@ -39,10 +39,10 @@ Once you're logged into Splunk Observability Cloud, generate your access token:
     - `Name`: Enter a descriptive name (e.g., "ThousandEyes Integration Token")
     - `Scope`: Select `INGEST` and `API` 
         - Check `Please accept to continue with your selection.`
-- Click `Next` to proceed the `Name and Scope` section
-- Keep the default permissions settings
 - Click `Next` to proceed the `Permissions` section
-- Set appropriate `Expiration date` (e.g. one day)
+- Keep the default permissions settings
+- Click `Next` to proceed the `Expiration` section
+- Keep the default `Expiration` settings
 - Click `Create Token`
 - Copy the token
 

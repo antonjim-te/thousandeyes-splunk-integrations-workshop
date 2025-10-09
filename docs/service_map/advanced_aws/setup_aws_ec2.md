@@ -43,7 +43,7 @@ sudo apt install -y git curl
 - Install and configure Docker
     -  Install Docker 
         ```
-        sudo apt install -y docker.io`
+        sudo apt install -y docker.io
         ```
     - Start and enable the Docker service to run on boot:
         ```

@@ -47,17 +47,17 @@ docker-compose up --force-recreate --remove-orphans --detach
 ## View a trace in Splunk Observability
 
 - Call a REST API of the OpenTelemetry demo application to generate some traces
-    - Firsty create a **random trace ID**. Example of traceparent header is  `00-7b8aa5a2d2c872e8321cf37308d69df3-051581bf3cb55c14-01`.
+    - Firsty create a **random [traceparent](https://www.w3.org/TR/trace-context/#examples-of-http-traceparent-headers)**. Example of traceparent header is  `00-4bf92f3577b34da6a3ce929d0e0e4736-051581bf3cb55c14-01`.
     - Call a REST API
       ```
       curl http://<your-ec2-public-ip>:8080/api/cart -H 'traceparent: <your-traceparent-ID>
       ```
         - example:
         ```
-        curl http://<your-ec2-public-ip>:8080/api/cart -H 'traceparent: 00-7b8aa5a2d2c872e8321cf37308d69df3-00f067aa0ba902b7-01'
+        curl http://<your-ec2-public-ip>:8080/api/cart -H 'traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01'
         ```
 
-- Open the trace: [https://app.us1.signalfx.com/#/apm/traces/7b8aa5a2d2c872e8321cf37308d69df3](https://app.us1.signalfx.com/#/apm/traces/7b8aa5a2d2c872e8321cf37308d69df3)
+- Open the trace: [https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736](https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736)
 
 Please note that it can take up to 5 minutes to see the trace in Splunk.
 

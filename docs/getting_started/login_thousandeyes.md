@@ -24,8 +24,8 @@ Choose one of the following options to access ThousandEyes:
 Once you're logged into ThousandEyes, follow these steps to generate your API bearer token:
 
 - Navigate to User Profile
-   - In the left-hand navigation bar:
-       - select  `Manage >Account Settings > Users and Roles > Profiles`.
+- In the left-hand navigation bar:
+- select  `Manage >Account Settings > Users and Roles > Profiles`.
 - Scroll down to the `User API Tokens` section
 - Here you have two options:
 
@@ -34,7 +34,7 @@ Once you're logged into ThousandEyes, follow these steps to generate your API be
     If you remember your bearer token, you can skip to the next section.
 
     Else, you can revoke the existing token and generate a new one.
-    - Click the `Revoke Token` button.
+    - Click the `Revoke` button.
   
     ![Revoke Token](../img/thousandeyes/revoke_token.png)
 
