@@ -1,6 +1,6 @@
 # Create a ThousandEyes HTTP Test with Distributed Tracing
 
-We are going to create a `HTTP Test` test an endpoint to our OpenTelemetry demo application, which is already instrumented with OpenTelemetry and sending telemetry data to Splunk Observability.
+We are going to create an `HTTP Test` for an endpoint of our OpenTelemetry demo application, which is already instrumented with OpenTelemetry and sending telemetry data to Splunk Observability.
 
 Refer to [ThousandEyes documentation](https://docs.thousandeyes.com/product-documentation/tests) for test creation.
 
@@ -15,7 +15,7 @@ Use the ThousandEyes web interface to create the test.
       - `Test Name`: e.g., "Basic - Test Distributed Tracing"
       - `URL`: Enter `http://13.52.215.7:8080/api/test`
       - In the `Agents` section, select a Cloud Agent
-      - Under `Advanced settings`: ![advanced setting](../../img/thousandeyes/advanced_setting.png)
+      - Under `Advanced settings`: ![advanced settings](../../img/thousandeyes/advanced_setting.png)
           - Check `Enable Distributed Tracing`
           ![create HTTP Test](../../img/thousandeyes/createHttpTest2.png)
 - Click `Create New Test`

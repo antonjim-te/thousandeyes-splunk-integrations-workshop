@@ -26,7 +26,7 @@ Under `Network & App Synthetics` -> `Views`, you can select your  HTTP Test to v
 
 ## Debug the Trace in Splunk Observability Cloud
 
-As you dont have access to our Splunk Observability Cloud instance, you will not be able to access the traces in Splunk Observability Cloud. However, if you had access, you would follow these steps:
+As you don't have access to our Splunk Observability Cloud instance, you will not be able to access the traces in Splunk Observability Cloud. However, if you had access, you would follow these steps:
 
 From the **Service Map** tab in ThousandEyes, follow the link to the trace in Splunk. There, you can:
 

@@ -10,6 +10,10 @@
 
 ![Search traces](../img/splunk_observability/searchTraces.png)
 
+- You can also filter by other attributes like `thousandeyes.test.id`
+
+![Search by ThousandEyes Test Id](../img/splunk_observability/search_by_test_id.png)
+
 - Click on a trace to view details
 
 ![Trace details](../img/splunk_observability/traceDetails.png)

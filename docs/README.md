@@ -14,7 +14,7 @@ During this session you will learn about:
 - [**Streaming ThousandEyes data to Splunk Cloud Platform or Splunk Enterprise**](splunk_core/login_splunk_cloud_enterprise.md)
 - [**Exploring the capabilities of the Cisco ThousandEyes App for Splunk**](thousandeyes_splunk_app/getting_started.md)
 
-![workflow](img/workflow_digram.png)
+![workflow](img/workflow_diagram.png)
 
 ## Prerequisites
 
