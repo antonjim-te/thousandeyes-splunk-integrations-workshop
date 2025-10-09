@@ -1839,19 +1839,19 @@
 <li>
 <p>Call a REST API of the OpenTelemetry demo application to generate some traces</p>
 <ul>
-<li>Firsty create a <strong>random trace ID</strong>. Example of traceparent header is  <code>00-7b8aa5a2d2c872e8321cf37308d69df3-051581bf3cb55c14-01</code>.</li>
+<li>Firsty create a <strong>random <a href="https://www.w3.org/TR/trace-context/#examples-of-http-traceparent-headers">traceparent</a></strong>. Example of traceparent header is  <code>00-4bf92f3577b34da6a3ce929d0e0e4736-051581bf3cb55c14-01</code>.</li>
 <li>Call a REST API
   <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl http://localhost:8080:8080/api/cart -H &#39;traceparent: &lt;your-traceparent-ID&gt;
 </span></code></pre></div><ul>
 <li>example:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl http://localhost:8080:8080/api/cart -H &#39;traceparent: 00-7b8aa5a2d2c872e8321cf37308d69df3-00f067aa0ba902b7-01&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl http://localhost:8080:8080/api/cart -H &#39;traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01&#39;
 </span></code></pre></div></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>Open the trace: <a href="https://app.us1.signalfx.com/#/apm/traces/7b8aa5a2d2c872e8321cf37308d69df3">https://app.us1.signalfx.com/#/apm/traces/7b8aa5a2d2c872e8321cf37308d69df3</a></p>
+<p>Open the trace: <a href="https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736">https://app.us1.signalfx.com/#/apm/traces/4bf92f3577b34da6a3ce929d0e0e4736</a></p>
 </li>
 </ul>
 <p>Please note that it can take up to 5 minutes to see the trace in Splunk.</p>
