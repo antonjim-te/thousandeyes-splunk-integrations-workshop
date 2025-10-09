@@ -21,10 +21,10 @@ During this session you will learn about:
 To prepare for this Hackathon:
 
 - Have accounts for:
-    - Bruno
-    - ThousandEyes 
-    - Splunk Observability Cloud
-    - Splunk Cloud Platform or Splunk Enterprise (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
+    - [Bruno](https://www.usebruno.com)
+    - [ThousandEyes](https://www.thousandeyes.com) 
+    - [Splunk Observability Cloud](https://www.splunk.com/en_us/products/observability-cloud.html)
+    - [Splunk Cloud Platform](https://www.splunk.com/en_us/products/splunk-cloud-platform.html) or [Splunk Enterprise](https://www.splunk.com/en_us/products/splunk-enterprise.html) (free trial is not valid due to the [issue](https://ideas.splunk.com/ideas/PLECID-I-816))
         - Version requirements: 9.4 or later.
 - Permissions and roles:
     - ThousandEyes: 

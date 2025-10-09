@@ -15,6 +15,7 @@ nav:
     - Log In to ThousandEyes: getting_started/login_thousandeyes.md
     - Save Agent ID: getting_started/get_agent_id.md
   - Service Map:
+    - Introduction: service_map/introduction.md
     - Advanced Integration (running locally):
       - Getting Started: service_map/advanced_locally/getting_started.md
       - Log In to Splunk Observability Cloud: service_map/advanced_locally/login_splunk_observability.md
