@@ -15,7 +15,7 @@ We are going to create a `Page Load` test that validates the availability of `ww
     Use the ThousandEyes API through Bruno to create the test programmatically.
     
     ### Create a Test via API
-    - Open the `Create ThousandEyVisualize ThousandEyes Page Load HAR as a trace in Splunk Observability Cloudes Page Load Test` request in your Bruno collection
+    - Open the `Create ThousandEyes Page Load Test` request in your Bruno collection
     - Click `Send` to execute the API request
     
     ![ThousandEyes create test](../img/bruno/createPageLoadTest.png)

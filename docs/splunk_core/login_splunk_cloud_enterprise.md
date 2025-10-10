@@ -68,7 +68,7 @@ Now that you have your Splunk HEC token, add it to your Bruno collection variabl
 - Find the variable named `Splunk_HEC_token` in the list
     - In the `Value` column, paste your HEC token
 - Find the variable named `Splunk_host` in the list
-    - In the `Value` column, enter your Splunk host URL
+    - In the `Value` column, enter your Splunk host
 - Click `Save` to apply the changes
 
 ![Splunk Enterprise Variables](../img/bruno/splunk_enterprise_variables.png)

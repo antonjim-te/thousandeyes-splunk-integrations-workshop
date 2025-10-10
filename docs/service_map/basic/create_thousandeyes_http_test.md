@@ -15,8 +15,7 @@ Use the ThousandEyes web interface to create the test.
       - `Test Name`: e.g., "Basic - Test Distributed Tracing"
       - `URL`: Enter `http://13.52.215.7:8080/api/test`
       - In the `Agents` section, select a Cloud Agent
-      - Under `Advanced settings`: ![advanced settings](../../img/thousandeyes/advanced_setting.png)
-          - Check `Enable Distributed Tracing`
-          ![create HTTP Test](../../img/thousandeyes/createHttpTest2.png)
+      - Under `HTTP Comunication and Performance (Optional)`, check `Enable Distributed Tracing`
+          ![Enable distributed tracing](../../img/thousandeyes/enabe_distributed_tracing.png)
 - Click `Create New Test`
 ![create HTTP Test](../../img/thousandeyes/basic_create_http_test_3.png)

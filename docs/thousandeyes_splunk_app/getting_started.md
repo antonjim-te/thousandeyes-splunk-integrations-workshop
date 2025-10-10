@@ -33,7 +33,7 @@ The [Cisco ThousandEyes App for Splunk](https://splunkbase.splunk.com/app/7719) 
 
 ## Configuring Server name
 
-- Go to `Setttings` > `General Settings` > `Server Name`
+- Go to `Setttings` > `Server Settings` -> `General Settings` > `Server Name`
 - Set the `Server Name` to the hostname of your Splunk instance. Same value that the Bruno variable `splunk_hec_host` is set to.
 
 ![Server name](../img/thousandeyes_splunk_app/config_server_name.png)

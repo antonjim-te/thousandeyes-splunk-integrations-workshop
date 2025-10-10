@@ -2,6 +2,7 @@
 
 - Navigate to `Configuration` > `ThousandEyes User`
 - Click on `Add ThousandEyes User`
+- Click `Authorize`
 - Enter your ThousandEyes username and password
 - Click on `Save`
 - You will see a message that the user has been added successfully

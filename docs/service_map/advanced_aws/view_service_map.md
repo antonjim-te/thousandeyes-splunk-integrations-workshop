@@ -12,11 +12,11 @@ Under `Network & App Synthetics` -> `Views`, you can select your  HTTP Test to v
 ![Trace headers](../../img/thousandeyes/headers.png)
 
 - Under the `HTTP Server` layer, open the `Service Map` tab.
-      - Use the service map to analyze the trace path:
-      - The services involved in the request.
-      - Any latency issues, highlighted in red if thresholds are exceeded.
-      - Any errors between services, shown as red lines if a request fails.
-      - Trace metadata, such as the trace ID and request flow details.
+- Use the service map to analyze the trace path:
+- The services involved in the request.
+- Any latency issues, highlighted in red if thresholds are exceeded.
+- Any errors between services, shown as red lines if a request fails.
+- Trace metadata, such as the trace ID and request flow details.
 
 ![Service Map](../../img/thousandeyes/advanced_service_map.png)
 
