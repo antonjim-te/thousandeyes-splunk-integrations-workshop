@@ -7,17 +7,10 @@
     - Name: `<your-unique-ID>-te-splunk-otel-demo`
     - AMI: Choose an Ubuntu Server AMI (e.g., Ubuntu Server 24.04 LTS).
     - Instance Type: Select an instance with 6 GB RAM or more (e.g., t3.large).
-    - Key pair: 
-        - Splunk AppDynamics PS Team: you can use `splunk-te-otel-key` (feel free to choose your key, but this can help in troubleshooting). You can download the key from [SharePoint](https://cisco.sharepoint.com/:u:/r/sites/AppDynamicsProfessionalServices/PS%20Challenge%20Series/20251010%20-%20ThousandEyes%20%26%20Splunk%20Integration%20Hackathon/splunk-te-otel-key.pem?csf=1&web=1&e=Tlg2w1)
-        - Others: you can use your key or create a new one
+    - Key pair: you can use your key or create a new one
     - Storage: Allocate 30 GB of disk space
     - Security Group Rules:
-        - If you are using Splunk AppDynamics PS Team AWS Account please use those existing security groups:
-            - default 
-            - CiscoAppDynamicsVPNAccess
-            - Splunk-TE-Hackathon
-        -  Others: 
-            - If possible, please select a Security Group that allows inbound connections from any IP address. If not possible, please make sure that you can access the server and allow inbound connections from the chosen ThousandEyes Cloud Agents that you will use during this workshop. You can obtain a list of ThousandEyes Agent IP addresses by using an API request provided in the Bruno collection. Please make sure to add the ThousandEyes Bearer token in Bruno variables before sendingbr the API request. Documentation on how to obtain a list of ThousandEyes Agents can be found here: [Obtaining a list of ThousandEyes Agent IP](https://docs.thousandeyes.com/product-documentation/global-vantage-points/obtaining-a-list-of-thousandeyes-agent-ip-addresses-with-te-iplist).  
+        - If possible, please select a Security Group that allows inbound connections from any IP address. If not possible, please make sure that you can access the server and allow inbound connections from the chosen ThousandEyes Cloud Agents that you will use during this workshop. You can obtain a list of ThousandEyes Agent IP addresses by using an API request provided in the Bruno collection. Please make sure to add the ThousandEyes Bearer token in Bruno variables before sendingbr the API request. Documentation on how to obtain a list of ThousandEyes Agents can be found here: [Obtaining a list of ThousandEyes Agent IP](https://docs.thousandeyes.com/product-documentation/global-vantage-points/obtaining-a-list-of-thousandeyes-agent-ip-addresses-with-te-iplist).  
             
 - Once configured, please launch the instance and connect to it using SSH. Replace `<your-private-keyfile.pem>` with your SSH key file and `<your-ec2-public-ip>` with your instance's
 public IP address: 

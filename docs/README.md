@@ -1,11 +1,8 @@
-# ThousandEyes - Splunk Integrations Hackathon
+# ThousandEyes - Splunk Integrations Workshop
 
 
 
-Welcome to **"ThousandEyes & Splunk Integration Hackathon, part of CX Observability Hackathons"**
-
-
-![cx_observability_hackathons](img/cx_observability_hackathons.png)
+Welcome to **"ThousandEyes & Splunk Integration workshop"**
 
 During this session you will learn about: 
 
@@ -18,7 +15,7 @@ During this session you will learn about:
 
 ## Prerequisites
 
-To prepare for this Hackathon:
+To prepare for this Workshop:
 
 - Have accounts for:
     - [Bruno](https://www.usebruno.com)
@@ -32,7 +29,7 @@ To prepare for this Hackathon:
         - View/Edit tests
     - Splunk Observability Cloud: role `power` or `admin` (to create access tokens and dashboards).
     - Splunk Cloud Platform / Splunk Enterprise: role `admin` or `sc_admin`.
-- Go through the [**Getting Started**](getting_started/access_bruno.md) before starting the different sections of the Hackathon
+- Go through the [**Getting Started**](getting_started/access_bruno.md) before starting the different sections of the Workshop
 
 ## Other integrations
 
