@@ -4,10 +4,10 @@ In the advanced section of the Distributed Tracing Service Map documentation, we
 
 ### Prerequisites
 - ThousandEyes account
-- Ngrok account
+- [Ngrok account](https://ngrok.com/signup)
 - Splunk Observability account
-- git
-- docker compose
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [docker](https://docs.docker.com/engine/install/)
 
 
 ### Diagram

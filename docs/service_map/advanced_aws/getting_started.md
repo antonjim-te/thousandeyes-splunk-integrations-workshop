@@ -8,9 +8,8 @@ This part of the documentation is applicable if you plan to run your OTel demo a
 - ThousandEyes account
 - AWS account
 	- EC2 instance
-		- Git
-		- Docker 
-		- Docker Compose
+		- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+		- [docker](https://docs.docker.com/engine/install/)
 - Splunk Observability account
 
 
