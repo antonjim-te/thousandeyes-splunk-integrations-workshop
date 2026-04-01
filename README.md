@@ -1,6 +1,6 @@
 # ThousandEyes - Splunk Integrations 
 
-All the docs in: https://antonjim-te.github.io/thousandeyes-splunk-integrations-workshop
+All the docs in: https://ajimenez1503.github.io/thousandeyes-splunk-integrations-workshop/
 
 
 # TODO
